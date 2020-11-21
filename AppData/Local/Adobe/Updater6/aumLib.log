@@ -1,0 +1,178 @@
+2010-11-06T18:35:54: >>> Adobe Updater Log Begin >>>
+2010-11-06T18:35:54: logFile: = C:\Users\Bill\AppData\Local\Adobe\Updater6\aumLib.log
+2010-11-06T18:35:54: logLevel: = 2
+2010-11-06T18:35:54: Vista IE Protected Mode:No
+2010-11-06T18:35:54: In AUMDoPluginAction(...)
+2010-11-06T18:35:54: appIdentifierreader9rdr-en_US
+2010-11-06T18:35:54: Do not have admin priv.
+2010-11-06T18:35:55: ForkUpdater.
+2010-11-06T18:35:55: return code = 0(ESD_ERR_OK)
+2010-11-06T18:36:07: In AUMTriggerUpdateCheck(...)
+2010-11-06T18:36:07: appIdentifierreader9rdr-en_US
+2010-11-06T18:36:07: appFolderPathC:\Program Files\Adobe\Reader 9.0\Reader
+2010-11-06T18:36:07: AUMTriggerType = 1
+2010-11-06T18:36:07: appDisplayNameAdobe Reader 9
+2010-11-06T18:36:07: appDisplayLangen_US
+2010-11-06T18:36:07: bOverrideData= true
+2010-11-06T18:36:07: Do not have admin priv.
+2010-11-06T18:36:07: Trigger Update: AppIdentifier: reader9rdr-en_US
+AppFolder: C:\Program Files\Adobe\Reader 9.0\Reader
+Update Type: =  Scheduled Update
+2010-11-06T18:36:07: Launching AUM.
+2010-11-14T13:09:17: >>> Adobe Updater Log Begin >>>
+2010-11-14T13:09:17: logFile: = C:\Users\Bill\AppData\Local\Adobe\Updater6\aumLib.log
+2010-11-14T13:09:17: logLevel: = 2
+2010-11-14T13:09:17: Vista IE Protected Mode:No
+2010-11-14T13:09:17: In AUMDoPluginAction(...)
+2010-11-14T13:09:17: appIdentifierreader9rdr-en_US
+2010-11-14T13:09:17: Do not have admin priv.
+2010-11-14T13:09:17: ForkUpdater.
+2010-11-14T13:09:17: return code = 0(ESD_ERR_OK)
+2010-11-14T13:09:19: <<< Adobe Updater Log End <<<
+
+
+2010-11-14T14:27:52: >>> Adobe Updater Log Begin >>>
+2010-11-14T14:27:52: logFile: = C:\Users\Bill\AppData\Local\Adobe\Updater6\aumLib.log
+2010-11-14T14:27:52: logLevel: = 2
+2010-11-14T14:27:52: Vista IE Protected Mode:No
+2010-11-14T14:27:52: In AUMDoPluginAction(...)
+2010-11-14T14:27:52: appIdentifierreader9rdr-en_US
+2010-11-14T14:27:52: Do not have admin priv.
+2010-11-14T14:27:52: ForkUpdater.
+2010-11-14T14:27:52: return code = 0(ESD_ERR_OK)
+2010-11-14T14:28:00: In AUMTriggerUpdateCheck(...)
+2010-11-14T14:28:00: appIdentifierreader9rdr-en_US
+2010-11-14T14:28:00: appFolderPathC:\Program Files\Adobe\Reader 9.0\Reader
+2010-11-14T14:28:00: AUMTriggerType = 1
+2010-11-14T14:28:00: appDisplayNameAdobe Reader 9
+2010-11-14T14:28:00: appDisplayLangen_US
+2010-11-14T14:28:00: bOverrideData= true
+2010-11-14T14:28:00: Do not have admin priv.
+2010-11-14T14:28:00: Trigger Update: AppIdentifier: reader9rdr-en_US
+AppFolder: C:\Program Files\Adobe\Reader 9.0\Reader
+Update Type: =  Scheduled Update
+2010-11-14T14:28:00: Launching AUM.
+2010-11-14T14:28:00: return code = 0(ESD_ERR_OK)
+2010-11-15T02:20:33: <<< Adobe Updater Log End <<<
+
+
+2010-11-20T00:57:28: >>> Adobe Updater Log Begin >>>
+2010-11-20T00:57:28: logFile: = C:\Users\Bill\AppData\Local\Adobe\Updater6\aumLib.log
+2010-11-20T00:57:28: logLevel: = 2
+2010-11-20T00:57:28: Vista IE Protected Mode:No
+2010-11-20T00:57:28: In AUMDoPluginAction(...)
+2010-11-20T00:57:28: appIdentifierreader9rdr-en_US
+2010-11-20T00:57:28: Do not have admin priv.
+2010-11-20T00:57:28: return code = 0(ESD_ERR_OK)
+2010-11-20T00:58:36: In AUMTriggerUpdateCheck(...)
+2010-11-20T00:58:36: appIdentifierreader9rdr-en_US
+2010-11-20T00:58:36: appFolderPathC:\Program Files\Adobe\Reader 9.0\Reader
+2010-11-20T00:58:36: AUMTriggerType = 1
+2010-11-20T00:58:36: appDisplayNameAdobe Reader 9
+2010-11-20T00:58:36: appDisplayLangen_US
+2010-11-20T00:58:36: bOverrideData= true
+2010-11-20T00:58:36: Do not have admin priv.
+2010-11-20T00:58:36: Trigger Update: AppIdentifier: reader9rdr-en_US
+AppFolder: C:\Program Files\Adobe\Reader 9.0\Reader
+Update Type: =  Scheduled Update
+2010-11-20T00:58:36: 
+2010-11-20T00:58:36: A month has not passed by since last launch of Updater.  Not time to launch.
+2010-11-21T12:30:20: >>> Adobe Updater Log Begin >>>
+2010-11-21T12:30:20: logFile: = C:\Users\Bill\AppData\Local\Adobe\Updater6\aumLib.log
+2010-11-21T12:30:20: logLevel: = 2
+2010-11-21T12:30:20: Vista IE Protected Mode:No
+2010-11-21T12:30:20: In AUMDoPluginAction(...)
+2010-11-21T12:30:20: appIdentifierreader9rdr-en_US
+2010-11-21T12:30:20: Do not have admin priv.
+2010-11-21T12:30:20: ForkUpdater.
+2010-11-21T12:30:20: return code = 0(ESD_ERR_OK)
+2010-11-21T12:30:40: In AUMTriggerUpdateCheck(...)
+2010-11-21T12:30:40: appIdentifierreader9rdr-en_US
+2010-11-21T12:30:40: appFolderPathC:\Program Files\Adobe\Reader 9.0\Reader
+2010-11-21T12:30:40: AUMTriggerType = 1
+2010-11-21T12:30:40: appDisplayNameAdobe Reader 9
+2010-11-21T12:30:40: appDisplayLangen_US
+2010-11-21T12:30:40: bOverrideData= true
+2010-11-21T12:30:40: Do not have admin priv.
+2010-11-21T12:30:40: Trigger Update: AppIdentifier: reader9rdr-en_US
+AppFolder: C:\Program Files\Adobe\Reader 9.0\Reader
+Update Type: =  Scheduled Update
+2010-11-21T12:30:40: Launching AUM.
+2010-11-21T12:56:10: >>> Adobe Updater Log Begin >>>
+2010-11-21T12:56:10: logFile: = C:\Users\Bill\AppData\Local\Adobe\Updater6\aumLib.log
+2010-11-21T12:56:10: logLevel: = 2
+2010-11-21T12:56:10: Vista IE Protected Mode:No
+2010-11-21T12:56:10: In AUMDoPluginAction(...)
+2010-11-21T12:56:10: appIdentifierreader9rdr-en_US
+2010-11-21T12:56:10: Do not have admin priv.
+2010-11-21T12:56:10: return code = 12()
+2010-11-21T12:56:10: In AUMTriggerUpdateCheck(...)
+2010-11-21T12:56:10: appIdentifierreader9rdr-en_US
+2010-11-21T12:56:10: appFolderPathC:\Program Files\Adobe\Reader 9.0\Reader
+2010-11-21T12:56:10: AUMTriggerType = 1
+2010-11-21T12:56:10: appDisplayNameAdobe Reader 9
+2010-11-21T12:56:10: appDisplayLangen_US
+2010-11-21T12:56:10: bOverrideData= true
+2010-11-21T12:56:10: Do not have admin priv.
+2010-11-21T12:56:10: Trigger Update: AppIdentifier: reader9rdr-en_US
+AppFolder: C:\Program Files\Adobe\Reader 9.0\Reader
+Update Type: =  Scheduled Update
+2010-11-21T12:56:10: 
+2010-11-21T12:56:10: A month has not passed by since last launch of Updater.  Not time to launch.
+2010-11-21T12:56:10: return code = 0(ESD_ERR_OK)
+2010-11-21T13:08:40: In AUMDoPluginAction(...)
+2010-11-21T13:08:40: appIdentifierreader9rdr-en_US
+2010-11-21T13:08:40: Do not have admin priv.
+2010-11-21T13:08:40: return code = 12()
+2010-11-21T13:08:40: In AUMTriggerUpdateCheck(...)
+2010-11-21T13:08:40: appIdentifierreader9rdr-en_US
+2010-11-21T13:08:40: appFolderPathC:\Program Files\Adobe\Reader 9.0\Reader
+2010-11-21T13:08:40: AUMTriggerType = 1
+2010-11-21T13:08:40: appDisplayNameAdobe Reader 9
+2010-11-21T13:08:40: appDisplayLangen_US
+2010-11-21T13:08:40: bOverrideData= true
+2010-11-21T13:08:40: Do not have admin priv.
+2010-11-21T13:08:40: Trigger Update: AppIdentifier: reader9rdr-en_US
+AppFolder: C:\Program Files\Adobe\Reader 9.0\Reader
+Update Type: =  Scheduled Update
+2010-11-21T13:08:40: 
+2010-11-21T13:08:40: A month has not passed by since last launch of Updater.  Not time to launch.
+2010-11-26T13:37:41: >>> Adobe Updater Log Begin >>>
+2010-11-26T13:37:41: logFile: = C:\Users\Bill\AppData\Local\Adobe\Updater6\aumLib.log
+2010-11-26T13:37:41: logLevel: = 2
+2010-11-26T13:37:41: Vista IE Protected Mode:No
+2010-11-26T13:37:41: In AUMUnRegisterApplication(...)
+2010-11-26T13:37:41: appIdentifierreader9rdr-en_US
+2010-11-26T13:37:41: Successfully unregistered - AppIdentifier: reader9rdr-en_US
+2010-11-26T13:37:41: return code = 0(ESD_ERR_OK)
+2010-11-26T13:38:39: In AUMRegisterApplication(...)
+2010-11-26T13:38:39: appIdentifierreader9rdr-en_US
+2010-11-26T13:38:39: appFolderPathC:\Program Files\Adobe\Reader 9.0\Reader
+2010-11-26T13:38:39: appDisplayNameAdobe Reader 9
+2010-11-26T13:38:39: Successfully registerred AppIdentifier: reader9rdr-en_US
+AppName: Adobe Reader 9
+AppFolder: C:\Program Files\Adobe\Reader 9.0\Reader
+2010-11-26T13:38:39: return code = 0(ESD_ERR_OK)
+2010-11-26T13:38:41: <<< Adobe Updater Log End <<<
+
+
+2010-12-04T14:38:53: >>> Adobe Updater Log Begin >>>
+2010-12-04T14:38:53: logFile: = C:\Users\Bill\AppData\Local\Adobe\Updater6\aumLib.log
+2010-12-04T14:38:53: logLevel: = 2
+2010-12-04T14:38:53: Vista IE Protected Mode:No
+2010-12-04T14:38:53: In AUMUnRegisterApplication(...)
+2010-12-04T14:38:53: appIdentifierreader9rdr-en_US
+2010-12-04T14:38:53: Successfully unregistered - AppIdentifier: reader9rdr-en_US
+2010-12-04T14:38:53: Launching AUM.
+2010-12-04T14:38:53: return code = 0(ESD_ERR_OK)
+2010-12-04T14:40:27: In AUMRegisterApplication(...)
+2010-12-04T14:40:27: appIdentifierreader9rdr-en_US
+2010-12-04T14:40:27: appFolderPathC:\Program Files\Adobe\Reader 9.0\Reader
+2010-12-04T14:40:27: appDisplayNameAdobe Reader 9
+2010-12-04T14:40:27: Successfully registerred AppIdentifier: reader9rdr-en_US
+AppName: Adobe Reader 9
+AppFolder: C:\Program Files\Adobe\Reader 9.0\Reader
+2010-12-04T14:40:27: return code = 0(ESD_ERR_OK)
+2010-12-04T14:40:31: <<< Adobe Updater Log End <<<
+
+

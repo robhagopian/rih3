@@ -1,0 +1,78 @@
+ : Loading AUM Integration library at path C:\Program Files\Adobe\Reader 9.0\Reader\AdobeUpdater.dll.
+ : Successfully loaded AUM integration library
+ : Successfully found all library entry points.  Library is valid.
+ : Entering GetAppID()
+ : AUMDoPluginAction returns => 0
+ : Entering GetAppID()
+ : AUMTriggerUpdateCheck returns => 0
+ : Loading AUM Integration library at path C:\Program Files\Adobe\Reader 9.0\Reader\AdobeUpdater.dll.
+ : Successfully loaded AUM integration library
+ : Successfully found all library entry points.  Library is valid.
+ : Entering GetAppID()
+ : AUMDoPluginAction returns => 0
+ : Loading AUM Integration library at path C:\Program Files\Adobe\Reader 9.0\Reader\AdobeUpdater.dll.
+ : Successfully loaded AUM integration library
+ : Successfully found all library entry points.  Library is valid.
+ : Entering GetAppID()
+ : AUMDoPluginAction returns => 0
+ : Entering GetAppID()
+ : AUMTriggerUpdateCheck returns => 0
+ : Loading AUM Integration library at path C:\Program Files\Adobe\Reader 9.0\Reader\AdobeUpdater.dll.
+ : Successfully loaded AUM integration library
+ : Successfully found all library entry points.  Library is valid.
+ : Entering GetAppID()
+ : AUMDoPluginAction returns => 0
+ : Entering GetAppID()
+ : AUMTriggerUpdateCheck returns => 0
+ : Loading AUM Integration library at path C:\Program Files\Adobe\Reader 9.0\Reader\AdobeUpdater.dll.
+ : Successfully loaded AUM integration library
+ : Successfully found all library entry points.  Library is valid.
+ : Entering GetAppID()
+ : AUMDoPluginAction returns => 0
+ : Entering GetAppID()
+ : AUMTriggerUpdateCheck returns => 0
+ : Loading AUM Integration library at path C:\Program Files\Adobe\Reader 9.0\Reader\AdobeUpdater.dll.
+ : Successfully loaded AUM integration library
+ : Successfully found all library entry points.  Library is valid.
+ : Entering GetAppID()
+ : AUMDoPluginAction returns => 12
+ : Entering GetAppID()
+ : AUMTriggerUpdateCheck returns => 0
+ : Entering UnregisterAppWithAUM() with msiHandle 2cf
+ : Entering InstallerQIsReader()
+ : *** GetAppDisplayName() ***
+ : SUCCESS
+ :     the product code provided by the installer is {AC76BA86-7AD7-1033-7B44-A91000000001}
+ :     this corresponds to appID reader9rdr-en_US
+ : Leaving InstallerQIsReader()
+ : Loading AUM Integration library at path C:\Program Files\Adobe\Reader 9.0\Reader\AdobeUpdater.dll.
+ : Successfully loaded AUM integration library
+ : Successfully found all library entry points.  Library is valid.
+ : Entering GetAppID()
+ : Entering InstallerQIsReader()
+ : *** GetAppDisplayName() ***
+ : SUCCESS
+ :     the product code provided by the installer is {AC76BA86-7AD7-1033-7B44-A91000000001}
+ :     this corresponds to appID reader9rdr-en_US
+ : Leaving InstallerQIsReader()
+ : Calling AUMUnRegisterApplication with appID reader9rdr-en_US
+ : AUMUnRegisterApplication returns => 0
+ : Entering UnregisterAppWithAUM() with msiHandle 2cf
+ : Entering InstallerQIsReader()
+ : *** GetAppDisplayName() ***
+ : SUCCESS
+ :     the product code provided by the installer is {AC76BA86-7AD7-1033-7B44-A92000000001}
+ :     this corresponds to appID reader9rdr-en_US
+ : Leaving InstallerQIsReader()
+ : Loading AUM Integration library at path C:\Program Files\Adobe\Reader 9.0\Reader\AdobeUpdater.dll.
+ : Successfully loaded AUM integration library
+ : Successfully found all library entry points.  Library is valid.
+ : Entering GetAppID()
+ : Entering InstallerQIsReader()
+ : *** GetAppDisplayName() ***
+ : SUCCESS
+ :     the product code provided by the installer is {AC76BA86-7AD7-1033-7B44-A92000000001}
+ :     this corresponds to appID reader9rdr-en_US
+ : Leaving InstallerQIsReader()
+ : Calling AUMUnRegisterApplication with appID reader9rdr-en_US
+ : AUMUnRegisterApplication returns => 0

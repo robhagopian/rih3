@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>RIH3 Hareline</title>
+    <meta content="text/html; charset=unicode" http-equiv="Content-Type"/>
+    <handy></handy>
+    <meta content="Fri, 6 Nov 1998 01:04:00 EST" http-equiv="Expires"/>
+    <link rel="stylesheet" href="Scripts/basic.css"/>
+    <style>
+        <!-- .postrow1 {	background-color: #F7F7F7;	color: #000000;}-->
+    </style>
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)"/>
+  </head>
+  <body background="Images/emfoot.gif" bgcolor="#cccccc">
+    <h1 style="TEXT-ALIGN: center">
+      <em>
+        <span style="COLOR: #ff0000">Rhode Island Hash House Harriers</span> </em>
+    </h1>
+    <p style="TEXT-ALIGN: center"></p>
+    <h2 style="TEXT-ALIGN: center">Receding Hareline</h2>
+    <p style="TEXT-ALIGN: center">
+      <img src="Images/beer.gif" width="21" height="47"/> <img src="Images/dog.gif" width="200" height="35"/> <img src="Images/beer.gif" width="21" height="47"/></p>
+    <p class="blue">
+      <span style="COLOR: #000000">
+        <strong>Note:&nbsp;&nbsp;</strong> </span>Upcumming runs are assigned in more or less random order.&nbsp;&nbsp; If you want to switch weeks, or would like to be added to the hareline, or offer the Trailmaster sexual favors, contact <a href="mailto:basketboomboom@cox.net">Basket Boom Boom</a>.</p>
+    <p>
+      <span style="FONT-FAMILY: Arial; FONT-SIZE: small">Last Updated:&nbsp; 
+May 25, 2013</span> <br/>If you're looking to do something completely different, a few of us meet on Wednesday at the Rock Gym in Lincoln and may climb over the weekend nearby or in New Hampshire. </p>
+    <div>
+      <table style="WIDTH: 90%" border="5">
+        <tbody>
+          <tr>
+            <td width="10%" align="left">
+              <span style="FONT-FAMILY: Arial; COLOR: #ff0000; FONT-SIZE: small">Date:</span> </td>
+            <td width="10%" align="left">
+              <span style="FONT-FAMILY: Arial; COLOR: #ff0000; FONT-SIZE: small">Time:</span> </td>
+            <td width="10%" align="left">
+              <span style="FONT-FAMILY: Arial; COLOR: #ff0000; FONT-SIZE: small">Run</span> </td>
+            <td width="20%" align="left">
+              <span style="FONT-FAMILY: Arial; COLOR: #ff0000; FONT-SIZE: small">Hare:</span> </td>
+            <td width="50" align="left">
+              <span style="FONT-FAMILY: Arial; COLOR: #ff0000; FONT-SIZE: small">Directions:</span> </td>
+          </tr>
+
+<tr>
+<td valign="top" width="10%" align="left">Mon. May 30</td>
+<td valign="top" width="10%" align="center">2 PM</td>
+<td valign="top" width="10%" align="center">1574</td>
+<td valign="top" width="20%" align="left">
+<strong>
+<span style="FONT-SIZE: large">BONDO</span>
+</strong><br/>
+<img border="0" src="Images/bondo.gif" width="138" height="108"/><br/></td>
+<td valign="top" width="50%" align="left">
+<p><strong>
+<h2>Bondo Runs Amuck for a Mammorial Boob Fest Hash</h2>
+Are you ready for this?
+<p align="left"><span style="font-size: small;"><span style="font-family: Arial; color: #cc0000;"><a href="http://www.websitetoolbox.com/tool/mb/dryfootfairy"><span style="font-family: Arial; color: #cc0000;">See Message Board for updates</span></a> </span></span></p>
+<p align="left"><span style="font-size: small;"><a href="Songs/Favorites/Walking.txt"><span style="font-family: Arial; color: #cc0000;">Song of the Week: As I was walking</span></a></span></p> </strong>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="10%" align="left">Mon. June 6</td>
+<td valign="top" width="10%" align="center">6:30 PM</td>
+<td valign="top" width="10%" align="center">1575</td>
+<td valign="top" width="20%" align="left">
+<strong>
+<span style="FONT-SIZE: large">Rusty</span>
+</strong><br/>
+<img border="0" src="Images/bondo.gif" width="138" height="108"/><br/></td>
+<td valign="top" width="50%" align="left">
+<p><strong>
+<h2>Rusty is not doing a Soccer Fields Hash</h2>
+Believe it or not.
+<p align="left"><span style="font-size: small;"><span style="font-family: Arial; color: #cc0000;"><a href="http://www.websitetoolbox.com/tool/mb/dryfootfairy"><span style="font-family: Arial; color: #cc0000;">See Message Board for updates</span></a> </span></span></p>
+<p align="left"><span style="font-size: small;"><a href="Songs/Favorites/Walking.txt"><span style="font-family: Arial; color: #cc0000;">Song of the Week: As I was walking</span></a></span></p> </strong>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="10%" align="left">Mon. June 13</td>
+<td valign="top" width="10%" align="center">6:30 PM</td>
+<td valign="top" width="10%" align="center">1576</td>
+<td valign="top" width="20%" align="left">
+<strong>
+<span style="FONT-SIZE: large">Crotch Tiger and Pussy Galore</span>
+</strong><br/>
+<img border="0" src="Images/bondo.gif" width="138" height="108"/><br/></td>
+<td valign="top" width="50%" align="left">
+<p><h2>The June Bug Hash</h2>
+Believe it or not.
+<p align="left"><span style="font-size: small;"><span style="font-family: Arial; color: #cc0000;"><a href="http://www.websitetoolbox.com/tool/mb/dryfootfairy"><span style="font-family: Arial; color: #cc0000;">See Message Board for updates</span></a> </span></span></p>
+<p align="left"><span style="font-size: small;"><a href="Songs/Favorites/Walking.txt"><span style="font-family: Arial; color: #cc0000;">Song of the Week: As I was walking</span></a></span></p> </strong>
+</td>
+
+<tr>
+<td valign="top" width="10%" align="left">Mon. June 20</td>
+<td valign="top" width="10%" align="center">6:30 PM</td>
+<td valign="top" width="10%" align="center">1577</td>
+<td valign="top" width="20%" align="left">
+<strong>
+<span style="FONT-SIZE: large">Shemale Man</span>
+</strong><br/>
+<img border="0" src="Images/shemale.gif" width="138" height="108"/><br/></td>
+<td valign="top" width="50%" align="left">
+<p><Wanna get lucky with Shemale?</h2>
+He's cancelling his bookings and laying a trail just for you.
+<p align="left"><span style="font-size: small;"><span style="font-family: Arial; color: #cc0000;"><a href="http://www.websitetoolbox.com/tool/mb/dryfootfairy"><span style="font-family: Arial; color: #cc0000;">See Message Board for updates</span></a> </span></span></p>
+<p align="left"><span style="font-size: small;"><a href="Songs/Favorites/Walking.txt"><span style="font-family: Arial; color: #cc0000;">Song of the Week: As I was walking</span></a></span></p> </strong>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="10%" align="left">Mon. June 27</td>
+<td valign="top" width="10%" align="center">6:30 PM</td>
+<td valign="top" width="10%" align="center">1578</td>
+<td valign="top" width="20%" align="left">
+<strong>
+<span style="FONT-SIZE: large">Hairy Krishna & Luxury Box</span>
+</strong><br/>
+<img border="0" src="Images/hairy.gif" width="138" height="108"/><br/></td>
+<td valign="top" width="50%" align="left">
+<p><h2>The HonneymOOn Hash in Hawaii</h2>
+Guaranteed to be the Hash of the Year.
+<p align="left"><span style="font-size: small;"><span style="font-family: Arial; color: #cc0000;"><a href="http://www.websitetoolbox.com/tool/mb/dryfootfairy"><span style="font-family: Arial; color: #cc0000;">See Message Board for updates</span></a> </span></span></p>
+<p align="left"><span style="font-size: small;"><a href="Songs/Favorites/Walking.txt"><span style="font-family: Arial; color: #cc0000;">Song of the Week: As I was walking</span></a></span></p> </strong>
+</td>
+</tr>
+
+<tr>
+<td valign="top" width="10%" align="left">Mon. July 4</td>
+<td valign="top" width="10%" align="center">2 PM</td>
+<td valign="top" width="10%" align="center">1580</td>
+<td valign="top" width="20%" align="left">
+<strong>
+<span style="FONT-SIZE: large">Amish Ithead and Meat Wallet</span>
+</strong><br/>
+<img border="0" src="Images/amish.gif" width="138" height="108"/><br/></td>
+<td valign="top" width="50%" align="left">
+<p><h2>Amish's Stuff the Brits Hash</h2>
+<p align="left"><span style="font-size: small;"><span style="font-family: Arial; color: #cc0000;"><a href="http://www.websitetoolbox.com/tool/mb/dryfootfairy"><span style="font-family: Arial; color: #cc0000;">See Message Board for updates</span></a> </span></span></p>
+<p align="left"><span style="font-size: small;"><a href="Songs/Favorites/Walking.txt"><span style="font-family: Arial; color: #cc0000;">Song of the Week: As I was walking</span></a></span></p> </strong>
+</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+<table style="WIDTH: 75%" border="5">
+                <tbody>
+                  <tr>
+                    <td height="32" valign="top" colspan="3" align="center">
+                      <strong>
+                        <span style="FONT-FAMILY: Arial; COLOR: #800080">HARELINE DOGHOUSE:</span> </strong>
+                    </td>
+                  </tr>
+<tr>
+                    <td height="32" valign="top" width="30%" align="left">&nbsp;</td>
+                    <td height="32" valign="top" width="30%" align="left">
+                      <p>
+                        <strong>Bondo Jovi</strong> <br/><br/><img border="0" src="Images/bondo.gif" width="160" height="159"/> </p>
+                    </td>
+                    <td height="32" valign="top" width="40%" align="left">
+                      <span style="FONT-FAMILY: Arial; FONT-SIZE: small">Bondo has decided to put himself in the Dog House. All this running for nuttin' is takin' time away from beer makin'. At his age he doesn't have the liberty of wasting too much time....so many beer, so little time. </td>
+                  </tr>
+                  <tr>
+                    <td height="32" valign="top" width="30%" align="left">&nbsp;</td>
+                    <td height="32" valign="top" width="30%" align="left">
+                      <p>
+                        <strong>Justin Myass</strong> <br/><br/><img border="0" src="Images/kissmyass1.JPG" width="160" height="159"/> </p>
+                    </td>
+                    <td height="32" valign="top" width="40%" align="left">
+                      <span style="FONT-FAMILY: Arial; FONT-SIZE: small">After a short hiatus, JIMA is back in the doghouse. He is lost in his books, and seems like he doesn't have time to do much else these days. He's got to learn one thing...Life is too short!</span> </td>
+                  </tr>
+                  <tr>
+                    <td height="32" valign="top" width="30%" align="left">&nbsp;</td>
+                    <td height="32" valign="top" width="30%" align="left">
+                      <p>
+                        <strong>Thats-a-Mouthful</strong> <br/><br/><img border="0" src="Images/Nipplesuck2.gif" width="106" height="165"/> </p>
+                    </td>
+                    <td height="32" valign="top" width="40%" align="left">
+                      <span style="FONT-FAMILY: Arial; FONT-SIZE: small">So Mouthful thinks flying planes in warmer climates is better than running in shiggy in the cold dark New England evenings whilst enjoying good beer. Such a shame... he was just getting good at setting sh*tty trails.</span> </td>
+                  </tr>
+                  <tr>
+                    <td height="32" valign="top" width="30%" align="left">&nbsp;</td>
+                    <td height="32" valign="top" width="30%" align="left">
+                      <p>
+                        <strong>Dry Foot Fairy</strong> <br/><br/><img border="0" src="Images/dryfootfairy.jpg" width="91" height="89"/> </p>
+                    </td>
+                    <td height="32" valign="top" width="40%" align="left">
+                      <span style="FONT-FAMILY: Arial; FONT-SIZE: small">Apparently, Dry Foot had to move to New York City to get laid.</span> </td>
+                  </tr>
+                  <tr>
+                    <td height="32" valign="top" width="30%" align="left">&nbsp;</td>
+                    <td height="32" valign="top" width="30%" align="left">
+                      <p>
+                        <strong>Trail Hoover (SESYB)</strong> <br/><br/><img border="0" src="Images/summers-eve-2.gif" width="148" height="77"/> </p>
+                    </td>
+                    <td height="32" valign="top" width="40%" align="left">
+                      <span style="FONT-FAMILY: Arial; FONT-SIZE: small">OK Boys and Girls.... time to dust off that porn collection.</span> </td>
+                  </tr>
+                  <tr>
+                    <td height="32" valign="top" width="30%" align="left">&nbsp;</td>
+                    <td height="32" valign="top" width="30%" align="left">
+                      <p>
+                        <strong>Great at Giving Head</strong> <br/><br/><img border="0" src="Images/gayduo.jpg" width="165" height="191"/> </p>
+                    </td>
+                    <td height="32" valign="top" width="40%" align="left">
+                      <span style="FONT-FAMILY: Arial; FONT-SIZE: small">Apparently, G@GH found better opportunities outside Rhode Island. Too bad he'll never find better beer.</span> </td>
+                  </tr>
+                  <tr>
+                    <td height="32" valign="top" width="30%" align="left">&nbsp;</td>
+                    <td height="32" valign="top" width="30%" align="left">
+                      <p>
+                        <strong>Async</strong> <br/><br/><img border="0" src="Images/Nerd.gif" width="150" height="124"/> </p>
+                    </td>
+                    <td height="32" valign="top" width="40%" align="left">
+                      <span style="FONT-FAMILY: Arial; FONT-SIZE: small">Until he shows himself again, he's back in the doghouse.</span> </td>
+                  </tr>
+                  <tr>
+                    <td height="32" valign="top" width="30%" align="left">&nbsp;</td>
+                    <td height="32" valign="top" width="30%" align="left">
+                      <p>
+                        <strong>Tinker</strong> <br/><br/><img border="0" src="Images/tinkerbell.gif" width="91" height="91"/> </p>
+                    </td>
+                    <td height="32" valign="top" width="40%" align="left">
+                      <span style="FONT-FAMILY: Arial; FONT-SIZE: small">Tinker is stuck in a snow drift in Pig Iron, NH and is trying to get a snow cat to catch his plane to Southeast Asia hashing with the Thai's. Good Luck and God bless that lucky Wanker!</span> </td>
+                  </tr>
+                  <tr>
+                    <td height="32" valign="top" width="30%" align="left">&nbsp;</td>
+                    <td height="32" valign="top" width="30%" align="left">
+                      <p>
+                        <strong>Cum Under PSHS</strong> <br/><br/><img border="0" src="Images/rocksquat.jpg" width="150" height="184"/> </p>
+                    </td>
+                    <td height="32" valign="top" width="40%" align="left">
+                      <span style="FONT-FAMILY: Arial; FONT-SIZE: small">She may be gone, but our ears will still be ringing for years to come. Thus, did she really leave?</span> </td>
+                  </tr>
+                  <tr>
+                    <td height="32" valign="top" width="30%" align="left">&nbsp;</td>
+                    <td height="32" valign="top" width="30%" align="left">
+                      <p>
+                        <strong>Dick Doc</strong> <br/><br/><img border="0" src="Images/moyel.gif" width="150" height="150"/> </p>
+                    </td>
+                    <td height="32" valign="top" width="40%" align="left">
+                      <span style="FONT-FAMILY: Arial; FONT-SIZE: small">Double D decided to leave us for warmer climates, rumored to be somewhere in Arizona. Those Canadians could never handle the New Engand winters and good beer.</span> </td>
+                  </tr>
+                  <tr>
+                    <td height="32" valign="top" width="30%" align="left">&nbsp;</td>
+                    <td height="32" valign="top" width="30%" align="left">
+                      <strong>
+                        <span style="FONT-FAMILY: Arial; FONT-SIZE: small">Evil Bitch Ripta</span> </strong>
+                      <p>
+                        <img border="0" src="Images/cruela.jpg" width="129" height="108"/> </p>
+                      <p>
+                        <img border="0" src="Images/ripta.jpg" width="99" height="79"/> </p>
+                      <p></p>
+                    </td>
+                    <td height="32" valign="top" width="40%" align="left">
+                      <span style="FONT-FAMILY: Arial; FONT-SIZE: small">EB has once again succumbed to the siren call of lite beer and bowling.</span> </td>
+                  </tr>
+                  <tr>
+                    <td height="32" valign="top" align="left">&nbsp;</td>
+                    <td height="32" valign="top" align="left">
+                      <strong>
+                        <span style="FONT-FAMILY: Arial; FONT-SIZE: small">Swallows My Pride</span> </strong>
+                      <p>
+                        <img border="0" src="Images/femaledoctor_small.jpg" width="100" height="67"/> </p>
+                    </td>
+                    <td height="32" valign="top" align="left">
+                      <span style="FONT-FAMILY: Arial; FONT-SIZE: small">The Good Doctor has gone Bad.</span> </td>
+                  </tr>
+                  <tr>
+                    <td height="32" valign="top" align="left">&nbsp;</td>
+                    <td height="32" valign="top" align="left">
+                      <strong>
+                        <span style="FONT-FAMILY: Arial; FONT-SIZE: small">Raging Queen of Beers</span> </strong>
+                      <p>
+                        <img border="0" src="Images/bud7.jpg" width="90" height="144"/> </p>
+                      <p></p>
+                    </td>
+                    <td height="32" valign="top" align="left">
+                      <span style="FONT-FAMILY: Arial; FONT-SIZE: small">Raging is AWOL somewhere in the Land of Teddy Kennedy and John Kerry</span> </td>
+                  </tr>
+                  <tr>
+                    <td height="32" valign="top" align="left">&nbsp;</td>
+                    <td height="32" valign="top" align="left">
+                      <strong>
+                        <span style="FONT-FAMILY: Arial; FONT-SIZE: small">Birdbrain</span> </strong>
+                      <p>
+                        <img border="0" src="Images/birdbrain1.jpg" width="75" height="99"/> </p>
+                      <p></p>
+                    </td>
+                    <td height="32" valign="top" align="left">
+                      <span style="FONT-FAMILY: Arial; FONT-SIZE: small">Birdbrain is currently whining with some lame exuse about working on a doctoral thesis.&nbsp;&nbsp;&nbsp; When will you people learn?&nbsp;&nbsp; Repeat after me.&nbsp;&nbsp; The Hash Is My Life!</span> </td>
+                  </tr>
+                  <tr>
+                    <td height="32" valign="top" align="left">&nbsp;</td>
+                    <td height="32" valign="top" align="left">
+                      <strong>
+                        <span style="FONT-FAMILY: Arial; FONT-SIZE: small">EverReady</span> </strong>
+                      <p>
+                        <img border="0" src="Images/1012585.gif" width="132" height="70"/> </p>
+                    </td>
+                    <td height="32" valign="top" align="left">
+                      <span style="FONT-FAMILY: Arial; FONT-SIZE: small">&nbsp;Our Hash Soccer Mom was suffering from terminal responsibility and respectability.&nbsp;&nbsp;&nbsp; Ever since she also became afflicted with the M-word, she's become a lost cause.&nbsp;&nbsp;&nbsp;&nbsp;</span> <p>
+                        <span style="FONT-FAMILY: Arial; FONT-SIZE: small">Someone has to darn KNO's socks, right?</span> </p></td>
+                  </tr>
+                  <tr>
+                    <td height="32" valign="top" align="left">&nbsp;</td>
+                    <td height="32" valign="top" align="left">
+                      <strong>
+                        <span style="FONT-FAMILY: Arial; FONT-SIZE: small">Short Peck</span> </strong>
+                      <p>
+                        <img border="0" src="Images/brynnersmall.jpg" width="150" height="173"/> </p>
+                    </td>
+                    <td height="32" valign="top" align="left">&nbsp; <p>
+                        <span style="FONT-FAMILY: Arial; FONT-SIZE: small">Apparently, Mr. Peck has determined he has a better chance of getting laid in the Granite State.&nbsp;&nbsp; (Yes, even Jake turned him down).&nbsp;&nbsp;&nbsp; </span>
+                      </p></td>
+                  </tr>
+                  <tr>
+                    <td height="32" valign="top" align="left">&nbsp;</td>
+                    <td height="32" valign="top" align="left">
+                      <strong>
+                        <span style="FONT-FAMILY: Arial; FONT-SIZE: small">Snot</span> </strong>
+                      <p>&nbsp;<img border="0" src="Images/1050055.gif" width="180" height="168"/></p>
+                    </td>
+                    <td height="32" valign="top" align="left">
+                      <span style="FONT-FAMILY: Arial; COLOR: #ff0000; FONT-SIZE: small">&nbsp; &nbsp;&nbsp;</span> <p>
+                        <span style="FONT-FAMILY: Arial; FONT-SIZE: small">Snot's performance as a Rhode Island hare was so abysmal that we sent him packing back to the UK.</span> </p><p>
+                        <span style="FONT-FAMILY: Arial; FONT-SIZE: small">He'll be allowed back on the hareline when he either (1) recruits Elizabeth Hurley to the Rhode Island Hash or (2) provides sexual favors to Jake.</span> </p></td>
+                  </tr>
+                </tbody>
+              </table>

@@ -1,0 +1,302 @@
+2010-11-06T18:35:56: >>> Adobe Updater Log Begin >>>
+2010-11-06T18:35:56: Application Version: 6.2.0.1474
+2010-11-06T18:35:56: cmdline option: -logFile = C:\Users\Bill\AppData\Local\Adobe\Updater6\aum.log
+2010-11-06T18:35:56: cmdline option: -logLevel = 2
+2010-11-06T18:35:56: Display Language requested = 
+2010-11-06T18:35:56: Valid AppID added from global xml file = reader9rdr-en_US
+2010-11-06T18:35:56: Could not load adobe_aum2pcd.dll
+2010-11-06T18:35:56: No Startup mode specified.
+2010-11-06T18:35:56: GetAppIDUpdates: getting available update info for AppID: reader9rdr-en_US
+2010-11-06T18:35:59: GetAppIDUpdates: getting .upd file: http://swupmf.adobe.com/manifest/60/win/reader9rdr-en_US.upd
+2010-11-06T18:36:00: Processed actionblob for appID  = reader9rdr-en_US
+2010-11-06T18:36:00: GetAppIDUpdates: MFS_New - parsing new .upd file = 1
+2010-11-06T18:36:00: GetAppIDUpdates: getting available update info for AppID: AdobeUpdater
+2010-11-06T18:36:00: GetAppIDUpdates: getting .upd file: http://swupmf.adobe.com/manifest/60/win/AdobeUpdater.upd
+2010-11-06T18:36:00: GetAppIDUpdates: MFS_New - parsing new .upd file = 1
+2010-11-06T18:36:00: sLaunchMode is = 
+2010-11-06T18:36:00: No manual/schedule workflow to process next
+2010-11-06T18:36:00: <<< Adobe Updater Log End <<<
+
+
+2010-11-06T18:36:08: >>> Adobe Updater Log Begin >>>
+2010-11-06T18:36:08: Application Version: 6.2.0.1474
+2010-11-06T18:36:08: cmdline option: -logFile = C:\Users\Bill\AppData\Local\Adobe\Updater6\aum.log
+2010-11-06T18:36:08: cmdline option: -logLevel = 2
+2010-11-06T18:36:08: Display Language requested = en_US
+2010-11-06T18:36:08: Valid AppID added from global xml file = reader9rdr-en_US
+2010-11-06T18:36:08: Could not load adobe_aum2pcd.dll
+2010-11-06T18:36:08: New AUM launched for schedule update...
+2010-11-06T18:36:08: Entering normal workflow...
+2010-11-06T18:36:08: GetAppIDUpdates: getting available update info for AppID: AdobeUpdater
+2010-11-06T18:36:08: GetAppIDUpdates: getting .upd file: http://swupmf.adobe.com/manifest/60/win/AdobeUpdater.upd
+2010-11-06T18:36:08: GetAppIDUpdates: MFS_New - parsing new .upd file = 1
+2010-11-06T18:36:08: GetAppIDUpdates: getting available update info for AppID: reader9rdr-en_US
+2010-11-06T18:36:09: GetAppIDUpdates: getting .upd file: http://swupmf.adobe.com/manifest/60/win/reader9rdr-en_US.upd
+2010-11-06T18:36:09: Deleting component because it is noncritical in a silent CFU 
+2010-11-06T18:36:09: Deleting component because it is noncritical in a silent CFU 
+2010-11-06T18:36:09: Deleting component because it is noncritical in a silent CFU 
+2010-11-06T18:36:09: Deleting component because it is noncritical in a silent CFU 
+2010-11-06T18:36:09: Deleting component because it is noncritical in a silent CFU 
+2010-11-06T18:36:09: Deleting component because it is noncritical in a silent CFU 
+2010-11-06T18:36:09: GetAppIDUpdates: MFS_New - parsing new .upd file = 1
+2010-11-06T18:36:09: Begin Installed Criteria Evaluation
+2010-11-06T18:36:09: Keyfile Comparison using = OSVersion: C:\Program Files\Common Files\Adobe\Updater6\AdobeUpdaterInstallMgr.exe >= 6.2.0.1474 =>Result: true
+2010-11-06T18:36:09: End Installed Criteria Evaluation =>true
+2010-11-06T18:36:09: Begin File Component Criteria Evaluation
+2010-11-06T18:36:09: Keyfile Comparison using = OSVersion: C:\Program Files\Common Files\Adobe\Updater6\AdobeUpdaterInstallMgr.exe < 6.2.0.1474 =>Result: false
+2010-11-06T18:36:09: End File Component Criteria Evaluation =>false
+2010-11-06T18:36:09: *** Marking File Component as Unmatched since criteria did not match
+2010-11-06T18:36:09: **Deleting component because component is not applicable
+2010-11-06T18:36:09: Begin Installed Criteria Evaluation
+2010-11-06T18:36:09: Keyfile Comparison using = OSVersion: C:\Program Files\Common Files\Adobe\Updater6\Adobe_Updater.exe >= 6.2.0.1474 =>Result: true
+2010-11-06T18:36:09: End Installed Criteria Evaluation =>true
+2010-11-06T18:36:09: Begin File Component Criteria Evaluation
+2010-11-06T18:36:09: Keyfile Comparison using = OSVersion: C:\Program Files\Common Files\Adobe\Updater6\Adobe_Updater.exe < 6.2.0.1474 =>Result: false
+2010-11-06T18:36:09: End File Component Criteria Evaluation =>false
+2010-11-06T18:36:09: *** Marking File Component as Unmatched since criteria did not match
+2010-11-06T18:36:09: **Deleting component because component is not applicable
+2010-11-06T18:36:09: Begin Global Criteria Evaluation
+2010-11-06T18:36:09: Win Registry lookup using = DWORD: HKLM\Software\Adobe\Acrobat Reader\9.0\Installer\VersionMax < 589826 =>Result: true
+2010-11-06T18:36:09: End Global Criteria Evaluation =>true
+2010-11-06T18:36:09: Begin Installed Criteria Evaluation
+2010-11-06T18:36:09: Begin Inner Group Evaluation with operation = and
+2010-11-06T18:36:09: Win Registry lookup using = DWORD: HKLM\Software\Adobe\Acrobat Reader\9.0\Installer\VersionMax == 589826 =>Result: false
+2010-11-06T18:36:09: Win Registry lookup using = DWORD: HKLM\Software\Adobe\Acrobat Reader\9.0\Installer\VersionMin >= 0 =>Result: true
+2010-11-06T18:36:09: End Inner Group Evaluation =>false
+2010-11-06T18:36:09: Begin Inner CompareType Evaluation with operation = or
+2010-11-06T18:36:09: Win Registry lookup using = DWORD: HKLM\Software\Adobe\Acrobat Reader\9.0\Installer\VersionMax > 589826 =>Result: false
+2010-11-06T18:36:09: End Inner CompareType Evaluation =>false
+2010-11-06T18:36:09: End Installed Criteria Evaluation =>false
+2010-11-06T18:36:09: Begin File Component Criteria Evaluation
+2010-11-06T18:36:09: End File Component Criteria Evaluation =>true
+2010-11-06T18:36:09: **Adding component to transaction file whose installed status is=>false
+2010-11-06T18:36:10: Result of GetOpenTransaction: = 1
+2010-11-06T18:36:10: ThreadDownloadUpdates::DownloadAnUpdate --> downloading file: C:\Users\Bill\AppData\Local\Adobe\Updater6\Install\reader9rdr-en_US\AdbeRdr920_en_US.msi
+2010-11-06T23:37:23: CTrayIcon::WindowProc Error: NIN_BALLOONTIMEOUT event received when icon state is not NOTIFICATION_STATE_BALLOON
+2010-11-07T01:22:49: CTrayIcon::WindowProc Error: NIN_BALLOONTIMEOUT event received when icon state is not NOTIFICATION_STATE_BALLOON
+2010-11-07T01:23:18: CTrayIcon::WindowProc Error: NIN_BALLOONTIMEOUT event received when icon state is not NOTIFICATION_STATE_BALLOON
+2010-11-08T02:15:40: CTrayIcon::WindowProc Error: NIN_BALLOONTIMEOUT event received when icon state is not NOTIFICATION_STATE_BALLOON
+2010-11-14T13:09:18: >>> Adobe Updater Log Begin >>>
+2010-11-14T13:09:18: Application Version: 6.2.0.1474
+2010-11-14T13:09:18: cmdline option: -logFile = C:\Users\Bill\AppData\Local\Adobe\Updater6\aum.log
+2010-11-14T13:09:18: cmdline option: -logLevel = 2
+2010-11-14T13:09:18: Display Language requested = en_US
+2010-11-14T13:09:18: Valid AppID added from global xml file = reader9rdr-en_US
+2010-11-14T13:09:18: Could not load adobe_aum2pcd.dll
+2010-11-14T13:09:18: No Startup mode specified.
+2010-11-14T13:09:19: GetAppIDUpdates: getting available update info for AppID: reader9rdr-en_US
+2010-11-14T13:09:20: GetAppIDUpdates: getting .upd file: http://swupmf.adobe.com/manifest/60/win/reader9rdr-en_US.upd
+2010-11-14T13:09:20: Processed actionblob for appID  = reader9rdr-en_US
+2010-11-14T13:09:20: GetAppIDUpdates: MFS_New - parsing new .upd file = 1
+2010-11-14T13:09:20: GetAppIDUpdates: getting available update info for AppID: AdobeUpdater
+2010-11-14T13:09:20: GetAppIDUpdates: getting .upd file: http://swupmf.adobe.com/manifest/60/win/AdobeUpdater.upd
+2010-11-14T13:09:20: GetAppIDUpdates: MFS_New - parsing new .upd file = 1
+2010-11-14T13:09:21: sLaunchMode is = 
+2010-11-14T13:09:21: No manual/schedule workflow to process next
+2010-11-14T13:09:21: <<< Adobe Updater Log End <<<
+
+
+2010-11-14T14:27:53: >>> Adobe Updater Log Begin >>>
+2010-11-14T14:27:53: Application Version: 6.2.0.1474
+2010-11-14T14:27:53: cmdline option: -logFile = C:\Users\Bill\AppData\Local\Adobe\Updater6\aum.log
+2010-11-14T14:27:53: cmdline option: -logLevel = 2
+2010-11-14T14:27:53: Display Language requested = en_US
+2010-11-14T14:27:53: Valid AppID added from global xml file = reader9rdr-en_US
+2010-11-14T14:27:53: Could not load adobe_aum2pcd.dll
+2010-11-14T14:27:53: No Startup mode specified.
+2010-11-14T14:27:53: GetAppIDUpdates: getting available update info for AppID: reader9rdr-en_US
+2010-11-14T14:27:53: GetAppIDUpdates: getting .upd file: http://swupmf.adobe.com/manifest/60/win/reader9rdr-en_US.upd
+2010-11-14T14:27:53: Processed actionblob for appID  = reader9rdr-en_US
+2010-11-14T14:27:53: GetAppIDUpdates: MFS_New - parsing new .upd file = 1
+2010-11-14T14:27:53: GetAppIDUpdates: getting available update info for AppID: AdobeUpdater
+2010-11-14T14:27:53: GetAppIDUpdates: getting .upd file: http://swupmf.adobe.com/manifest/60/win/AdobeUpdater.upd
+2010-11-14T14:27:53: GetAppIDUpdates: MFS_New - parsing new .upd file = 1
+2010-11-14T14:27:55: sLaunchMode is = 
+2010-11-14T14:27:55: No manual/schedule workflow to process next
+2010-11-14T14:27:55: <<< Adobe Updater Log End <<<
+
+
+2010-11-14T14:28:00: >>> Adobe Updater Log Begin >>>
+2010-11-14T14:28:00: Application Version: 6.2.0.1474
+2010-11-14T14:28:00: cmdline option: -logFile = C:\Users\Bill\AppData\Local\Adobe\Updater6\aum.log
+2010-11-14T14:28:00: cmdline option: -logLevel = 2
+2010-11-14T14:28:00: Display Language requested = en_US
+2010-11-14T14:28:00: Valid AppID added from global xml file = reader9rdr-en_US
+2010-11-14T14:28:00: Could not load adobe_aum2pcd.dll
+2010-11-14T14:28:00: New AUM launched for schedule update...
+2010-11-14T14:28:00: Entering normal workflow...
+2010-11-14T14:28:01: GetAppIDUpdates: getting available update info for AppID: AdobeUpdater
+2010-11-14T14:28:01: GetAppIDUpdates: getting .upd file: http://swupmf.adobe.com/manifest/60/win/AdobeUpdater.upd
+2010-11-14T14:28:01: GetAppIDUpdates: MFS_New - parsing new .upd file = 1
+2010-11-14T14:28:01: GetAppIDUpdates: getting available update info for AppID: reader9rdr-en_US
+2010-11-14T14:28:01: GetAppIDUpdates: getting .upd file: http://swupmf.adobe.com/manifest/60/win/reader9rdr-en_US.upd
+2010-11-14T14:28:01: Deleting component because it is noncritical in a silent CFU 
+2010-11-14T14:28:01: Deleting component because it is noncritical in a silent CFU 
+2010-11-14T14:28:01: Deleting component because it is noncritical in a silent CFU 
+2010-11-14T14:28:01: Deleting component because it is noncritical in a silent CFU 
+2010-11-14T14:28:01: Deleting component because it is noncritical in a silent CFU 
+2010-11-14T14:28:01: Deleting component because it is noncritical in a silent CFU 
+2010-11-14T14:28:01: GetAppIDUpdates: MFS_New - parsing new .upd file = 1
+2010-11-14T14:28:02: Begin Installed Criteria Evaluation
+2010-11-14T14:28:02: Keyfile Comparison using = OSVersion: C:\Program Files\Common Files\Adobe\Updater6\AdobeUpdaterInstallMgr.exe >= 6.2.0.1474 =>Result: true
+2010-11-14T14:28:02: End Installed Criteria Evaluation =>true
+2010-11-14T14:28:02: Begin File Component Criteria Evaluation
+2010-11-14T14:28:02: Keyfile Comparison using = OSVersion: C:\Program Files\Common Files\Adobe\Updater6\AdobeUpdaterInstallMgr.exe < 6.2.0.1474 =>Result: false
+2010-11-14T14:28:02: End File Component Criteria Evaluation =>false
+2010-11-14T14:28:02: *** Marking File Component as Unmatched since criteria did not match
+2010-11-14T14:28:02: **Deleting component because component is not applicable
+2010-11-14T14:28:02: Begin Installed Criteria Evaluation
+2010-11-14T14:28:02: Keyfile Comparison using = OSVersion: C:\Program Files\Common Files\Adobe\Updater6\Adobe_Updater.exe >= 6.2.0.1474 =>Result: true
+2010-11-14T14:28:02: End Installed Criteria Evaluation =>true
+2010-11-14T14:28:02: Begin File Component Criteria Evaluation
+2010-11-14T14:28:02: Keyfile Comparison using = OSVersion: C:\Program Files\Common Files\Adobe\Updater6\Adobe_Updater.exe < 6.2.0.1474 =>Result: false
+2010-11-14T14:28:02: End File Component Criteria Evaluation =>false
+2010-11-14T14:28:02: *** Marking File Component as Unmatched since criteria did not match
+2010-11-14T14:28:02: **Deleting component because component is not applicable
+2010-11-14T14:28:02: Begin Global Criteria Evaluation
+2010-11-14T14:28:02: Win Registry lookup using = DWORD: HKLM\Software\Adobe\Acrobat Reader\9.0\Installer\VersionMax < 589826 =>Result: true
+2010-11-14T14:28:02: End Global Criteria Evaluation =>true
+2010-11-14T14:28:02: Begin Installed Criteria Evaluation
+2010-11-14T14:28:02: Begin Inner Group Evaluation with operation = and
+2010-11-14T14:28:02: Win Registry lookup using = DWORD: HKLM\Software\Adobe\Acrobat Reader\9.0\Installer\VersionMax == 589826 =>Result: false
+2010-11-14T14:28:02: Win Registry lookup using = DWORD: HKLM\Software\Adobe\Acrobat Reader\9.0\Installer\VersionMin >= 0 =>Result: true
+2010-11-14T14:28:02: End Inner Group Evaluation =>false
+2010-11-14T14:28:02: Begin Inner CompareType Evaluation with operation = or
+2010-11-14T14:28:02: Win Registry lookup using = DWORD: HKLM\Software\Adobe\Acrobat Reader\9.0\Installer\VersionMax > 589826 =>Result: false
+2010-11-14T14:28:02: End Inner CompareType Evaluation =>false
+2010-11-14T14:28:02: End Installed Criteria Evaluation =>false
+2010-11-14T14:28:02: Begin File Component Criteria Evaluation
+2010-11-14T14:28:02: End File Component Criteria Evaluation =>true
+2010-11-14T14:28:02: **Adding component to transaction file whose installed status is=>false
+2010-11-14T14:28:02: Result of GetOpenTransaction: = 1
+2010-11-21T12:30:20: >>> Adobe Updater Log Begin >>>
+2010-11-21T12:30:20: Application Version: 6.2.0.1474
+2010-11-21T12:30:20: cmdline option: -logFile = C:\Users\Bill\AppData\Local\Adobe\Updater6\aum.log
+2010-11-21T12:30:20: cmdline option: -logLevel = 2
+2010-11-21T12:30:20: Display Language requested = en_US
+2010-11-21T12:30:20: Valid AppID added from global xml file = reader9rdr-en_US
+2010-11-21T12:30:20: Could not load adobe_aum2pcd.dll
+2010-11-21T12:30:20: No Startup mode specified.
+2010-11-21T12:30:20: GetAppIDUpdates: getting available update info for AppID: reader9rdr-en_US
+2010-11-21T12:30:21: GetAppIDUpdates: getting .upd file: http://swupmf.adobe.com/manifest/60/win/reader9rdr-en_US.upd
+2010-11-21T12:30:22: Processed actionblob for appID  = reader9rdr-en_US
+2010-11-21T12:30:22: GetAppIDUpdates: MFS_New - parsing new .upd file = 1
+2010-11-21T12:30:22: GetAppIDUpdates: getting available update info for AppID: AdobeUpdater
+2010-11-21T12:30:22: GetAppIDUpdates: getting .upd file: http://swupmf.adobe.com/manifest/60/win/AdobeUpdater.upd
+2010-11-21T12:30:22: GetAppIDUpdates: MFS_New - parsing new .upd file = 1
+2010-11-21T12:30:22: sLaunchMode is = 
+2010-11-21T12:30:22: No manual/schedule workflow to process next
+2010-11-21T12:30:22: <<< Adobe Updater Log End <<<
+
+
+2010-11-21T12:30:40: >>> Adobe Updater Log Begin >>>
+2010-11-21T12:30:40: Application Version: 6.2.0.1474
+2010-11-21T12:30:40: cmdline option: -logFile = C:\Users\Bill\AppData\Local\Adobe\Updater6\aum.log
+2010-11-21T12:30:40: cmdline option: -logLevel = 2
+2010-11-21T12:30:40: Display Language requested = en_US
+2010-11-21T12:30:40: Valid AppID added from global xml file = reader9rdr-en_US
+2010-11-21T12:30:40: Could not load adobe_aum2pcd.dll
+2010-11-21T12:30:40: New AUM launched for schedule update...
+2010-11-21T12:30:40: Entering normal workflow...
+2010-11-21T12:30:41: GetAppIDUpdates: getting available update info for AppID: AdobeUpdater
+2010-11-21T12:30:41: GetAppIDUpdates: getting .upd file: http://swupmf.adobe.com/manifest/60/win/AdobeUpdater.upd
+2010-11-21T12:30:41: GetAppIDUpdates: MFS_New - parsing new .upd file = 1
+2010-11-21T12:30:41: GetAppIDUpdates: getting available update info for AppID: reader9rdr-en_US
+2010-11-21T12:30:41: GetAppIDUpdates: getting .upd file: http://swupmf.adobe.com/manifest/60/win/reader9rdr-en_US.upd
+2010-11-21T12:30:41: Deleting component because it is noncritical in a silent CFU 
+2010-11-21T12:30:41: Deleting component because it is noncritical in a silent CFU 
+2010-11-21T12:30:41: Deleting component because it is noncritical in a silent CFU 
+2010-11-21T12:30:41: Deleting component because it is noncritical in a silent CFU 
+2010-11-21T12:30:41: Deleting component because it is noncritical in a silent CFU 
+2010-11-21T12:30:41: Deleting component because it is noncritical in a silent CFU 
+2010-11-21T12:30:41: GetAppIDUpdates: MFS_New - parsing new .upd file = 1
+2010-11-21T12:30:41: Begin Installed Criteria Evaluation
+2010-11-21T12:30:41: Keyfile Comparison using = OSVersion: C:\Program Files\Common Files\Adobe\Updater6\AdobeUpdaterInstallMgr.exe >= 6.2.0.1474 =>Result: true
+2010-11-21T12:30:41: End Installed Criteria Evaluation =>true
+2010-11-21T12:30:41: Begin File Component Criteria Evaluation
+2010-11-21T12:30:41: Keyfile Comparison using = OSVersion: C:\Program Files\Common Files\Adobe\Updater6\AdobeUpdaterInstallMgr.exe < 6.2.0.1474 =>Result: false
+2010-11-21T12:30:41: End File Component Criteria Evaluation =>false
+2010-11-21T12:30:41: *** Marking File Component as Unmatched since criteria did not match
+2010-11-21T12:30:41: **Deleting component because component is not applicable
+2010-11-21T12:30:41: Begin Installed Criteria Evaluation
+2010-11-21T12:30:41: Keyfile Comparison using = OSVersion: C:\Program Files\Common Files\Adobe\Updater6\Adobe_Updater.exe >= 6.2.0.1474 =>Result: true
+2010-11-21T12:30:41: End Installed Criteria Evaluation =>true
+2010-11-21T12:30:41: Begin File Component Criteria Evaluation
+2010-11-21T12:30:41: Keyfile Comparison using = OSVersion: C:\Program Files\Common Files\Adobe\Updater6\Adobe_Updater.exe < 6.2.0.1474 =>Result: false
+2010-11-21T12:30:41: End File Component Criteria Evaluation =>false
+2010-11-21T12:30:42: *** Marking File Component as Unmatched since criteria did not match
+2010-11-21T12:30:42: **Deleting component because component is not applicable
+2010-11-21T12:30:42: Begin Global Criteria Evaluation
+2010-11-21T12:30:42: Win Registry lookup using = DWORD: HKLM\Software\Adobe\Acrobat Reader\9.0\Installer\VersionMax < 589826 =>Result: true
+2010-11-21T12:30:42: End Global Criteria Evaluation =>true
+2010-11-21T12:30:42: Begin Installed Criteria Evaluation
+2010-11-21T12:30:42: Begin Inner Group Evaluation with operation = and
+2010-11-21T12:30:42: Win Registry lookup using = DWORD: HKLM\Software\Adobe\Acrobat Reader\9.0\Installer\VersionMax == 589826 =>Result: false
+2010-11-21T12:30:42: Win Registry lookup using = DWORD: HKLM\Software\Adobe\Acrobat Reader\9.0\Installer\VersionMin >= 0 =>Result: true
+2010-11-21T12:30:42: End Inner Group Evaluation =>false
+2010-11-21T12:30:42: Begin Inner CompareType Evaluation with operation = or
+2010-11-21T12:30:42: Win Registry lookup using = DWORD: HKLM\Software\Adobe\Acrobat Reader\9.0\Installer\VersionMax > 589826 =>Result: false
+2010-11-21T12:30:42: End Inner CompareType Evaluation =>false
+2010-11-21T12:30:42: End Installed Criteria Evaluation =>false
+2010-11-21T12:30:42: Begin File Component Criteria Evaluation
+2010-11-21T12:30:42: End File Component Criteria Evaluation =>true
+2010-11-21T12:30:42: **Adding component to transaction file whose installed status is=>false
+2010-11-21T12:30:42: Result of GetOpenTransaction: = 1
+2010-11-26T13:36:48: LaunchAdobeUpdaterInstall app=> = "C:\Program Files\Common Files\Adobe\Updater6\AdobeUpdaterInstallMgr.exe"
+2010-11-26T13:36:48: LaunchAdobeUpdaterInstall args=> = -appDataDir=\"C:\Users\Bill\AppData\Local\Adobe\Updater6\" -AUM_SID=\"S-1-5-21-3111579935-177672929-2987266323-1001\" -showInstallNowDlg=\"1\" -AU_DISPLAY_LANG=\"en_US\" -AU_LAUNCH_MODE=\"1\" -AU_LAUNCH_APPID=\"reader9rdr-en_US\"
+2010-11-26T13:37:01: Result of ProcessOpenTransaction: = 2
+2010-11-26T13:37:01: Quitting loop due to AUM error, clear out any workflows to process
+2010-11-26T13:37:01: <<< Adobe Updater Log End <<<
+
+
+2010-11-26T13:37:03: >>> Adobe Updater Log Begin >>>
+2010-11-26T13:37:03: Application Version: 6.2.0.1474
+2010-11-26T13:37:03: cmdline option: -logFile = C:\Users\Bill\AppData\Local\Adobe\Updater6\aum.log
+2010-11-26T13:37:03: cmdline option: -logLevel = 2
+2010-11-26T13:37:03: Display Language requested = en_US
+2010-11-26T13:37:03: Valid AppID added from global xml file = reader9rdr-en_US
+2010-11-26T13:37:03: Could not load adobe_aum2pcd.dll
+2010-11-26T13:37:03: New AUM launched for schedule update...
+2010-11-26T13:37:03: Entering normal workflow...
+2010-11-26T13:37:03: Result of GetOpenTransaction: = 1
+2010-11-26T13:37:03: Setting parent window => = 394454
+2010-11-26T13:37:03: Calling PreApp function of plugin with appID  = reader9rdr-en_US
+2010-11-26T13:37:05: **InvokePreApp for plugin - C:\Program Files\Adobe\Reader 9.0\Reader\AMT\AUMProduct.aup = 1
+2010-11-26T13:37:05: Entering regular installation phase - Non-msp files or user does not have msi 3 installed
+2010-11-26T13:37:05: --- Moved update binary to secure folder before installation: C:\Users\Bill\AppData\Local\Adobe\Updater6\Install\reader9rdr-en_US\AdbeRdr920_en_US.msi --> C:\Users\Bill\AppData\Local\Adobe\Updater6\Install\reader9rdr-en_US\AdbeRdr920_en_US.msi
+2010-11-26T13:37:07: --- Validation for update binary before installation: C:\Users\Bill\AppData\Local\Adobe\Updater6\Install\reader9rdr-en_US\AdbeRdr920_en_US.msi= PASSED
+2010-11-26T13:37:07: About to launch installer => = C:\Users\Bill\AppData\Local\Adobe\Updater6\Install\reader9rdr-en_US\AdbeRdr920_en_US.msi
+2010-11-26T13:37:07: MSI updated started:  = C:\Users\Bill\AppData\Local\Adobe\Updater6\Install\reader9rdr-en_US\AdbeRdr920_en_US.msi  args=()
+2010-11-26T13:38:41: MsiInstallProduct returned: rc= = 0
+2010-11-26T13:38:41: Installer launch was =>successful
+2010-11-26T13:38:41: +++ Irpt file exists and the file component installation result => = 0
+2010-11-26T13:38:41: Final component installation state => = 4
+2010-11-26T13:38:41: Final client installation client state => = 3
+2010-11-26T13:38:41: ThreadInstallUpdates::InstallAUTransactionClientUpdates --> installed file: 'Adobe Reader 9.2.0 (CPSID_50026)' InstallResult = 1
+2010-11-26T13:38:41: Calling PreApp function of plugin with appID  = reader9rdr-en_US
+2010-11-26T13:38:41: **InvokePostApp for plugin - C:\Program Files\Adobe\Reader 9.0\Reader\AMT\AUMProduct.aup = 1
+2010-11-26T13:38:41: Done with this client.  Do the appropriate cleanup.
+2010-11-26T13:38:51: Updates installed successfully. Final alert not shown because updates were run in scheduled mode
+2010-11-26T13:38:51: Result of ProcessOpenTransaction: = 0
+2010-11-26T13:38:51: sLaunchMode is = 
+2010-11-26T13:38:51: No manual/schedule workflow to process next
+2010-11-26T13:38:51: Quitting loop from normal WF, no other workflows to process
+2010-11-26T13:38:52: <<< Adobe Updater Log End <<<
+
+
+2010-12-04T14:38:53: >>> Adobe Updater Log Begin >>>
+2010-12-04T14:38:53: Application Version: 6.2.0.1474
+2010-12-04T14:38:53: cmdline option: -logFile = C:\Users\Bill\AppData\Local\Adobe\Updater6\aum.log
+2010-12-04T14:38:53: cmdline option: -logLevel = 2
+2010-12-04T14:38:53: Display Language requested = 
+2010-12-04T14:38:53: Could not load adobe_aum2pcd.dll
+2010-12-04T14:38:53: Received kStartupCleanupState
+2010-12-04T14:38:54: AdobeUpdater cleanup cache state - AUM reboot file/registry entry
+2010-12-04T14:38:55: AdobeUpdater cleanup cache state - AUM cached manifest file directory = C:\Users\Bill\AppData\Local\Adobe\Updater6\Data
+2010-12-04T14:38:55: AdobeUpdaterBobCache: Null security context passed in to DeleteAllBobsAndCache
+2010-12-04T14:38:55: AdobeUpdater cleanup cache state - AUM preference file = C:\Users\Bill\AppData\Local\Adobe\Updater6\AdobeUpdaterPrefs.dat
+2010-12-04T14:38:55: AdobeUpdater cleanup cache state - AUM CRL directory = C:\Users\Bill\AppData\Local\Adobe\Updater6\crl
+2010-12-04T14:38:55: AdobeUpdater cleanup cache state - AUM Proxy preference file
+2010-12-04T14:38:55: <<< Adobe Updater Log End <<<
+
+
