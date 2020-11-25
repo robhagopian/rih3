@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Created on Mar 1, 2002 10:06:35 AM -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      How to Create and Edit HTML Documents
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rev="made" href="http://www.arachnoid.com"/>
+    <meta http-equiv="Content-language" content="en"/>
+    <meta name="author" content="Paul Lutus"/>
+    <meta name="owner" content="Paul Lutus"/>
+    <meta name="description" content="Another basic tutorial."/>
+    <meta name="group" content="DOCUMENTATION"/>
+    <meta name="keywords" content="Arachnophilia,HTML,edit,editor,webpage,programming,macro,Lutus"/>
+    <meta name="rating" content="General"/>
+    <meta name="ROBOTS" content="ALL"/>
+    <meta name="GENERATOR" content="Arachnophilia 5.0"/>
+    <meta name="FORMATTER" content="Arachnophilia 5.0"/>
+    <link rel="stylesheet" type="text/css" href="styles/default_article.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/roundcorner_16_parch.css"/>
+    <style type="text/css">
+.lc {font-weight:normal;font-style:normal;color:#808080;background-color:#ffffd8}
+img { vertical-align:middle; }
+    </style>
+  </head>
+  <body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000">
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <script type="text/javascript" language="JavaScript">
+            function toNewPage(t) { location.href = t.options[t.selectedIndex].value; }
+          </script>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html" selected="selected">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="GraphicsOperations.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="SearchingReplacing.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+    <div align="center">
+      <div class="article_title_inverse">How to Create and Edit HTML Documents</div>
+<div class="article_linklist_inverse">Arachnophilia is &copy; Copyright 2009, P. Lutus.
+        <br/>
+        <p>Arachnophilia is
+        <a href="http://www.arachnoid.com/careware">CareWare</a></p>
+
+
+      </div>
+      <!-- LINK_MENU_START -->
+<a href="#Introduction">Introduction</a> | <a href="#Building_a_Web_Page">Building a Web Page</a> | <a href="#The_Details">The Details</a>
+<!-- LINK_MENU_END -->
+    </div>
+    <p></p>
+
+    <div class="article_wrapper">
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch0"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch9"></span>
+      </span>
+      <div class="roundcorner_16_parch_content">
+        <a name="Introduction"></a><div class="article_heading">Introduction</div>
+        <div class="article_section_color_bar">
+          The first and most important thing to know about Arachnophilia is that
+          <b>
+            it can be changed to suit your needs.
+          </b>
+          Arachnophilia's menus and toolbars are nearly all created from macros &mdash; macros you can change, changes that Arachnophilia remembers.
+          <p></p>
+
+          This design choice results from the general usefulness of a macro architecture, and more important because it simply is not possible to include enough hardwired tags and features to satisfy even a small minority of serious Web developers. The macro architecture supports the saving and loading of specific sets of macros, so macro sets that support specific kinds of work can be loaded, or they can all reside in the default macro file and be switched on and off at a keystroke.
+          <p></p>
+
+          But that is really a digression &mdash; to read in-depth about the macro system, read <a href="MacroArchitecture.html">The Arachnophilia Macro Architecture</a>. For now, we can get started learning how to manipulate Arachnophilia's many HTML tag editing features.
+          <p></p>
+
+        </div>
+        <a name="Building_a_Web_Page"></a><div class="article_heading">Building a Web Page</div>
+        <div class="article_section_color_bar">
+          Choose
+          <b>
+            File ... New ... HTML file.
+          </b>
+          Type a title. You will then see, more or less, this:
+          <p></p>
+
+          <blockquote>
+            <div style="display:block;overflow:auto;"><pre><code>
+<span class="lc">&nbsp;&nbsp;1&nbsp;</span><font color = "#0000ff">&lt;</font><font color = "#000000">!doctype</font><font color = "#00b200"> html public </font><font color = "#b200b2">"-//w3c//dtd html 3.2//en"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;2&nbsp;</span>
+<span class="lc">&nbsp;&nbsp;3&nbsp;</span></font><i><font color = "#000000">&lt;!-- Created on Mar 4, 2002 1:23:46 PM --&gt;
+<span class="lc">&nbsp;&nbsp;4&nbsp;</span>
+<span class="lc">&nbsp;&nbsp;5&nbsp;</span></font></i><font color = "#0000ff">&lt;</font><font color = "#000000">html</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;6&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">head</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;7&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">title</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;8&nbsp;</span></font>         My Page!
+<span class="lc">&nbsp;&nbsp;9&nbsp;</span>      <font color = "#0000ff">&lt;</font><font color = "#000000">/title</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;10&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">meta</font><font color = "#00b200"> name=</font><font color = "#b200b2">"GENERATOR"</font><font color = "#00b200"> content=</font><font color = "#b200b2">"Arachnophilia 5.0"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;11&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">meta</font><font color = "#00b200"> name=</font><font color = "#b200b2">"FORMATTER"</font><font color = "#00b200"> content=</font><font color = "#b200b2">"Arachnophilia 5.0"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;12&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">/head</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;13&nbsp;</span>
+<span class="lc">&nbsp;14&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">body</font><font color = "#00b200"> bgcolor=</font><font color = "#b200b2">"#ffffff"</font><font color = "#00b200"> text=</font><font color = "#b200b2">"#000000"</font><font color = "#00b200"> link=</font><font color = "#b200b2">"#0000ff"</font><font color = "#00b200"> vlink=</font><font color = "#b200b2">"#800080"</font><font color = "#00b200"> alink=</font><font color = "#b200b2">"#ff0000"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;15&nbsp;</span>
+<span class="lc">&nbsp;16&nbsp;</span></font>      <font color="#ff0000">|</font>
+<span class="lc">&nbsp;17&nbsp;</span>
+<span class="lc">&nbsp;18&nbsp;</span>   <font color = "#0000ff">&lt;</font><font color = "#000000">/body</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;19&nbsp;</span></font><font color = "#0000ff">&lt;</font><font color = "#000000">/html</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;20&nbsp;</span>
+</font><font color = "#0000ff"></font>
+            </code></pre></div>
+          </blockquote>
+          Notice the editing cursor in particular ("
+          <font color="#ff0000">
+            |
+          </font>
+          "). A lot of Arachnophilia'a behavior vis-a-vis HTML tags revolves around the cursor, text selection, and the like.
+          <p></p>
+
+          The most basic tag activity is to select a block of text and apply a tag to it. Like this &mdash; Type a sentence:
+          <p></p>
+
+          <blockquote>
+            <div style="display:block;overflow:auto;"><pre><code>
+<span class="lc">&nbsp;&nbsp;1&nbsp;</span><font color = "#0000ff">&lt;</font><font color = "#000000">!doctype</font><font color = "#00b200"> html public </font><font color = "#b200b2">"-//w3c//dtd html 3.2//en"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;2&nbsp;</span>
+<span class="lc">&nbsp;&nbsp;3&nbsp;</span></font><i><font color = "#000000">&lt;!-- Created on Mar 4, 2002 1:23:46 PM --&gt;
+<span class="lc">&nbsp;&nbsp;4&nbsp;</span>
+<span class="lc">&nbsp;&nbsp;5&nbsp;</span></font></i><font color = "#0000ff">&lt;</font><font color = "#000000">html</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;6&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">head</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;7&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">title</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;8&nbsp;</span></font>         My Page!
+<span class="lc">&nbsp;&nbsp;9&nbsp;</span>      <font color = "#0000ff">&lt;</font><font color = "#000000">/title</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;10&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">meta</font><font color = "#00b200"> name=</font><font color = "#b200b2">"GENERATOR"</font><font color = "#00b200"> content=</font><font color = "#b200b2">"Arachnophilia 5.0"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;11&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">meta</font><font color = "#00b200"> name=</font><font color = "#b200b2">"FORMATTER"</font><font color = "#00b200"> content=</font><font color = "#b200b2">"Arachnophilia 5.0"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;12&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">/head</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;13&nbsp;</span>
+<span class="lc">&nbsp;14&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">body</font><font color = "#00b200"> bgcolor=</font><font color = "#b200b2">"#ffffff"</font><font color = "#00b200"> text=</font><font color = "#b200b2">"#000000"</font><font color = "#00b200"> link=</font><font color = "#b200b2">"#0000ff"</font><font color = "#00b200"> vlink=</font><font color = "#b200b2">"#800080"</font><font color = "#00b200"> alink=</font><font color = "#b200b2">"#ff0000"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;15&nbsp;</span>
+<span class="lc">&nbsp;16&nbsp;</span></font>      A Sentence.<font color="#ff0000">|</font>
+<span class="lc">&nbsp;17&nbsp;</span>
+<span class="lc">&nbsp;18&nbsp;</span>   <font color = "#0000ff">&lt;</font><font color = "#000000">/body</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;19&nbsp;</span></font><font color = "#0000ff">&lt;</font><font color = "#000000">/html</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;20&nbsp;</span>
+</font><font color = "#0000ff"></font>
+            </code></pre></div>
+          </blockquote>
+          Now drag the mouse across the sentence, so it looks like this:
+          <blockquote>
+            <div style="display:block;overflow:auto;"><pre><code>
+<span class="lc">&nbsp;&nbsp;1&nbsp;</span><font color = "#0000ff">&lt;</font><font color = "#000000">!doctype</font><font color = "#00b200"> html public </font><font color = "#b200b2">"-//w3c//dtd html 3.2//en"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;2&nbsp;</span>
+<span class="lc">&nbsp;&nbsp;3&nbsp;</span></font><i><font color = "#000000">&lt;!-- Created on Mar 4, 2002 1:23:46 PM --&gt;
+<span class="lc">&nbsp;&nbsp;4&nbsp;</span>
+<span class="lc">&nbsp;&nbsp;5&nbsp;</span></font></i><font color = "#0000ff">&lt;</font><font color = "#000000">html</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;6&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">head</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;7&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">title</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;8&nbsp;</span></font>         My Page!
+<span class="lc">&nbsp;&nbsp;9&nbsp;</span>      <font color = "#0000ff">&lt;</font><font color = "#000000">/title</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;10&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">meta</font><font color = "#00b200"> name=</font><font color = "#b200b2">"GENERATOR"</font><font color = "#00b200"> content=</font><font color = "#b200b2">"Arachnophilia 5.0"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;11&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">meta</font><font color = "#00b200"> name=</font><font color = "#b200b2">"FORMATTER"</font><font color = "#00b200"> content=</font><font color = "#b200b2">"Arachnophilia 5.0"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;12&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">/head</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;13&nbsp;</span>
+<span class="lc">&nbsp;14&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">body</font><font color = "#00b200"> bgcolor=</font><font color = "#b200b2">"#ffffff"</font><font color = "#00b200"> text=</font><font color = "#b200b2">"#000000"</font><font color = "#00b200"> link=</font><font color = "#b200b2">"#0000ff"</font><font color = "#00b200"> vlink=</font><font color = "#b200b2">"#800080"</font><font color = "#00b200"> alink=</font><font color = "#b200b2">"#ff0000"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;15&nbsp;</span>
+<span class="lc">&nbsp;16&nbsp;</span></font>      <span style="background-color:#ccccff;">A Sentence.</span><font color="#ff0000">|</font>
+<span class="lc">&nbsp;17&nbsp;</span>
+<span class="lc">&nbsp;18&nbsp;</span>   <font color = "#0000ff">&lt;</font><font color = "#000000">/body</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;19&nbsp;</span></font><font color = "#0000ff">&lt;</font><font color = "#000000">/html</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;20&nbsp;</span>
+</font><font color = "#0000ff"></font>
+            </code></pre></div>
+          </blockquote>
+          This is called "text selection." Now press the toolbar button marked like this:
+          <img src="images/Bold.png" width="20" height="20" alt=""/>
+          . You will see:
+          <p></p>
+
+          <blockquote>
+            <div style="display:block;overflow:auto;"><pre><code>
+<span class="lc">&nbsp;&nbsp;1&nbsp;</span><font color = "#0000ff">&lt;</font><font color = "#000000">!doctype</font><font color = "#00b200"> html public </font><font color = "#b200b2">"-//w3c//dtd html 3.2//en"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;2&nbsp;</span>
+<span class="lc">&nbsp;&nbsp;3&nbsp;</span></font><i><font color = "#000000">&lt;!-- Created on Mar 4, 2002 1:23:46 PM --&gt;
+<span class="lc">&nbsp;&nbsp;4&nbsp;</span>
+<span class="lc">&nbsp;&nbsp;5&nbsp;</span></font></i><font color = "#0000ff">&lt;</font><font color = "#000000">html</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;6&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">head</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;7&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">title</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;8&nbsp;</span></font>         My Page!
+<span class="lc">&nbsp;&nbsp;9&nbsp;</span>      <font color = "#0000ff">&lt;</font><font color = "#000000">/title</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;10&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">meta</font><font color = "#00b200"> name=</font><font color = "#b200b2">"GENERATOR"</font><font color = "#00b200"> content=</font><font color = "#b200b2">"Arachnophilia 5.0"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;11&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">meta</font><font color = "#00b200"> name=</font><font color = "#b200b2">"FORMATTER"</font><font color = "#00b200"> content=</font><font color = "#b200b2">"Arachnophilia 5.0"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;12&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">/head</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;13&nbsp;</span>
+<span class="lc">&nbsp;14&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">body</font><font color = "#00b200"> bgcolor=</font><font color = "#b200b2">"#ffffff"</font><font color = "#00b200"> text=</font><font color = "#b200b2">"#000000"</font><font color = "#00b200"> link=</font><font color = "#b200b2">"#0000ff"</font><font color = "#00b200"> vlink=</font><font color = "#b200b2">"#800080"</font><font color = "#00b200"> alink=</font><font color = "#b200b2">"#ff0000"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;15&nbsp;</span>
+<span class="lc">&nbsp;16&nbsp;</span></font>      &lt;b&gt;<span style="background-color:#ccccff;">A Sentence.</span><font color="#ff0000">|</font>&lt;/b&gt;
+<span class="lc">&nbsp;17&nbsp;</span>
+<span class="lc">&nbsp;18&nbsp;</span>   <font color = "#0000ff">&lt;</font><font color = "#000000">/body</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;19&nbsp;</span></font><font color = "#0000ff">&lt;</font><font color = "#000000">/html</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;20&nbsp;</span>
+</font><font color = "#0000ff"></font>
+            </code></pre></div>
+          </blockquote>
+          The selected text will now appear in
+          <b>
+            boldface
+          </b>
+          when viewed in a browser.
+          <b>
+          <p></p>
+          
+          </div>
+          <a name="The_Details"></a><div class="article_heading">The Details</div>
+      <div class="article_section_color_bar">
+
+          
+            Remember this series of actions
+          </b>
+          &mdash; it is how tags are applied to text blocks in Arachnophilia:
+          <p></p>
+
+          <ol>
+            <li>Select the desired text.</li>
+            <li>Activate the desired macro (by way of a toolbar button, a menu item, or a keystroke).</li>
+          </ol>
+          <b>
+            Important:
+          </b>
+          If you don't like how the action came out, simply
+          <i>
+            undo it:
+          </i>
+          <ul>
+            <li>Press this toolbar button: <img src="images/Undo.png" width="20" height="20" alt=""/></li>
+            <li>Or, press Ctrl-Z</li>
+          </ul>
+          Now let's look at how these editing macros work. You want to become comfortable with creating and editing Arachnophilia macros as soon as possible, so it is by no means too soon to be looking at this topic.
+          <p></p>
+
+          Point the mouse cursor at the toolbar button marked
+          <img src="images/Bold.png" width="20" height="20" alt=""/>
+          , right-click the mouse, and choose "Edit." The macro editing window will appear (with a file tab of its own, so you can switch back to your document at any time). The "Bold" macro content is very simply this:
+          <p></p>
+
+          <blockquote>
+            &lt;b&gt;|&lt;/b&gt;
+          </blockquote>
+          The vertical bar character "|" means "Put any selected text here."
+          <i>
+            This is the simple way Arachnophilia's macros enclose a text block with tags.
+          </i>
+          Remember this use of the vertical bar symbol &mdash; it is the key to writing simple, effective macros.
+          <p></p>
+
+          There are a large number of such HTML tag macros in the macro section "HTML Tag toolbars" (on the left-hand panel of the main Arachnophilia display). To make one or more of these toolbars appear, simply click it with the mouse, then press "x" on the keyboard or use the right-click context menu. When developing Web pages, you can use this method to choose which toolbars to put on display as you work.
+          <p></p>
+
+          And &mdash; most important &mdash; if you don't see a tag you need,
+          <i>
+            just add it.
+          </i>
+          Point the mouse at an appropriate toolbar folder, press the right mouse button, and choose "New." Type in the tag you need, give it a memorable name, and click "Accept."
+          <p></p>
+
+        </div>&nbsp;
+      </div> <!-- content -->
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch9"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch0"></span>
+      </span>
+    </div> <!-- wrapper -->
+    <p></p>
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html" selected="selected">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="GraphicsOperations.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="SearchingReplacing.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+  </body>
+</html>

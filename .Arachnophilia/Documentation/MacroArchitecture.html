@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Created on Mar 1, 2002 10:06:35 AM -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      The Arachnophilia Macro Architecture
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rev="made" href="http://www.arachnoid.com"/>
+    <meta http-equiv="Content-language" content="en"/>
+    <meta name="author" content="Paul Lutus"/>
+    <meta name="owner" content="Paul Lutus"/>
+    <meta name="description" content="An introduction to Arachnophilia's macro engine."/>
+    <meta name="group" content="DOCUMENTATION"/>
+    <meta name="keywords" content="Arachnophilia,HTML,edit,editor,webpage,programming,macro,Lutus"/>
+    <meta name="rating" content="General"/>
+    <meta name="ROBOTS" content="ALL"/>
+    <meta name="GENERATOR" content="Arachnophilia 5.0"/>
+    <meta name="FORMATTER" content="Arachnophilia 5.0"/>
+    <link rel="stylesheet" type="text/css" href="styles/default_article.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/roundcorner_16_parch.css"/>
+  </head>
+  <body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000">
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <script type="text/javascript" language="JavaScript">
+            function toNewPage(t) { location.href = t.options[t.selectedIndex].value; }
+          </script>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html" selected="selected">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="TablesAndLists.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="RightClickWizard.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+    <div align="center">
+      <div class="article_title_inverse">The Arachnophilia Macro Architecture</div>
+<div class="article_linklist_inverse">Arachnophilia is &copy; Copyright 2009, P. Lutus.
+        <br/>
+        <p>Arachnophilia is
+        <a href="http://www.arachnoid.com/careware">CareWare</a></p>
+
+
+      </div>
+      <!-- LINK_MENU_START --><!-- LINK_MENU_END -->
+    </div>
+    <p></p>
+
+    <div class="article_wrapper">
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch0"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch9"></span>
+      </span>
+      <div class="roundcorner_16_parch_content">
+        <b>
+          Arachnophilia's menus and toolbars rely almost completely on a command architecture based on
+          <a href="#macroDef">"macros"</a>
+          ,
+        </b>
+        and the HTML editing features rely completely on macros of various kinds mixed with system commands. This is because macros offer a fantastic amount of flexibility --
+        <i>
+          using macros, the user can completely change Arachnophilia's appearance and behavior.
+        </i>
+        <p></p>
+
+        The underlying purpose of the macro architecture is to make Arachnophilia capable of doing much more than the author could include explicitly, which is a serious limitation of most modern computer programs. By using macros, Arachnophilia shifts the paradigm away from programs that you simply learn from. You still have to learn about Arachnophilia, but very quickly you turn the tables on Arachnophilia and start
+        <i>
+          teaching it things
+        </i>
+        &mdash; what you want to do, how you want to do it, with what menus, toolbars, and keystrokes.
+        <p></p>
+
+        Arachnophilia macros can even invoke external Java classes created by the user or third-party sources, so there really is no limit on the degree to which the user can customize Arachnophilia.
+        <p></p>
+
+        Each Arachnophilia macro has:
+        <ul>
+          <li>A title that appears on menu items and toolbar buttons and that is used to identify the macro internally,</li>
+          <li>A "tooltip," a message that appears over a toolbar button or menu item when the mouse cursor is located there,</li>
+          <li>An optional icon image (Arachnophilia comes with a large set of icons),</li>
+          <li>A "content", which can be one or more of:
+            <ul>
+              <li>Some text you want to put in your document,</li>
+              <li>A specially formatted HTML tag that is used to modify the document content,</li>
+              <li>The name of another macro,</li>
+              <li>The name of an Arachnophilia system command, like "[Save]",</li>
+              <li>The name of an external Java class provided by the user to do specialized work,</li>
+              <li>Any combination of the above.</li>
+          </ul></li>
+        </ul>
+        It is important to understand how macros invoke system behaviors:
+        <ul>
+          <li>A system command has a fixed name like "[Save]", and, when this name is included in a macro, it executes a system command.</li>
+          <li>A complete list of system command and descriptions can be gotten with the macro "[ListSystemCommands]," and there is a menu item in the default menu set <b>Tools ... List System Commands</b> that can be used to create the list. If you haven't guessed already, the menu item that makes the macro list is itself a macro. :)</li>
+        </ul>
+        Unlike system commands, macros are editable, copyable, deletable, and have a name that appears on toolbars (optionally) and menu items (always). Nearly all the Arachnophilia menus and toolbars are composed of macros, which means you can change them to suit your own needs.
+        <p></p>
+
+        <b>
+          Now it's time to get your feet wet. Let's make a macro and play with it.
+        </b>
+        <p></p>
+
+        Arachnophilia has two panels in its display &mdash; a right panel containing documents to be edited, and a left panel dedicated to macro activities (which, when you want, you may close &mdash; just click the left arrow on the dividing bar). Here is a closeup of the left panel (it may not look exactly like this on your copy of Arachnophilia):
+        <blockquote>
+          <img src="images/MacroTreeClosed.png" width="172" height="85" alt=""/>
+        </blockquote>
+        Now take these steps:
+        <p></p>
+
+        <ul>
+          <li>Point the mouse cursor at the folder marked "Macros."</li>
+          <li>Press the right mouse button.</li>
+          <li>Choose "New."</li>
+        </ul>
+        Now the left (macro) panel will look like this --
+        <blockquote>
+          <img src="images/MacroTreeNewItem.png" width="176" height="110" alt=""/>
+        </blockquote>
+        &mdash; and the right panel will show the macro editor. Notice about the right panel that there is a tab at the bottom for the macro editor, and also tabs for any documents you may have had open previously. This means you can switch between the macro editor and any documents you care to, without having to close any of them. I mention this because you will need to do this later on. :)
+        <p></p>
+
+        Now take these steps:
+        <ul>
+          <li>Move the editing cursor over to the macro editor at the right, to the large central window marked "Macro Editing Area."</li>
+          <li>Type something there, a sentence of your choosing.</li>
+          <li>At the right end of the panel marked "Shortcut Key" above the main editing area, press the button marked "Define." The program will wait for you to press a key.</li>
+          <li>Press Alt-Q (or, if your keyboard doesn't support this key combination, choose another equally obscure combination).</li>
+          <li>You may optionally select an icon for your macro by pressing "Choose Icon."</li>
+          <li>Move to the bottom of the macro editor and press "Accept."</li>
+        </ul>
+        You have defined a new macro, one that will be activated if you:
+        <ul>
+          <li>Click it directly, or</li>
+          <li>Press the key combination you defined for it.</li>
+        </ul>
+        Now let's open a new, blank document to receive the macro's output. Choose menu item
+        <b>
+          File ... New ... Text File.
+        </b>
+        <p></p>
+
+        Once the new, blank document is on display, press the key combination you defined for your macro. Your sentence should appear. Then try double-clicking the macro directly &mdash; you will see the same result.
+        <p></p>
+
+        Now return to the macro editor by clicking the tab marked "Macro Editor" at the bottom of the right pane. Type this:
+        <blockquote>
+          Right now, it is [DateTime]
+        </blockquote>
+        Press "Accept" again, return to the blank text document, and press your defined key combination. Your sentence plus the current date and time should appear. This is an example of a macro that contain both user text and a system command.
+        <p></p>
+
+        Normally you will use the dropdown lists at the bottom of the macro editor display to select system commands and the names of other macros &mdash; this is a more convenient method than typing them, and you can avoid typographical errors that may prevent your macros from working.
+        <p></p>
+
+        Here is an example that shows an important property of macros that takes effect if they are used to define HTML tags. Move to the macro editor and type this:
+        <blockquote>
+          &lt;b&gt;|&lt;/b&gt;
+        </blockquote>
+        The vertical bar "|" has a special meaning if it is included in a macro &mdash; if you select some document text and activate such a macro, the text you have selected will be placed at the position of the vertical bar. Try it &mdash; enter the above macro, move to the text document, select some text, and activate the macro. The result will look more or less like this:
+        <blockquote>
+          &lt;b&gt;
+          <span style="background-color:#ccccff;">My sentence!</span>
+          &lt;/b&gt;
+        </blockquote>
+        This is a convenient way to wrap a text block in a pair of HTML tags, and it is easy to remember.
+        <p></p>
+
+        <blockquote><b>
+            Clipboard Support in the Macro Editor
+        </b></blockquote>
+        In answer to many inquiries, yes, you can cut, copy and paste text within the macro editor window. Because the macro editor is the repair facility of last resort, the keystrokes for these functions had to be fixed (not user-defined). They are Ctrl+X = cut, Ctrl+C = copy, and Ctrl+V = paste.
+        <blockquote><b>
+            Macro Tree Activation and Deactivation
+        </b></blockquote>
+        In order to have custom menus appropriate to different tasks, all loaded and available at once, there is a convenient way to make menus and toolbars appear and disappear as needed. Take these steps:
+        <p></p>
+
+        Open the folder named "HTML Tag Toolbars". You will see this (more or less):
+        <p></p>
+
+        <blockquote>
+          <img src="images/MacroTreeHTMLFolderOpen.png" width="202" height="248" alt=""/>
+        </blockquote>
+        Notice there are (parentheses) around the names of the folders. If you select a folder with the mouse and press "x" at the keyboard, that folder will become "visible," meaning:
+        <ul>
+          <li>If it is a toolbar, the toolbar will appear below the main system toolbar at the top of the screen (if this doesn't happen, press the main toolbar button that looks like this: <img src="images/FlowGraph.png" width="20" height="20" alt="" style="vertical-align:middle;"/>),</li>
+          <li>If it is a menu, it will appear with the other menus on the Arachnophilia menu bar.</li>
+        </ul>
+        You can make a collection of commands into a menu or toolbar with the macro editor. Note the checkboxes for this purpose on the macro editor display. Remember about these options that a complete tree of commands (a folder that may have other folders "inside" it) can be made into a menu, and that menu will have the appropriate submenus, but a toolbar only has one level, so it cannot contain any macros from subfolders.
+        <p></p>
+
+        You can also manipulate commands and folders in the macro tree display:
+        <ul>
+          <li>The keyboard arrow keys move the selection point up and down,</li>
+          <li>The "+" and "-" keys move the selected <i>item</i> up and down,</li>
+          <li>You can cut, copy and paste items or folders using the context (right-click) menu or the usual editing keys Ctrl-X, Ctrl-C and Ctrl-V (this is one of the few places where the menu items and key definitions are hard-wired into the program. Can you guess why this was necessary?).</li>
+          <li>You can save all or part of the macro tree as a file by selecting the desired component and then using the context menu file load/save features.</li>
+          <li>You can load such a saved file into a particular position by selecting the position you want the file to be a "child" to, and loading it.</li>
+          <li>You can import older (pre - version 5.0) Arachnophilia "toolbar" files using the context menu "Read legacy file" command, and use those older toolbars as elements of the new macro system.</li>
+        </ul>
+        An important note on copying, pasting, loading and saving tree components:
+        <ul>
+          <li><b>To copy an item</b> (or save a file), simply select it and use the copy or file save feature. The item and all its "children" will be copied or saved.</li>
+          <li><b>To paste an item</b> (or load a file), always choose the folder that is the "parent" of the place you want the commands/folders to be positioned. This puts the pasted item "inside" the selected folder.</li>
+        </ul>
+        <b>
+          Q: Okay, we've practiced making a command, but how do you make a folder?
+        </b>
+        <blockquote>
+          A: It's simple, really. Just select an item you have created and activate the context menu item "New" (or paste an item onto it).
+          <i>
+            A folder is simply an item that has children.
+          </i>
+          <p></p>
+
+          <b>
+            Simple rule:
+          </b>
+          If you delete all the children of a folder, it becomes an ordinary item. If you add one or more children to an item, it becomes a folder. And folders can contain folders, ad infinitum.
+        </blockquote>
+        <b>
+          Q: How do I recover from mistakes that have scrambled my menus?
+        </b>
+        <blockquote>
+          A: Well, there are several ways:
+          <ul>
+            <li>Log on as a different user, and make a copy of the default menu structure there. Load the copy into your own installation, and delete the scrambled set, replacing it with the copy.</li>
+            <li>Activate the system macro [GetRescueMacroSet]. This macro will load a copy of the original menu structure from the Arachnophilia executable file, and place it alongside the existing macro tree (it will not erase or replace any macros you have written). Once it is loaded, you can use it to select individual menus or commands, or you can replace all the changed macros with the originals by deleting the changed folders and using the replacements instead.</li>
+            <li>Delete the ".Arachnophilia" directory from your user directory. This is an extreme step, a last resort. If you do this, Arachnophilia will recreate the default user installation the next time it is run. You will lose all your choices and preferences.</li>
+            <li>Move the ".Arachnophilia" directory elsewhere (or rename it) instead of deleting it, and sort out how to keep the good parts and throw away the bad parts after Arachnophilia creates the default installation file set. Not for the faint of heart.</li>
+          </ul>
+        </blockquote>
+        <b>
+          Q: How do I create completely separate menus and toolbars for different tasks?
+        </b>
+        <blockquote>
+          A: Not difficult at all. Just make two or more copies of the entire desired menu structure (or any subset you need), change the macros in the individual copies at will, and place them in separate folders. Then unhide only that set you want to use at the moment. Like this rather extreme example:
+          <p></p>
+
+          <img src="images/MultipleCommandSets.png" width="193" height="265" alt=""/>
+          <p></p>
+
+          Remember that a hidden folder's name is enclosed in (parentheses). Be sure to hide your newly created folders
+          <i>
+            before
+          </i>
+          copying macro sets into them. This will prevent the macro processor from complaining about multiple key mappings. And when you switch macro contexts, always hide the first macro set before unhiding the next, for the same reason.
+          <p></p>
+
+          Using the example above, if you hide the first command set (by selecting the desired folder and pressing "x") when (as shown) the other two are already hidden, the entire menu and toolbar structure will disappear from Arachnophilia. This is why the macro editor must have separate, hard-wired menus and keyboard commands &mdash; if it didn't, the user could unplug Arachnophilia from reality by mistake, and not be able to recover. :)
+        </blockquote>
+        <blockquote>
+          <table cellpadding="4">
+            <tr>
+              <td>
+                <a name="macroDef">Macro</a>
+                :
+              </td>
+              <td style="background-color:#ccffcc;color:#514622;">
+                a flexible, user-defined series of actions invoked by a keystroke or a mouse click.
+              </td>
+            </tr>
+          </table>
+        </blockquote><p></p>
+
+        <b>For more advanced information about macros, <a href="AdvancedFeatures.html#macros">click here</a></b>
+        <p></p>&nbsp;
+
+      </div> <!-- content -->
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch9"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch0"></span>
+      </span>
+    </div> <!-- wrapper -->
+    <p></p>
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html" selected="selected">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="TablesAndLists.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="RightClickWizard.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+  </body>
+</html>

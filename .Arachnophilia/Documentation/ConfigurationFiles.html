@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Created on Mar 1, 2002 10:06:35 AM -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      Configuration Files
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rev="made" href="http://www.arachnoid.com"/>
+    <meta http-equiv="Content-language" content="en"/>
+    <meta name="author" content="Paul Lutus"/>
+    <meta name="owner" content="Paul Lutus"/>
+    <meta name="description" content="A description of some data files used to instruct Arachnophilia."/>
+    <meta name="group" content="DOCUMENTATION"/>
+    <meta name="keywords" content="Arachnophilia,HTML,edit,editor,webpage,programming,macro,Lutus"/>
+    <meta name="rating" content="General"/>
+    <meta name="ROBOTS" content="ALL"/>
+    <meta name="GENERATOR" content="Arachnophilia 5.0"/>
+    <meta name="FORMATTER" content="Arachnophilia 5.0"/>
+    <link rel="stylesheet" type="text/css" href="styles/default_article.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/roundcorner_16_parch.css"/>
+
+
+  </head>
+  <body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000">
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <script type="text/javascript" language="JavaScript">
+            function toNewPage(t) { location.href = t.options[t.selectedIndex].value; }
+          </script>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html" selected="selected">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="CommonProblems.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="GettingStarted.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+    <div align="center">
+      
+          <div class="article_title_inverse">Configuration Files</div>
+<div class="article_linklist_inverse">Arachnophilia is &copy; Copyright 2009, P. Lutus.
+        <br/>
+        <p>Arachnophilia is
+        <a href="http://www.arachnoid.com/careware">CareWare</a></p>
+
+
+      </div>
+        <!-- LINK_MENU_START --><!-- LINK_MENU_END -->
+    </div>
+    <p></p>
+    <div class="article_wrapper">
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch0"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch9"></span>
+      </span>
+      <div class="roundcorner_16_parch_content">
+
+    <b>
+      There are a number of large and small configuration and data files in the Arachnophilia user installation area (user home directory/.Arachnophilia).
+    </b>
+    Many of them are self-documenting because they contain comments. These files exist because of the Arachnophilia basic design philosophy &mdash; expose as much functionality to the user as possible. Instead of only requiring the user to learn the program,  make the program learn from the user.
+    <br/><br/>
+    Each logon user gets a separate set of these files installed in his home directory, which means Arachnophilia is very much a personal program &mdash; it looks the way you want, acts the way you choose to make it act, and other users' choices cannot interfere.
+    Here is a detailed list:
+    <br/><br/>
+    <ul>
+      <li><b>ArachConf/BrowsewrExecutableNames.txt</b>
+        <blockquote>
+          <i>
+            A list of unadorned executable names used in the browser search carried out by the Browser Configuration dialog.
+          </i>
+      </blockquote></li>
+      <li><b>ArachConf/CtrlRightClickList.txt</b>
+        <blockquote>
+          <i>
+            The command list used by the Ctrl-right-click list. This is one of the few macro-bearing files that must be edited directly. It is easy to edit in plain-text form, unlike the main macro collection, which contains some rather esoteric traits and therefore needs a special, dedicated editor.
+          </i>
+      </blockquote></li>
+      <li><b>ArachConf/ExtendedChars.txt</b>
+        <blockquote>
+          <i>
+            A list of character numbers and corresponding HTML entities. This list is used by the HTML entity->
+            char and char->
+            entity macros.
+          </i>
+      </blockquote></li>
+      <li><b>ArachConf/FileData.txt</b>
+        <blockquote>
+          <i>
+            A list of file types, extensions (or suffixes if you prefer) and other file traits. This file makes it easy to add extensions to existing file types, or even to add new file types. It contains some detailed comments.
+          </i>
+      </blockquote></li>
+      <li><b>ArachConf/FTPSiteData.txt</b>
+        <blockquote>
+          <i>
+            A list of FTP site definitions. This file doesn't exist by default, it is created after some definitions have been entered into the FTP Service dialog. This file is separate from the main macro file because it can contain (trivially encrypted) passwords &mdash; users may want to exchange macro files and not realize they are giving away their passwords. So this file stays in the user's Arachnophilia directory unless he really knows his way around Arachnophilia and actually wants to pass it on.
+          </i>
+      </blockquote></li>
+      <li><b>ArachConf/TipsOfTheDay.txt</b>
+        <blockquote>
+          <i>
+            The database used by the Tips of the Day dialog. It is very easy to add data to this file. Each tip is separated from others by "*" characters, this allows multi-line tips.
+          </i>
+      </blockquote></li>
+      <li><b>CustomClasses/TestClass.java and TestClass.class</b>
+        <blockquote>
+          <i>
+            These files are provided to demonstrate the external class invocation feature explained in&nbsp;
+            <a href="JavaCustomClassInterface.html">The Java Custom Clas Interface</a>
+            page.
+          </i>
+      </blockquote></li>
+      <li><b>Documentation</b>
+        <blockquote>
+          <i>
+            This directory contains Arachnophilia's documentation in HTML form. It is always a good idea to visit <a href="http://www.arachnoid.com/arachnophilia/Documentation">www.arachnoid.com/arachnophilia/Documentation</a> from time to time to see if the documentation has been updated.
+          </i>
+      </blockquote></li>
+      <li><b>Macros/Macros.xml</b>
+        <blockquote>
+          <i>
+            This is the main Arachnophilia macro file. It contains the entire Arachnophilia macro tree &mdash; all the toolbars, menus and the like. It is formatted in XML, so it should be possible to:
+          <br/><br/></i>
+          <ol>
+            <li>Export and import to/from other applications that read XML,</li>
+            <li>Easily exchange macro sets and subsets with other Arachnophilia users, and</li>
+            <li>Understand it to some extent by reading it directly.</li>
+          </ol>
+          <br/><br/>
+          <i>
+            Macro importing and exporting is made easy using the macro tree browser's file read and write features.
+          </i>
+      </blockquote></li>
+      <li><b>SpellCheckData/American.zip</b>
+        <blockquote>
+          <i>
+            This is the default spelling dictionary. It doesn't have to be a zip file if that is not convenient. Any file in this directory with a suffix of ".txt" will be read by the spell checker, as explained in the tips of the day and on the
+            <a href="SpellChecker.html">Spell Checker</a>
+            page
+          </i>
+      </blockquote></li>
+      <li><b>SpellCheckData/CustomDictionary.txt</b>
+        <blockquote>
+          <i>
+            This file appears after the user has chosen to add words to the spell checker. It can be edited directly.
+          </i>
+      </blockquote></li>
+      <li><b>SpellCheckData/SpellSkipTags.txt</b>
+        <blockquote>
+          <i>
+            This file identifies tag pairs inside which the spell checker should not search. An example would be a &lt;style&gt;&lt;/style&gt; tag pair containing only style definitions, or a &lt;script&gt;&lt;/script&gt; tag pair containing only JavaScript or another language, information that would only confuse the spell checker.
+          </i>
+      </blockquote></li>
+      <li><b>Templates/template.*, one file for each supported file type.</b>
+        <blockquote>
+          <i>
+            This is the set of file templates that Arachnophilia uses to create new documents. The templates can contain Arachnophilia macros, which will be processed before the document is presented to the user. These are easy to customize for particular tasks.
+          </i>
+      </blockquote></li>
+    </ul>&nbsp;
+    </div> <!-- content -->
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch9"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch0"></span>
+      </span>
+    </div> <!-- wrapper -->
+    <p></p>
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html" selected="selected">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="CommonProblems.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="GettingStarted.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+  </body>
+</html>

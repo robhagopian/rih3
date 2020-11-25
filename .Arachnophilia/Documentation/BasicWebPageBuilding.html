@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Created on Mar 3, 2002 5:43:25 PM -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      Basic Web Page Building
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rev="made" href="http://www.arachnoid.com"/>
+    <meta http-equiv="Content-language" content="en"/>
+    <meta name="author" content="Paul Lutus"/>
+    <meta name="owner" content="Paul Lutus"/>
+    <meta name="description" content="A beginner's tutorial."/>
+    <meta name="group" content="DOCUMENTATION"/>
+    <meta name="keywords" content="Arachnophilia,HTML,edit,editor,webpage,programming,macro,Lutus"/>
+    <meta name="rating" content="General"/>
+    <meta name="ROBOTS" content="ALL"/>
+    <meta name="GENERATOR" content="Arachnophilia 5.0"/>
+    <meta name="FORMATTER" content="Arachnophilia 5.0"/>
+    <link rel="stylesheet" type="text/css" href="styles/default.css"/>
+    <meta name="GENERATOR" content="Arachnophilia 5.0"/>
+    <meta name="FORMATTER" content="Arachnophilia 5.0"/>
+    <link rel="stylesheet" type="text/css" href="styles/default_article.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/roundcorner_16_parch.css"/>
+
+
+    <style type="text/css">
+.question {color:#cc0033;background-color:#ccffcc;font-style:bold;font-size:32pt;vertical-align:middle;}
+.answer {color:#0000ff;background-color:#ffccff;font-style:bold;font-size:32pt;vertical-align:middle;}
+.lc {font-weight:normal;font-style:normal;color:#808080;background-color:#ffffd8}
+table { border-collapse: collapse; }
+    </style>
+  </head>
+  <body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000">
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <script type="text/javascript" language="JavaScript">
+            function toNewPage(t) { location.href = t.options[t.selectedIndex].value; }
+          </script>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html" selected="selected">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="RevHistory.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="BrowserIssues.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+    <div align="center">
+      
+          <div class="article_title_inverse">Basic Web Page Building
+          </div>
+<div class="article_linklist_inverse">Arachnophilia is &copy; Copyright 2009, P. Lutus.
+        <br/>
+        <p>Arachnophilia is
+        <a href="http://www.arachnoid.com/careware">CareWare</a></p>
+
+
+      </div>
+      <!-- LINK_MENU_START --><!-- LINK_MENU_END -->
+          </div>
+        
+    <p></p>
+<div class="article_wrapper">
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch0"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch9"></span>
+      </span>
+      <div class="roundcorner_16_parch_content">
+
+    <b>
+      This page is meant to instruct the complete HTML beginner in these topics:
+    </b>
+    <ul>
+      <li><a href="#whatis">What is a Web page?</a></li>
+      <li><a href="#howdoes">How does a Web page work?</a></li>
+      <li><a href="#howcan">How can I create a simple Web page?</a></li>
+      <li><a href="#howdo">How do I get my page from my computer to the Internet?</a></li>
+    </ul>
+    In my many years of experience in instructing beginners in Web page design, I have realized these are the primary issues. I promise to make this as simple and painless as humanly possible.
+    <p></p>
+
+    <a name="whatis"></a>
+    <span class="question">?</span>
+    &nbsp;
+    <b>
+      What is a Web page?
+    </b>
+    <br/>
+    <blockquote>
+      <table border="0">
+        <tr>
+          <td valign="top">
+            <span class="answer">!</span>
+            &nbsp;
+          </td>
+          <td>
+            A Web page is a plain-text, human-readable computer file that contains words and some special instructions about how the words should appear.
+            <i>
+              Those instructions are called "tags."
+            </i>
+            A Web page can also contain references to other Web pages, graphic images, sounds and so forth.
+            <i>
+              Those references are called "links."
+            </i>
+          </td>
+        </tr>
+      </table>
+    </blockquote>
+    <span class="question">?</span>
+    &nbsp;
+    <b>
+      <a name="howdoes"></a>
+      How does a Web page work?
+    </b>
+    <br/>
+    <blockquote>
+      <table border="0">
+        <tr>
+          <td valign="top">
+            <span class="answer">!</span>
+            &nbsp;
+          </td>
+          <td>
+            A Web page carries text-formatting and other information in its tags. The text and tags in the Web page are interpreted by a program called a "Web browser."
+            <p></p>
+
+            <b>
+              Here is what a Web page looks like in a Web editor like Arachnophilia as plain text, and as it appears on a browser:
+            </b>
+            <p></p>
+
+            <table border="0" width="95%">
+              <tr>
+                <td>
+                  <table border="1" cellpadding="10" cellspacing="0" width="100%">
+                    <tr>
+                      <td style="background-color:#ccccff" align="center">
+                        <b>
+                          Web Editor (plain text)
+                        </b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <pre><code>
+<font color = "#0000ff">&lt;</font><font color = "#000000">html</font><font color = "#0000ff">&gt;
+</font>   <font color = "#0000ff">&lt;</font><font color = "#000000">head</font><font color = "#0000ff">&gt;
+</font>      <font color = "#0000ff">&lt;</font><font color = "#000000">title</font><font color = "#0000ff">&gt;
+</font>         This is my page!
+      <font color = "#0000ff">&lt;</font><font color = "#000000">/title</font><font color = "#0000ff">&gt;
+</font>   <font color = "#0000ff">&lt;</font><font color = "#000000">/head</font><font color = "#0000ff">&gt;
+</font>   <font color = "#0000ff">&lt;</font><font color = "#000000">body</font><font color = "#0000ff">&gt;
+</font>      <font color = "#0000ff">&lt;</font><font color = "#000000">h2</font><font color = "#0000ff">&gt;
+</font>         Welcome to my web page!
+      <font color = "#0000ff">&lt;</font><font color = "#000000">/h2</font><font color = "#0000ff">&gt;
+</font>      By using HTML tags I can make my text 
+      <font color = "#0000ff">&lt;</font><font color = "#000000">i</font><font color = "#0000ff">&gt;
+</font>         italic,
+      <font color = "#0000ff">&lt;</font><font color = "#000000">/i</font><font color = "#0000ff">&gt;
+</font>      or 
+      <font color = "#0000ff">&lt;</font><font color = "#000000">b</font><font color = "#0000ff">&gt;
+</font>         bold,
+      <font color = "#0000ff">&lt;</font><font color = "#000000">/b</font><font color = "#0000ff">&gt;
+</font>      or 
+      <font color = "#0000ff">&lt;</font><font color = "#000000">u</font><font color = "#0000ff">&gt;
+</font>         underlined.
+      <font color = "#0000ff">&lt;</font><font color = "#000000">/u</font><font color = "#0000ff">&gt;
+</font>   <font color = "#0000ff">&lt;</font><font color = "#000000">/body</font><font color = "#0000ff">&gt;
+</font><font color = "#0000ff">&lt;</font><font color = "#000000">/html</font><font color = "#0000ff">&gt;
+</font>
+                        </code></pre>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top">
+                  &nbsp;
+                  <p></p>
+
+                  &nbsp;&nbsp;
+                  <img src="images/bigright.png" width="20" height="20" alt=""/>
+                  &nbsp;&nbsp;
+                </td>
+                <td valign="top">
+                  <table border="1" cellpadding="10" cellspacing="0" width="100%">
+                    <tr>
+                      <td style="background-color:#ccffcc" align="center">
+                        <b>
+                          Browser: This is my page!
+                        </b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h2>
+                          Welcome to my Web page!
+                        </h2>
+                        By using HTML tags I can make my text
+                        <i>
+                          italic,
+                        </i>
+                        or
+                        <b>
+                          bold,
+                        </b>
+                        or
+                        <u>
+                          underlined.
+                        </u>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan = "2">
+            Notice the &lt;tags&gt; above:
+            <p></p>
+
+            <ul>
+              <li>The tag "&lt;b&gt;" means "Start printing <b>bold</b> text."</li>
+              <li>The tag "&lt;/b&gt;" means "Okay, you can stop doing that <b>bold</b> thing I said before."</li>
+            </ul>
+            <p></p>
+
+            <b>
+              A starting &lt;tag&gt; and an ending &lt;/tag&gt; control what is between them.
+            </b>
+            As in this example, almost all tags come in pairs (but, unfortunately, not all of them).
+            <p></p>
+
+            <b>
+              A very important kind of tag is called a "link."
+            </b>
+            Links are why HTML pages are not just another kind of word processing document, with styled text. Among other things, links allow the viewer of the page to move:
+            <ul>
+              <li>To another part of the current page (as the links at the top of this page do),</li>
+              <li>To another page on your site,</li>
+              <li>To another location on the Internet.</li>
+            </ul>
+            <p></p>
+
+            <b>
+              Here is what a link looks like in plain text, and when viewed in a browser:
+            </b>
+            <p></p>
+
+            <table border="0" width="95%">
+              <tr>
+                <td>
+                  <table border="1" cellpadding="10" cellspacing="0" width="100%">
+                    <tr>
+                      <td style="background-color:#ccccff" align="center">
+                        <b>
+                          Web Editor (plain text)
+                        </b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <pre><code>
+<font color = "#0000ff">&lt;</font><font color = "#000000">a</font><font color = "#00b200"> href=</font><font color = "#b200b2">"http://www.arachnoid.com/arachnophilia"</font><font color = "#0000ff">&gt;</font>
+	Go to the Arachnophilia Home Page
+<font color = "#0000ff">&lt;</font><font color = "#000000">/a</font><font color = "#0000ff">&gt;</font> 
+                        </code></pre>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top">
+                  &nbsp;
+                  <p></p>
+
+                  &nbsp;&nbsp;
+                  <img src="images/bigright.png" width="20" height="20" alt=""/>
+                  &nbsp;&nbsp;
+                </td>
+                <td valign="top">
+                  <table border="1" cellpadding="10" cellspacing="0" width="100%">
+                    <tr>
+                      <td style="background-color:#ccffcc" align="center">
+                        <b>
+                          Browser
+                        </b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="http://www.arachnoid.com/arachnophilia">Go to the Arachnophilia Home Page</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+              </tr>
+            </table>
+            <p></p>
+
+            The browser display at the right contains the display version of the link, and if you click it (and if you are logged onto the Internet), you will go to the Arachnophilia Home Page.
+            <p></p>
+
+            <b>
+              Notice that there are two parts to a link:
+            </b>
+            <ul>
+              <li>The actual Internet address: <font color="#b200b2">"http://www.arachnoid.com/arachnophilia"</font>.</li>
+              <li>A human-readable label that stands for the address: "<font color="#0000ff">Go to the Arachnophilia Home Page</font>".</li>
+            </ul>
+            <b>
+              To work as intended and meet people's expectations, your links should always have both parts.
+            </b>
+            <p></p>
+
+          </td>
+        </tr>
+      </table>
+    </blockquote>
+    <a name="howcan"></a>
+    <span class="question">?</span>
+    &nbsp;
+    <b>
+      How can I create a simple Web page?
+    </b>
+    <br/>
+    <blockquote>
+      <table border="0">
+        <tr>
+          <td valign="top">
+            <span class="answer">!</span>
+            &nbsp;
+          </td>
+          <td>
+            <b>
+              It's easy, really! Here are the steps:
+            </b>
+            <p></p>
+
+            <ul>
+              <li>Create a new HTML document,</li>
+              <li>Type some text into the page,</li>
+              <li>Save your new page,</li>
+              <li>Preview the page.</li>
+            </ul>
+            <p></p>
+
+            <b>
+              * First, create a new HTML document.
+            </b>
+            Run Arachnophilia and choose
+            <b>
+              File ... New ... HTML File.
+            </b>
+            Like this:
+            <p></p>
+
+            <div align="center"><img src="images/FileNewHTMLImage.png" width="406" height="145" alt=""/></div>
+            <p></p>
+
+            You will be asked to provide a title for your page. The title is very important &mdash; it appears on the browser's title bar and is rather conspicuous to your visitors. You can always change the title later.
+            <p></p>
+
+            <b>
+              Now you will see something more or less like this:
+            </b>
+            <p></p>
+
+            <table border="1" cellpadding="10" cellspacing="0">
+              <tr>
+                <td style="background-color:#ccccff" align="center">
+                  <b>
+                    Web Editor
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="width:100%;overflow:auto;">
+                    <pre><code>
+<span class="lc">&nbsp;&nbsp;1&nbsp;</span><font color = "#0000ff">&lt;</font><font color = "#000000">!DOCTYPE</font><font color = "#00b200"> html PUBLIC </font><font color = "#b200b2">"-//W3C//DTD XHTML 1.0 Transitional//EN"</font><font color = "#00b200"> </font><font color = "#b200b2">"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;2&nbsp;</span>
+<span class="lc">&nbsp;&nbsp;3&nbsp;</span></font><i><font color = "#000000">&lt;!-- Created on Mar 3, 2002 11:56:06 PM --&gt;
+<span class="lc">&nbsp;&nbsp;4&nbsp;</span>
+<span class="lc">&nbsp;&nbsp;5&nbsp;</span></font></i><font color = "#0000ff">&lt;</font><font color = "#000000">html</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;6&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">head</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;7&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">title</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;8&nbsp;</span></font>         My page!
+<span class="lc">&nbsp;&nbsp;9&nbsp;</span>      <font color = "#0000ff">&lt;</font><font color = "#000000">/title</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;10&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">meta</font><font color = "#00b200"> name=</font><font color = "#b200b2">"GENERATOR"</font><font color = "#00b200"> content=</font><font color = "#b200b2">"Arachnophilia 5.0"</font><font color = "#0000ff">/&gt;
+<span class="lc">&nbsp;11&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">meta</font><font color = "#00b200"> name=</font><font color = "#b200b2">"FORMATTER"</font><font color = "#00b200"> content=</font><font color = "#b200b2">"Arachnophilia 5.0"</font><font color = "#0000ff">/&gt;
+<span class="lc">&nbsp;12&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">/head</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;13&nbsp;</span>
+<span class="lc">&nbsp;14&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">body</font><font color = "#00b200"> bgcolor=</font><font color = "#b200b2">"#ffffff"</font><font color = "#00b200"> text=</font><font color = "#b200b2">"#000000"</font><font color = "#00b200"> link=</font><font color = "#b200b2">"#0000ff"</font><font color = "#00b200"> vlink=</font><font color = "#b200b2">"#800080"</font><font color = "#00b200"> alink=</font><font color = "#b200b2">"#ff0000"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;15&nbsp;</span>
+<span class="lc">&nbsp;16&nbsp;</span></font>      <span style="color:#ff0000;">|</span>
+<span class="lc">&nbsp;17&nbsp;</span>
+<span class="lc">&nbsp;18&nbsp;</span>   <font color = "#0000ff">&lt;</font><font color = "#000000">/body</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;19&nbsp;</span></font><font color = "#0000ff">&lt;</font><font color = "#000000">/html</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;20&nbsp;</span>
+</font><font color = "#0000ff"></font>
+                    </code></pre>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <p></p>
+
+            The red vertical line ("
+            <span style="color:#ff0000;">|</span>
+            ") is called the "cursor" or "caret." The two terms are used interchangeably. If you have already learned how to use a word processor, you will know what this term means. But if you haven't, the cursor is the point of action in a word processor program &mdash; it is where things happen. When you want to put some words in a particular place, first you put the cursor there, then you type.
+            <p></p>
+
+            <b>
+              * Now type something:
+            </b>
+            <p></p>
+
+            <table border="1" cellpadding="10" cellspacing="0">
+              <tr>
+                <td style="background-color:#ccccff" align="center">
+                  <b>
+                    Web Editor
+                  </b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div style="width:100%;overflow:auto;">
+                    <pre><code>
+<span class="lc">&nbsp;&nbsp;1&nbsp;</span><font color = "#0000ff">&lt;</font><font color = "#000000">!DOCTYPE</font><font color = "#00b200"> html PUBLIC </font><font color = "#b200b2">"-//W3C//DTD XHTML 1.0 Transitional//EN"</font><font color = "#00b200"> </font><font color = "#b200b2">"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;2&nbsp;</span>
+<span class="lc">&nbsp;&nbsp;3&nbsp;</span></font><i><font color = "#000000">&lt;!-- Created on Mar 3, 2002 11:56:06 PM --&gt;
+<span class="lc">&nbsp;&nbsp;4&nbsp;</span>
+<span class="lc">&nbsp;&nbsp;5&nbsp;</span></font></i><font color = "#0000ff">&lt;</font><font color = "#000000">html</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;6&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">head</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;7&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">title</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;8&nbsp;</span></font>         My page!
+<span class="lc">&nbsp;&nbsp;9&nbsp;</span>      <font color = "#0000ff">&lt;</font><font color = "#000000">/title</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;10&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">meta</font><font color = "#00b200"> name=</font><font color = "#b200b2">"GENERATOR"</font><font color = "#00b200"> content=</font><font color = "#b200b2">"Arachnophilia 5.0"</font><font color = "#0000ff">/&gt;
+<span class="lc">&nbsp;11&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">meta</font><font color = "#00b200"> name=</font><font color = "#b200b2">"FORMATTER"</font><font color = "#00b200"> content=</font><font color = "#b200b2">"Arachnophilia 5.0"</font><font color = "#0000ff">/&gt;
+<span class="lc">&nbsp;12&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">/head</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;13&nbsp;</span>
+<span class="lc">&nbsp;14&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">body</font><font color = "#00b200"> bgcolor=</font><font color = "#b200b2">"#ffffff"</font><font color = "#00b200"> text=</font><font color = "#b200b2">"#000000"</font><font color = "#00b200"> link=</font><font color = "#b200b2">"#0000ff"</font><font color = "#00b200"> vlink=</font><font color = "#b200b2">"#800080"</font><font color = "#00b200"> alink=</font><font color = "#b200b2">"#ff0000"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;15&nbsp;</span>
+<span class="lc">&nbsp;16&nbsp;</span></font>      This is my personal Web page!<span style="color:#ff0000;">|</span>
+<span class="lc">&nbsp;17&nbsp;</span>
+<span class="lc">&nbsp;18&nbsp;</span>   <font color = "#0000ff">&lt;</font><font color = "#000000">/body</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;19&nbsp;</span></font><font color = "#0000ff">&lt;</font><font color = "#000000">/html</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;20&nbsp;</span>
+</font><font color = "#0000ff"></font>
+                    </code></pre>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <p></p>
+
+            Okay, it's not Shakespeare, but this is just a rehearsal for reality, not reality itself. :)
+            <p></p>
+
+            <b>
+              * Next step &mdash; save your page.
+            </b>
+            <p></p>
+
+            <blockquote>
+              A digression: Nothing is more frustrating than to lose computer documents on which hours may have been spent. Always save your documents, and always know where your documents have been saved. Don't just press "Save" once in a while without thinking about where the document is being stored. Be proactive &mdash; choose (create) a directory for your Web site, and put all the components there.
+              <p></p>
+
+              I emphasize this because I have received any number of e-mails over the years from otherwise intelligent people who leave the room, pet the cat, return, and then simply cannot figure out what happened to their magnum opus.
+            </blockquote>
+            <b>
+              Choose File ... Save As.
+            </b>
+            A file explorer dialog will appear. Choose an appropriate directory and file name.
+            <p></p>
+
+            <b>
+              * Now let's look at your page on a Web browser.
+            </b>
+            <p></p>
+
+            Most recent personal computers are provided with at least one browser. In this step (and assuming you haven't already done this), you will help Arachnophilia find a browser.
+            <p></p>
+
+            To start the process, either press this toolbar button:
+            <img src="images/Palette.png" width="20" height="20" alt="" align="middle"/>
+            or press Ctrl-P. After an explanatory message, you will see this dialog:
+            <p></p>
+
+            <div align="center"><img src="images/browserConfigurationDialogImage.png" width="498" height="461" alt=""/></div>
+            <p></p>
+
+            First, if the default search path doesn't look right for your system, choose an appropriate one, either by typing it in or by using the "Browse" button. On Windows systems, most browsers are located in a directory named "/Program Files". On Linux systems of recent vintage, it will be "/usr/bin". Macintosh users will probably see a default of "/Applications". One of these alternatives will most likely appear automatically based on your operating system. Having chosen an appropriate search path, press "Search." The browser search engine will search for any of the browser names listed at the left (and you can add to the list).
+            <p></p>
+
+            With any luck, one or more browser paths will appear in the list at the right. To transfer the results to your personal browser list, press "Transfer", then "OK." Then, to view your page, press the preview button (
+            <img src="images/Palette.png" width="20" height="20" alt="" align="middle"/>
+            ) or Ctrl-P again.
+            <p></p>
+            
+            <p style="">If all these features fail to locate your browser, you can simply type in a browser name and a path to its executable in the lower part of the browser dialog, then press "OK".</p>
+
+
+
+          </td>
+        </tr>
+      </table>
+    </blockquote>
+    <a name="howdo"></a>
+    <span class="question">?</span>
+    &nbsp;
+    <b>
+      How do I get my page from my computer to the Internet?
+    </b>
+    <br/>
+    <blockquote>
+      <table border="0">
+        <tr>
+          <td valign="top">
+            <span class="answer">!</span>
+            &nbsp;
+          </td>
+          <td>
+            <b>
+              Unfortunately for beginning Web page builders, this is the most complex part of getting started.
+            </b>
+            <p></p>
+
+            If you have a friend with more Web experience, you might want to ask for help at this point.
+            <p></p>
+
+            The normal way to get your page from your computer to the Internet is to use a file transfer protocol named (surprise!) File transfer Protocol (FTP). Arachnophilia has a built-in FTP service to help you do this.
+            <p></p>
+
+            Before using the FTP service, you need to have some information, information that your Internet service provider should have given you:
+            <p></p>
+
+            <ul>
+              <li>The name of the FTP server.</li>
+              <li>Your logon user name.</li>
+              <li>Your logon password.</li>
+              <li>Your directory path.</li>
+            </ul>
+            <p></p>
+
+            As a first step, locate this information and have it available.
+            <p></p>
+
+            Next, make sure your new page is still displayed in Arachnophilia's Web editor window. Then choose menu item
+            <b>
+              HTML ... Run FTP Service
+            </b>
+            or press Alt-F. You will see something like this:
+            <p></p>
+
+            <div align="center"><img src="images/FTPServiceDialogImage.png" width="500" height="427" alt=""/></div>
+            <p></p>
+
+            Here are the steps to take:
+            <p></p>
+
+            <ul>
+              <li>For "Site Name," type in something you will remember easily. This is not a special name, it is just a convenient label.</li>
+              <li>For "Server name", type the FTP server name provided by your Internet service.</li>
+              <li>For "User Name", type the login name provided by your service.</li>
+              <li>For "Password", type in the password you were given. You have the option to save the password so you don't have to type it in each time you use the FTP service. But this entails a small risk &mdash; a skilled computer person, a hacker, could, in principle, acquire and decrypt your password if he gained access to your computer. You decide.</li>
+              <li>For "Remote directory", type in this information if it has been provided by your service.<p></p>
+
+                <blockquote>
+                  <i>NOTE: Most remote FTP directory paths must begin with a prefix, like "/", or "~/". If you omit this prefix, the FTP transaction may not work as expected. If you are unsure about this issue, be sure to include a prefix, like this: "/myPages". Some services require "~/", an example would be "~/html". If you don't know which to use, or are unsure which directory path to enter, please ask your ISP.</i>
+              </blockquote></li>
+              <li>For "Local directory", and if you have your Web page still loaded into Arachnophilia, simply press the button to the right &mdash; "Use Current." This is an easy way to tell the FTP service where your page is located in the local computer.</li>
+            </ul>
+            <p></p>
+
+            Having entered this information, you can test the connection:
+            <p></p>
+
+            <ul>
+              <li>Make sure you are logged onto the Internet.</li>
+              <li>Press the "Rehearse" button.</li>
+              <li>The FTP service will contact your Internet service, scan the provided local directory, and report to you what it would upload if "Execute" had been pressed.</li>
+            </ul>
+            With any luck, the rehearsal will go off without a hitch. If any problems arise, simply move the "Level" slider to the right (to show more information) and press "Rehearse" again to see what the problem is. You may have typed in the site name, user name or password incorrectly &mdash; remember, the case of these entries is significant.
+            <p></p>
+
+            Once you have a successful rehearsal, press "Execute." In most cases, "Execute" will upload your Web page. Use the troubleshooting procedure described above if problems arise.
+            <p></p>
+
+            Now you can use your browser to view the online version of your page.
+            <p></p>
+
+            <b>Some Additional FTP Service Details:</b>
+            <ul>
+              <li>The FTP Service uses a local log file to keep track of which files have been uploaded.<p></p></li>
+
+              <li>When you change a page and save it, its modified date changes. If you run an FTP upload then, the program will compare the file's date with its log file entry. If a file's date is newer than its log entry, it will be uploaded and its log file entry will be changed.<p></p></li>
+
+              <li>To prevent all your files from being uploaded all over again, just press "SyncLog." This synchronizes the local log file with the actual file modified dates, but without uploading anything.<p></p></li>
+
+              <li>Conversely, to upload all the files regardless of their dates, choose "upload all," then "Execute." This forces a full upload.<p></p></li>
+
+              <li>If you know you want to upload only a few files or just one, but you are not sure about the state of the log file, use this procedure:<p></p>
+
+                <ul>
+                  <li>Press "SyncLog". This updates the log file without uploading anyting.</li>
+                  <li>Load, edit, and save just those file(s) you want to change (this changes their modified dates).</li>
+                  <li>Press "Execute." Only the changed files will be uploaded.</li>
+                </ul><p></p>
+
+              <b>For more advanced FTP instructions, <a href="AdvancedFeatures.html#ftp">click here</a>.</b><p></p></li>
+
+            </ul>
+            <b>
+              General Web site suggestions:
+            </b>
+            <p></p>
+
+            <ul>
+              <li>About your page:<p></p>
+
+                <ul>
+                  <li>Always keep a local copy of your page. Never assume that, because there is a copy on your provider's machine, you can delete your local copy. Internet service providers regularly lose machines and user data.</li>
+                  <li>If you have problems uploading your page, just go through the steps again.
+                    <ul>
+                      <li>Did you type all the information exactly as it appears as provided by your service?</li>
+                      <li>Were you logged onto the Internet?</li>
+                      <li>Was your page loaded into Arachnophilia to allow the FTP Service's "Use Current" button to locate it?</li>
+                  </ul></li>
+                  <li>If you still cannot upload your page, ask a friend or contact your service provider for help.</li>
+                </ul>
+              <p></p></li>
+
+              <li>About general Web page design:<p></p>
+
+                <ul>
+                  <li>Any number of magazines and books cover this topic &mdash; make a visit to a bookstore or library.</li>
+                  <li>There are online resources of all kinds to help you learn how to write Web pages.</li>
+                  <li>If you see a page that does something you want your page to do, simply look at the plain-text version of the page:
+                    <ul>
+                      <li>In Microsoft Internet Explorer, choose menu item "View ... Source."</li>
+                      <li>In Netscape, choose menu item "View ... Page Source."</li>
+                      <li>Look at the page's tags. You can learn a lot this way.</li>
+                  </ul></li>
+                  <li>If you don't know abut <b>search engines,</b> you would do well to find out about this powerful Internet tool. Go to <a href="http://www.google.com">www.google.com</a> for an example of a search engine. Type in "HTML tutor" to learn how useful a search engine can be.</li>
+              </ul></li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </blockquote>&nbsp;
+    </div> <!-- content -->
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch9"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch0"></span>
+      </span>
+    </div> <!-- wrapper -->
+    <p></p>
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html" selected="selected">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="RevHistory.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="BrowserIssues.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+  </body>
+</html>

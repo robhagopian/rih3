@@ -1,0 +1,1381 @@
+<?xml version="1.0" standalone="yes" encoding="iso-8859-1"?>
+<node>
+	<title>DefaultToolBar</title>
+	<tooltip>The main toolbar</tooltip>
+	<toolbar>true</toolbar>
+	<leaf>
+		<title>NewAuto</title>
+		<tooltip>Create another of the most recently created file type</tooltip>
+		<icon>Icons/New.gif</icon>
+		<content>[NewDoc]</content>
+	</leaf>
+	<leaf>
+		<title>OpenAuto ...</title>
+		<tooltip>Open the most recently opened file type</tooltip>
+		<icon>Icons/Open.gif</icon>
+		<content>[OpenDoc]</content>
+	</leaf>
+	<leaf>
+		<title>* Separator *</title>
+		<separator>true</separator>
+	</leaf>
+	<leaf>
+		<title>Save</title>
+		<tooltip>Save displayed file</tooltip>
+		<icon>Icons/Save.gif</icon>
+		<content>[Save]</content>
+	</leaf>
+	<leaf>
+		<title>SaveAs</title>
+		<tooltip>Save file as ...</tooltip>
+		<icon>Icons/SaveAs.gif</icon>
+		<content>[SaveAs]</content>
+	</leaf>
+	<leaf>
+		<title>SaveChanged</title>
+		<tooltip>Save all changed files</tooltip>
+		<icon>Icons/SaveAll.gif</icon>
+		<content>[SaveAllChangedDocs]</content>
+	</leaf>
+	<leaf>
+		<title>* Separator *</title>
+		<separator>true</separator>
+	</leaf>
+	<leaf>
+		<title>Cut</title>
+		<tooltip>Cut selection to clipboard</tooltip>
+		<icon>Icons/Cut.gif</icon>
+		<content>[EditCut]</content>
+	</leaf>
+	<leaf>
+		<title>Copy</title>
+		<tooltip>Copy text to clipboard</tooltip>
+		<icon>Icons/Copy.gif</icon>
+		<content>[EditCopy]</content>
+	</leaf>
+	<leaf>
+		<title>Paste</title>
+		<tooltip>Paste from clipboard</tooltip>
+		<icon>Icons/Paste.gif</icon>
+		<content>[EditPaste]</content>
+	</leaf>
+	<leaf>
+		<title>* Separator *</title>
+		<separator>true</separator>
+	</leaf>
+	<leaf>
+		<title>Undo</title>
+		<tooltip>Undo last action</tooltip>
+		<icon>Icons/Undo.gif</icon>
+		<content>[EditUndo]</content>
+	</leaf>
+	<leaf>
+		<title>Redo</title>
+		<tooltip>Redo recent undone editing action</tooltip>
+		<icon>Icons/Redo.gif</icon>
+		<content>[EditRedo]</content>
+	</leaf>
+	<leaf>
+		<title>* Separator *</title>
+		<separator>true</separator>
+	</leaf>
+	<leaf>
+		<title>Unordered List</title>
+		<tooltip>Make an unordered list from selected lines</tooltip>
+		<icon>Icons/DocumentDiagram.gif</icon>
+		<content>[MakeUnorderedList]</content>
+	</leaf>
+	<leaf>
+		<title>Bold</title>
+		<tooltip>Bold</tooltip>
+		<icon>Icons/Bold.gif</icon>
+		<content>&lt;b&gt;|&lt;/b&gt;</content>
+	</leaf>
+	<leaf>
+		<title>Italic</title>
+		<tooltip>Italic</tooltip>
+		<icon>Icons/Italic.gif</icon>
+		<content>&lt;i&gt;|&lt;/i&gt;</content>
+	</leaf>
+	<leaf>
+		<title>Underline</title>
+		<tooltip>Underline</tooltip>
+		<icon>Icons/Underline.gif</icon>
+		<content>&lt;u&gt;|&lt;/u&gt;</content>
+	</leaf>
+	<leaf>
+		<title>Centered</title>
+		<tooltip>Centered</tooltip>
+		<keyboardhook>84,520</keyboardhook>
+		<icon>Icons/AlignCenterArrow.gif</icon>
+		<content>&lt;div align=\"center\"&gt;|&lt;/div&gt;</content>
+	</leaf>
+	<leaf>
+		<title>Right</title>
+		<tooltip>Right-aligned</tooltip>
+		<keyboardhook>82,520</keyboardhook>
+		<icon>Icons/AlignRightArrow.gif</icon>
+		<content>&lt;div align=\"right\"&gt;|&lt;/div&gt;</content>
+	</leaf>
+	<leaf>
+		<title>* Separator *</title>
+		<separator>true</separator>
+	</leaf>
+	<leaf>
+		<title>ShowToolBar</title>
+		<tooltip>Show/Hide secondary toolbar panel</tooltip>
+		<keyboardhook>83,520</keyboardhook>
+		<icon>Icons/FlowGraph.gif</icon>
+		<content>[ShowToolBarPanel]</content>
+	</leaf>
+	<leaf>
+		<title>LaunchBrowser</title>
+		<tooltip>Launch a Web browser (Ctrl-P)</tooltip>
+		<keyboardhook>80,130</keyboardhook>
+		<icon>Icons/Palette.gif</icon>
+		<content>[LaunchBrowser]</content>
+	</leaf>
+	<leaf>
+		<title>* Separator *</title>
+		<separator>true</separator>
+	</leaf>
+	<leaf>
+		<title>Help</title>
+		<tooltip>Launch help in the default browser</tooltip>
+		<icon>Icons/Help.gif</icon>
+		<content>[LaunchHelp]</content>
+	</leaf>
+	<leaf>
+		<title>About</title>
+		<tooltip>About Arachnophilia</tooltip>
+		<icon>Icons/Options.gif</icon>
+		<content>[AboutDialog]</content>
+	</leaf>
+</node>
+<node>
+	<title>Standard Menus</title>
+	<tooltip>The group of default application menus</tooltip>
+	<node>
+		<title>File</title>
+		<menu>true</menu>
+		<leaf>
+			<title>NewAuto</title>
+			<tooltip>Create another of the most recently created file type</tooltip>
+			<keyboardhook>78,130</keyboardhook>
+			<icon>Icons/New.gif</icon>
+			<content>[NewDoc]</content>
+		</leaf>
+		<leaf>
+			<title>OpenAuto ...</title>
+			<tooltip>Open the most recently opened file type</tooltip>
+			<keyboardhook>79,130</keyboardhook>
+			<icon>Icons/Open.gif</icon>
+			<content>[OpenDoc]</content>
+		</leaf>
+		<leaf>
+			<title>NewOpenMenus</title>
+			<tooltip>This creates the new and open menu file lists</tooltip>
+			<content>[BuildNewOpenMenus]</content>
+		</leaf>
+		<node>
+			<title>Character Encoding</title>
+			<tooltip>Choose an appropriate character encoding for your files</tooltip>
+			<icon>Icons/DocumentDraw.gif</icon>
+			<leaf>
+				<title>Default (ISO-8859-1)</title>
+				<content>[FileEncoding:ISO-8859-1]</content>
+			</leaf>
+			<leaf>
+				<title>UTF-8</title>
+				<content>[FileEncoding:UTF-8]</content>
+			</leaf>
+			<leaf>
+				<title>UTF-7</title>
+				<content>[FileEncoding:UTF-7]</content>
+			</leaf>
+			<leaf>
+				<title>UTF-15</title>
+				<content>[FileEncoding:UTF-15]</content>
+			</leaf>
+			<leaf>
+				<title>UTF-16</title>
+				<content>[FileEncoding:UTF-16]</content>
+			</leaf>
+			<leaf>
+				<title>UTF-16BE</title>
+				<content>[FileEncoding:UTF-16BE]</content>
+			</leaf>
+			<leaf>
+				<title>UTF-16LE</title>
+				<content>[FileEncoding:UTF-16LE]</content>
+			</leaf>
+			<leaf>
+				<title>ISO-8859-14</title>
+				<content>[FileEncoding:ISO-8859-14]</content>
+			</leaf>
+			<leaf>
+				<title>ISO-8859-15</title>
+				<content>[FileEncoding:ISO-8859-15]</content>
+			</leaf>
+			<leaf>
+				<title>Windows 1252</title>
+				<content>[FileEncoding:Windows-1252]</content>
+			</leaf>
+			<leaf>
+				<title>ASCII</title>
+				<content>[FileEncoding:ASCII]</content>
+			</leaf>
+			<leaf>
+				<title>User Entry</title>
+				<content>[FileEncoding:[UserInput:Enter Character Encoding]]</content>
+			</leaf>
+		</node>
+		<leaf>
+			<title>Save</title>
+			<tooltip>Save Current Document</tooltip>
+			<keyboardhook>83,130</keyboardhook>
+			<icon>Icons/Save.gif</icon>
+			<content>[Save]</content>
+		</leaf>
+		<leaf>
+			<title>Save As</title>
+			<tooltip>Save current document as ...</tooltip>
+			<icon>Icons/SaveAs.gif</icon>
+			<content>[SaveAs]</content>
+		</leaf>
+		<leaf>
+			<title>Save All Changed Files</title>
+			<tooltip>Save any files that have been changed</tooltip>
+			<icon>Icons/SaveAll.gif</icon>
+			<content>[SaveAllChangedDocs]</content>
+		</leaf>
+		<leaf>
+			<title>Close</title>
+			<tooltip>Close current document</tooltip>
+			<icon>Icons/NewFolder.gif</icon>
+			<content>[CloseDoc]</content>
+		</leaf>
+		<leaf>
+			<title>Close All</title>
+			<tooltip>Close all documents</tooltip>
+			<content>[CloseAllDocs]</content>
+		</leaf>
+		<leaf>
+			<title>Clear File List Below</title>
+			<tooltip>Clear the recently opened file list below</tooltip>
+			<content>[ClearFileList]</content>
+		</leaf>
+		<leaf>
+			<title>Exit</title>
+			<tooltip>Save changed files, exit Arachnophilia</tooltip>
+			<content>[ExitApp]</content>
+		</leaf>
+		<leaf>
+			<title>* Separator *</title>
+			<separator>true</separator>
+		</leaf>
+		<leaf>
+			<title>FileList</title>
+			<tooltip>This must be the last item on the menu!</tooltip>
+			<content>[LocateFileList]</content>
+		</leaf>
+	</node>
+	<node>
+		<title>Edit</title>
+		<menu>true</menu>
+		<leaf>
+			<title>Undo</title>
+			<tooltip>Undo the most recent editing action</tooltip>
+			<keyboardhook>90,130</keyboardhook>
+			<icon>Icons/Undo.gif</icon>
+			<content>[EditUndo]</content>
+		</leaf>
+		<leaf>
+			<title>Redo</title>
+			<tooltip>Redo a recently undone editing action</tooltip>
+			<keyboardhook>89,130</keyboardhook>
+			<icon>Icons/Redo.gif</icon>
+			<content>[EditRedo]</content>
+		</leaf>
+		<leaf>
+			<title>* Separator *</title>
+			<separator>true</separator>
+		</leaf>
+		<leaf>
+			<title>Cut</title>
+			<tooltip>Cut selected text to system clipboard</tooltip>
+			<keyboardhook>88,130</keyboardhook>
+			<icon>Icons/Cut.gif</icon>
+			<content>[EditCut]</content>
+		</leaf>
+		<leaf>
+			<title>Copy</title>
+			<tooltip>Copy selected text to system clipboard</tooltip>
+			<keyboardhook>67,130</keyboardhook>
+			<icon>Icons/Copy.gif</icon>
+			<content>[EditCopy]</content>
+		</leaf>
+		<leaf>
+			<title>Paste</title>
+			<tooltip>Paste system clipboard text into docment</tooltip>
+			<keyboardhook>86,130</keyboardhook>
+			<icon>Icons/Paste.gif</icon>
+			<content>[EditPaste]</content>
+		</leaf>
+		<leaf>
+			<title>Select All</title>
+			<tooltip>Select the entire document</tooltip>
+			<keyboardhook>65,130</keyboardhook>
+			<icon>Icons/ToBack.gif</icon>
+			<content>[EditSelectAll]</content>
+		</leaf>
+		<leaf>
+			<title>* Separator *</title>
+			<separator>true</separator>
+		</leaf>
+		<leaf>
+			<title>Find First</title>
+			<tooltip>Find first case of search string</tooltip>
+			<keyboardhook>68,130</keyboardhook>
+			<icon>Icons/Up.gif</icon>
+			<content>[FindFirstAuto]</content>
+		</leaf>
+		<leaf>
+			<title>Find Next</title>
+			<tooltip>Find next case of search text</tooltip>
+			<keyboardhook>114,0</keyboardhook>
+			<icon>Icons/Right.gif</icon>
+			<content>[FindNextAuto]</content>
+		</leaf>
+		<leaf>
+			<title>Replace</title>
+			<tooltip>Replace found text</tooltip>
+			<keyboardhook>82,130</keyboardhook>
+			<icon>Icons/EditBCard.gif</icon>
+			<content>[ReplaceAuto]</content>
+		</leaf>
+		<leaf>
+			<title>Go to line</title>
+			<tooltip>Launches a dialog for a line number</tooltip>
+			<keyboardhook>71,130</keyboardhook>
+			<icon>Icons/PlusMinus.gif</icon>
+			<content>[GotoLine]</content>
+		</leaf>
+	</node>
+	<node>
+		<title>Tools</title>
+		<menu>true</menu>
+		<leaf>
+			<title>Convert Document to HTML</title>
+			<tooltip>Convert syntax-colored document to HTML document</tooltip>
+			<icon>Icons/DocumentIn.gif</icon>
+			<content>[ConvertDocToHTML]</content>
+		</leaf>
+		<leaf>
+			<title>Convert RTF to HTML</title>
+			<tooltip>Convert RTF Document to HTML document</tooltip>
+			<icon>Icons/PageSetup.gif</icon>
+			<content>[ConvertRTFToHTML]</content>
+		</leaf>
+		<leaf>
+			<title>Spell Check</title>
+			<tooltip>Run the spell checker on your document</tooltip>
+			<keyboardhook>118,0</keyboardhook>
+			<icon>Icons/DocumentMag.gif</icon>
+			<content>[SpellCheck]</content>
+		</leaf>
+		<leaf>
+			<title>List System Commands</title>
+			<tooltip>Make a document containing all system commands and descriptions</tooltip>
+			<icon>Icons/DocumentDiagram.gif</icon>
+			<content>[ListSystemCommands]</content>
+		</leaf>
+		<leaf>
+			<title>List current key Mappings</title>
+			<tooltip>Make a document containing current shortcut key mappings</tooltip>
+			<icon>Icons/Computer.gif</icon>
+			<content>[ListKeyMappings]</content>
+		</leaf>
+		<leaf>
+			<title>* Separator *</title>
+			<separator>true</separator>
+		</leaf>
+		<leaf>
+			<title>Set Look &amp; Feel</title>
+			<tooltip>Launch Loook &amp; Feel selection dialog</tooltip>
+			<icon>Icons/CameraFlash.gif</icon>
+			<content>[SetLookAndFeel]</content>
+		</leaf>
+		<leaf>
+			<title>Configure AutoSave</title>
+			<tooltip>Set up AutoSave feature</tooltip>
+			<icon>Icons/SaveProject.gif</icon>
+			<content>[AutoSave]</content>
+		</leaf>
+		<leaf>
+			<title>Insert Date &amp; Time</title>
+			<tooltip>Insert current date and time into document</tooltip>
+			<icon>Icons/Clock.gif</icon>
+			<content>[DateTime]</content>
+		</leaf>
+		<leaf>
+			<title>Word count</title>
+			<tooltip>Count lines, words and characters</tooltip>
+			<icon>Icons/DocumentDraw.gif</icon>
+			<content>[WordCount]</content>
+		</leaf>
+		<leaf>
+			<title>Run Garbage Collector</title>
+			<tooltip>Use the Java \"garbage collector\" to reclaim memory</tooltip>
+			<keyboardhook>88,520</keyboardhook>
+			<icon>Icons/Paint.gif</icon>
+			<content>[RunGarbageCollector]</content>
+		</leaf>
+	</node>
+	<node>
+		<title>HTML</title>
+		<menu>true</menu>
+		<leaf>
+			<title>Jump to Opposite Tag</title>
+			<tooltip>For &lt;paired&gt; &lt;/tags&gt;, find mate tag</tooltip>
+			<keyboardhook>74,520</keyboardhook>
+			<icon>Icons/Move.gif</icon>
+			<content>[JumpToOppositeTag]</content>
+		</leaf>
+		<leaf>
+			<title>Configure Browsers</title>
+			<tooltip>Launch the browser configuration dialog</tooltip>
+			<icon>Icons/EditBook.gif</icon>
+			<content>[ConfigureBrowsers]</content>
+		</leaf>
+		<leaf>
+			<title>Beautify HTML</title>
+			<tooltip>Indent HTML pages like program listings, find inconsistencies</tooltip>
+			<keyboardhook>69,130</keyboardhook>
+			<icon>Icons/DocumentIn.gif</icon>
+			<content>[BeautifyHTML]</content>
+		</leaf>
+		<leaf>
+			<title>Validate HTML</title>
+			<tooltip>Analyze tag structure, list errors</tooltip>
+			<keyboardhook>86,520</keyboardhook>
+			<icon>Icons/DocumentDiagram.gif</icon>
+			<content>[ValidateHTML]</content>
+		</leaf>
+		<leaf>
+			<title>Size graphics</title>
+			<tooltip>Update all document IMG tags to reflect actual graphic sizes</tooltip>
+			<keyboardhook>71,520</keyboardhook>
+			<icon>Icons/Laptop.gif</icon>
+			<content>[SizeGraphics]</content>
+		</leaf>
+		<leaf>
+			<title>Run FTP Service</title>
+			<tooltip>Launch the FTP upload service</tooltip>
+			<keyboardhook>70,520</keyboardhook>
+			<icon>Icons/Gearwheel.gif</icon>
+			<content>[LaunchFTPService]</content>
+		</leaf>
+		<leaf>
+			<title>Change default HTML page colors</title>
+			<tooltip>Set up the default page colors</tooltip>
+			<icon>Icons/BarGraph.gif</icon>
+			<content>[ChoosePageColors]</content>
+		</leaf>
+		<leaf>
+			<title>Launch Table Wizard</title>
+			<tooltip>Automatically create sophisticated tables</tooltip>
+			<icon>Icons/Sheets.gif</icon>
+			<content>[TableWizard]</content>
+		</leaf>
+		<leaf>
+			<title>Unordered List</title>
+			<tooltip>Make an unordered list out of selected lines</tooltip>
+			<keyboardhook>85,520</keyboardhook>
+			<icon>Icons/DocumentDiagram.gif</icon>
+			<content>[MakeUnorderedList]</content>
+		</leaf>
+		<leaf>
+			<title>Ordered List</title>
+			<tooltip>Make an ordered list out of selected lines</tooltip>
+			<keyboardhook>76,520</keyboardhook>
+			<icon>Icons/SelectAll.gif</icon>
+			<content>[MakeOrderedList]</content>
+		</leaf>
+		<node>
+			<title>More Functions</title>
+			<leaf>
+				<title>Replace LI tags</title>
+				<tooltip>Replace all &lt;/li&gt; tags consistent with XHTML rules</tooltip>
+				<content>[ReplaceLiTags][BeautifyHTML]</content>
+			</leaf>
+			<leaf>
+				<title>Tags lower case (preferred)</title>
+				<content>[TagsLowercase]</content>
+			</leaf>
+			<leaf>
+				<title>Tags UPPERCASE (not for XHTML)</title>
+				<content>[TagsUppercase]</content>
+			</leaf>
+			<leaf>
+				<title>Escape Tag delimiters</title>
+				<tooltip>Convert \"&lt;,&gt;\" to \"&amp;lt;,&amp;gt;\"</tooltip>
+				<content>[TagDelimsEscape]</content>
+			</leaf>
+			<leaf>
+				<title>Unescape Tag delimiters</title>
+				<tooltip>Convert \"&amp;lt;,&amp;gt;\" to \"&lt;,&gt;\"</tooltip>
+				<content>[TagDelimsUnescape]</content>
+			</leaf>
+			<leaf>
+				<title>Char To Entity</title>
+				<tooltip>Convert extended characters to HTML entities</tooltip>
+				<content>[CvtExtChars]</content>
+			</leaf>
+			<leaf>
+				<title>Entity To Char</title>
+				<tooltip>Convet HTML character entites to extended chars</tooltip>
+				<content>[CvtHTMLChars]</content>
+			</leaf>
+			<leaf>
+				<title>Double dashes to HTML entity</title>
+				<tooltip>Convert all \" -- \" -&gt; \"&amp;mdash;\"</tooltip>
+				<content>[RegExpFindReplaceAll:/(\\s)(--)(\\s)/$1&amp;mdash;$3/]</content>
+			</leaf>
+		</node>
+		<node>
+			<title>Keyboard Hooks</title>
+			<tooltip>Commands acessed by way of keystrokes</tooltip>
+			<leaf>
+				<title>Non-blanking space</title>
+				<keyboardhook>32,520</keyboardhook>
+				<content>&amp;nbsp;</content>
+			</leaf>
+			<leaf>
+				<title>HMTL line break</title>
+				<keyboardhook>10,520</keyboardhook>
+				<content>&lt;br/&gt;\n</content>
+			</leaf>
+			<leaf>
+				<title>HTML Paragraph break</title>
+				<keyboardhook>10,585</keyboardhook>
+				<content>&lt;p&gt;&lt;/p&gt;\n\n</content>
+			</leaf>
+			<leaf>
+				<title>Comment</title>
+				<tooltip>Enclose the selection in comment tags</tooltip>
+				<keyboardhook>67,520</keyboardhook>
+				<content>&lt;!-- | --&gt;</content>
+			</leaf>
+			<leaf>
+				<title>Move to next document</title>
+				<tooltip>A keyboard hook to change documents</tooltip>
+				<keyboardhook>9,130</keyboardhook>
+				<content>[MoveToNextDocument]</content>
+			</leaf>
+			<leaf>
+				<title>Focus to Find Dialog</title>
+				<keyboardhook>70,130</keyboardhook>
+				<content>[FindSetFocus]</content>
+			</leaf>
+		</node>
+	</node>
+	<node>
+		<title>Text</title>
+		<menu>true</menu>
+		<leaf>
+			<title>Set Program Font</title>
+			<tooltip>Choose a font for the entire program</tooltip>
+			<icon>Icons/Workstation.gif</icon>
+			<content>[SetProgramFont]</content>
+		</leaf>
+		<leaf>
+			<title>Set Editor font</title>
+			<tooltip>Choose a font for the editing display</tooltip>
+			<icon>Icons/DocumentDiagram.gif</icon>
+			<content>[SetEditFont]</content>
+		</leaf>
+		<leaf>
+			<title>Assemble Lines</title>
+			<tooltip>Join individual lines into paragraphs</tooltip>
+			<icon>Icons/Swap.gif</icon>
+			<content>[CompressText]</content>
+		</leaf>
+		<leaf>
+			<title>AntiAliasing on/off</title>
+			<tooltip>Toggle antialiasing (smooth font rendering)</tooltip>
+			<icon>Icons/DocumentIn.gif</icon>
+			<content>[AntiAliasing]</content>
+		</leaf>
+		<node>
+			<title>Tab-related</title>
+			<leaf>
+				<title>Set Tab Size</title>
+				<tooltip>Choose the tab size in character widths</tooltip>
+				<content>[SetTabSize]</content>
+			</leaf>
+			<leaf>
+				<title>Use spaces for tabs</title>
+				<tooltip>Choose (y/n) to use spaces instead of tabs</tooltip>
+				<content>[UseSpacesForTabs:[UserInput:Use spaces for tabs (y/n)?]]</content>
+			</leaf>
+			<leaf>
+				<title>Convert Spaces to Tabs</title>
+				<content>[SpacesToTabs]</content>
+			</leaf>
+			<leaf>
+				<title>Convert Tabs to Spaces</title>
+				<content>[TabsToSpaces]</content>
+			</leaf>
+			<leaf>
+				<title>Block Tab</title>
+				<keyboardhook>9,0</keyboardhook>
+				<content>[BlockTab]</content>
+			</leaf>
+			<leaf>
+				<title>Block Reverse Tab</title>
+				<keyboardhook>9,65</keyboardhook>
+				<content>[BlockReverseTab]</content>
+			</leaf>
+		</node>
+		<node>
+			<title>General</title>
+			<leaf>
+				<title>To Uppercase</title>
+				<tooltip>Document/selection to upper case</tooltip>
+				<content>[ToUpperCase]</content>
+			</leaf>
+			<leaf>
+				<title>To Lowercase</title>
+				<tooltip>Document/selection to lower case</tooltip>
+				<content>[ToLowerCase]</content>
+			</leaf>
+		</node>
+	</node>
+	<node>
+		<title>Programming</title>
+		<menu>true</menu>
+		<leaf>
+			<title>Beautify Code</title>
+			<tooltip>Beautify program source files or code sections of HTML documents</tooltip>
+			<keyboardhook>72,130</keyboardhook>
+			<icon>Icons/PageSetup.gif</icon>
+			<content>[BeautifyCode]</content>
+		</leaf>
+		<leaf>
+			<title>Left Flush Lines</title>
+			<tooltip>Undo the effect of Code Beautify</tooltip>
+			<keyboardhook>76,130</keyboardhook>
+			<icon>Icons/AlignLeft.gif</icon>
+			<content>[LeftFlushLines]</content>
+		</leaf>
+		<leaf>
+			<title>Base Calculator</title>
+			<tooltip>Launch simple number base calculator</tooltip>
+			<icon>Icons/Calculator.gif</icon>
+			<content>[LaunchBaseCalculator]</content>
+		</leaf>
+		<leaf>
+			<title>Syntax Colors</title>
+			<tooltip>Select editing display highlight colors</tooltip>
+			<icon>Icons/BarGraph.gif</icon>
+			<content>[SetSyntaxColors]</content>
+		</leaf>
+		<leaf>
+			<title>Java Compiler</title>
+			<tooltip>Launch Java compiler. Change this to suit your system</tooltip>
+			<keyboardhook>120,0</keyboardhook>
+			<content>[Save][SystemExec:javac -g -deprecation [Filename] ]</content>
+		</leaf>
+		<leaf>
+			<title>Java Runtime</title>
+			<tooltip>Run Java class. Change this to suit your system</tooltip>
+			<keyboardhook>121,0</keyboardhook>
+			<content>[SystemExec:java [Classname]]</content>
+		</leaf>
+		<leaf>
+			<title>C++ Compiler</title>
+			<tooltip>Launch C++ compiler. Change this to suit your system</tooltip>
+			<keyboardhook>122,0</keyboardhook>
+			<content>[Save][SystemExec:g++ [Filename]]</content>
+		</leaf>
+		<leaf>
+			<title>C++ Runtime</title>
+			<tooltip>Run C++ executable. Change this to suit your system</tooltip>
+			<keyboardhook>123,0</keyboardhook>
+			<content>[SystemExec:cmd /c a.exe]</content>
+		</leaf>
+		<leaf>
+			<title>Close Compiler Window</title>
+			<keyboardhook>115,0</keyboardhook>
+			<content>[CloseCompilerWindow]</content>
+		</leaf>
+		<leaf>
+			<title>Block Indent</title>
+			<keyboardhook>73,520</keyboardhook>
+			<content>[BlockIndent]</content>
+		</leaf>
+		<leaf>
+			<title>Block Outdent</title>
+			<keyboardhook>79,520</keyboardhook>
+			<content>[BlockOutdent]</content>
+		</leaf>
+		<leaf>
+			<title>Custom Class Demo</title>
+			<tooltip>Execute a class named \"TestClass\"</tooltip>
+			<content>[RunCustomClassDoc:CustomClasses/TestClass]</content>
+		</leaf>
+	</node>
+	<node>
+		<title>Help</title>
+		<menu>true</menu>
+		<leaf>
+			<title>Help</title>
+			<tooltip>Launch help in the default browser</tooltip>
+			<keyboardhook>112,0</keyboardhook>
+			<icon>Icons/Help.gif</icon>
+			<content>[LaunchHelp]</content>
+		</leaf>
+		<leaf>
+			<title>About</title>
+			<tooltip>About Arachnophilia</tooltip>
+			<keyboardhook>113,0</keyboardhook>
+			<icon>Icons/Options.gif</icon>
+			<content>[AboutDialog]</content>
+		</leaf>
+		<leaf>
+			<title>Tip of the Day</title>
+			<tooltip>Show the tip of the day Dialog</tooltip>
+			<icon>Icons/Bulb.gif</icon>
+			<content>[ShowTips]</content>
+		</leaf>
+	</node>
+	<node>
+		<title>_RootPopup</title>
+		<tooltip>This is a unique name for the base (no document open) popup menu</tooltip>
+		<menu>true</menu>
+		<leaf>
+			<title>NewAuto</title>
+			<tooltip>Create another of the most recently created file type</tooltip>
+			<icon>Icons/New.gif</icon>
+			<content>[NewDoc]</content>
+		</leaf>
+		<leaf>
+			<title>OpenAuto ...</title>
+			<tooltip>Open the most recently opened file type</tooltip>
+			<icon>Icons/Open.gif</icon>
+			<content>[OpenDoc]</content>
+		</leaf>
+		<leaf>
+			<title>* Separator *</title>
+			<separator>true</separator>
+		</leaf>
+		<leaf>
+			<title>New/open File list</title>
+			<content>[BuildNewOpenMenus]</content>
+		</leaf>
+	</node>
+	<node>
+		<title>_SyntaxDocPopup</title>
+		<tooltip>This is a unique name for the syntax-highlighted document popup menu</tooltip>
+		<menu>true</menu>
+		<leaf>
+			<title>Cut</title>
+			<tooltip>Cut selection to clipboard</tooltip>
+			<icon>Icons/Cut.gif</icon>
+			<content>[EditCut]</content>
+		</leaf>
+		<leaf>
+			<title>Copy</title>
+			<tooltip>Copy text to clipboard</tooltip>
+			<icon>Icons/Copy.gif</icon>
+			<content>[EditCopy]</content>
+		</leaf>
+		<leaf>
+			<title>Paste</title>
+			<tooltip>Paste from clipboard</tooltip>
+			<icon>Icons/Paste.gif</icon>
+			<content>[EditPaste]</content>
+		</leaf>
+		<leaf>
+			<title>* Separator *</title>
+			<separator>true</separator>
+		</leaf>
+		<leaf>
+			<title>Line Numbers</title>
+			<tooltip>Show/hide line number column</tooltip>
+			<content>[DisplayLineNumberColumn]</content>
+		</leaf>
+		<leaf>
+			<title>EOL Marks</title>
+			<tooltip>Show/hide EOL marks</tooltip>
+			<content>[DisplayEOLMarks]</content>
+		</leaf>
+		<leaf>
+			<title>Choose font</title>
+			<tooltip>Select a font for the editing display</tooltip>
+			<content>[SetEditFont]</content>
+		</leaf>
+		<leaf>
+			<title>Change to plain display</title>
+			<tooltip>Change to plain-text, line-wrapped display</tooltip>
+			<content>[DisplayPlainText]</content>
+		</leaf>
+		<leaf>
+			<title>Change file type</title>
+			<tooltip>Override file type based on suffix</tooltip>
+			<content>[SetFileType]</content>
+		</leaf>
+		<leaf>
+			<title>Save</title>
+			<tooltip>Save this document</tooltip>
+			<icon>Icons/Save.gif</icon>
+			<content>[Save]</content>
+		</leaf>
+		<leaf>
+			<title>* Separator *</title>
+			<separator>true</separator>
+		</leaf>
+		<leaf>
+			<title>Close</title>
+			<tooltip>Close this document</tooltip>
+			<icon>Icons/Folder.gif</icon>
+			<content>[CloseDoc]</content>
+		</leaf>
+		<leaf>
+			<title>NewAuto</title>
+			<tooltip>Create another of the most recently created file type</tooltip>
+			<icon>Icons/New.gif</icon>
+			<content>[NewDoc]</content>
+		</leaf>
+		<leaf>
+			<title>OpenAuto ...</title>
+			<tooltip>Open the most recently opened file type</tooltip>
+			<icon>Icons/Open.gif</icon>
+			<content>[OpenDoc]</content>
+		</leaf>
+		<leaf>
+			<title>* Separator *</title>
+			<separator>true</separator>
+		</leaf>
+		<leaf>
+			<title>new/open list</title>
+			<content>[BuildNewOpenMenus]</content>
+		</leaf>
+	</node>
+	<node>
+		<title>_PlainDocPopup</title>
+		<tooltip>This is a unique name for the plain-text document popup menu</tooltip>
+		<menu>true</menu>
+		<leaf>
+			<title>Cut</title>
+			<tooltip>Cut selection to clipboard</tooltip>
+			<icon>Icons/Cut.gif</icon>
+			<content>[EditCut]</content>
+		</leaf>
+		<leaf>
+			<title>Copy</title>
+			<tooltip>Copy text to clipboard</tooltip>
+			<icon>Icons/Copy.gif</icon>
+			<content>[EditCopy]</content>
+		</leaf>
+		<leaf>
+			<title>Paste</title>
+			<tooltip>Paste from clipboard</tooltip>
+			<icon>Icons/Paste.gif</icon>
+			<content>[EditPaste]</content>
+		</leaf>
+		<leaf>
+			<title>* Separator *</title>
+			<separator>true</separator>
+		</leaf>
+		<leaf>
+			<title>Line Wrap</title>
+			<tooltip>Toggle line wrapping</tooltip>
+			<content>[DisplayLineWrap]</content>
+		</leaf>
+		<leaf>
+			<title>Choose Font</title>
+			<tooltip>Select a font for the editing display</tooltip>
+			<content>[SetEditFont]</content>
+		</leaf>
+		<leaf>
+			<title>Change to syntax-color display</title>
+			<content>[DisplaySyntaxColors]</content>
+		</leaf>
+		<leaf>
+			<title>Change file type</title>
+			<tooltip>Override file type based on suffix</tooltip>
+			<content>[SetFileType]</content>
+		</leaf>
+		<leaf>
+			<title>* Separator *</title>
+			<separator>true</separator>
+		</leaf>
+		<leaf>
+			<title>Save</title>
+			<tooltip>Save this document</tooltip>
+			<icon>Icons/Save.gif</icon>
+			<content>[Save]</content>
+		</leaf>
+		<leaf>
+			<title>Close</title>
+			<tooltip>Close current document</tooltip>
+			<icon>Icons/Folder.gif</icon>
+			<content>[CloseDoc]</content>
+		</leaf>
+		<leaf>
+			<title>* Separator *</title>
+			<separator>true</separator>
+		</leaf>
+		<leaf>
+			<title>NewAuto</title>
+			<tooltip>Create another of the most recently created file type</tooltip>
+			<icon>Icons/New.gif</icon>
+			<content>[NewDoc]</content>
+		</leaf>
+		<leaf>
+			<title>OpenAuto ...</title>
+			<tooltip>Open the most recently opened file type</tooltip>
+			<icon>Icons/Open.gif</icon>
+			<content>[OpenDoc]</content>
+		</leaf>
+		<leaf>
+			<title>* Separator *</title>
+			<separator>true</separator>
+		</leaf>
+		<leaf>
+			<title>new/open list</title>
+			<content>[BuildNewOpenMenus]</content>
+		</leaf>
+	</node>
+</node>
+<node>
+	<title>HTML tag toolbars</title>
+	<tooltip>An array of HTML-specific toolbars</tooltip>
+	<node>
+		<title>Fonts</title>
+		<tooltip>Font Format and Color</tooltip>
+		<toolbar>true</toolbar>
+		<hidden>true</hidden>
+		<leaf>
+			<title>Fontcolor</title>
+			<tooltip>Select a block of text and change its color with this tag</tooltip>
+			<content>&lt;font style=\"color:#[InsertValueColor:Choose a font color]\"&gt;|&lt;/font&gt;</content>
+		</leaf>
+		<leaf>
+			<title>Span</title>
+			<tooltip>Complete \"span\" tag with backgrond color specification</tooltip>
+			<content>&lt;span style=\"background-color:#[InsertValueColor:Choose a background color];\"&gt;|&lt;/span&gt;</content>
+		</leaf>
+		<leaf>
+			<title>H1</title>
+			<tooltip>Heading 1</tooltip>
+			<content>&lt;h1&gt;|&lt;/h1&gt;</content>
+		</leaf>
+		<leaf>
+			<title>H2</title>
+			<tooltip>Heading 2</tooltip>
+			<content>&lt;h2&gt;|&lt;/h2&gt;</content>
+		</leaf>
+		<leaf>
+			<title>H3</title>
+			<tooltip>Heading 3</tooltip>
+			<content>&lt;h3&gt;|&lt;/h3&gt;</content>
+		</leaf>
+		<leaf>
+			<title>H4</title>
+			<tooltip>Heading 4</tooltip>
+			<content>&lt;h4&gt;|&lt;/h4&gt;</content>
+		</leaf>
+		<leaf>
+			<title>H5</title>
+			<tooltip>Heading 5</tooltip>
+			<content>&lt;h5&gt;|&lt;/h5&gt;</content>
+		</leaf>
+		<leaf>
+			<title>H6</title>
+			<tooltip>Heading 6</tooltip>
+			<content>&lt;h6&gt;|&lt;/h6&gt;</content>
+		</leaf>
+		<leaf>
+			<title>Font+1</title>
+			<tooltip>Bigger</tooltip>
+			<content>&lt;font size=\"+1\"&gt;|&lt;/font&gt;</content>
+		</leaf>
+		<leaf>
+			<title>Font+2</title>
+			<tooltip>Much bigger</tooltip>
+			<content>&lt;font size=\"+2\"&gt;|&lt;/font&gt;</content>
+		</leaf>
+		<leaf>
+			<title>Font-1</title>
+			<tooltip>Smaller</tooltip>
+			<content>&lt;font size=\"-1\"&gt;|&lt;/font&gt;</content>
+		</leaf>
+		<leaf>
+			<title>Font-2</title>
+			<tooltip>Much smaller</tooltip>
+			<content>&lt;font size=\"-2\"&gt;|&lt;/font&gt;</content>
+		</leaf>
+	</node>
+	<node>
+		<title>Forms</title>
+		<tooltip>Automating Methods</tooltip>
+		<toolbar>true</toolbar>
+		<hidden>true</hidden>
+		<leaf>
+			<title>NewForm</title>
+			<tooltip>Creates new form</tooltip>
+			<content>&lt;form action=\"http://yourcgiscript\" method=\"post\"&gt;\n\n|\n\n&lt;/form&gt;</content>
+		</leaf>
+		<leaf>
+			<title>InText</title>
+			<tooltip>Text input control</tooltip>
+			<content>&lt;input type=\"text\" name=\"var name\" size=\"40\" maxlength=\"80\" value=\"default value\"/&gt;</content>
+		</leaf>
+		<leaf>
+			<title>InPasswd</title>
+			<tooltip>Keystrokes are rendered as \"*\"</tooltip>
+			<content>&lt;input type=\"password\" name=\"var name\" size=\"40\" maxlength=\"80\" value=\"default value\"/&gt;</content>
+		</leaf>
+		<leaf>
+			<title>InCheck</title>
+			<tooltip>For selecting more than one of a set</tooltip>
+			<content>&lt;input type=\"checkbox\" name=\"var name\" value=\"default value\"/&gt;</content>
+		</leaf>
+		<leaf>
+			<title>InRadio</title>
+			<tooltip>When put in sets, only one stays pressed</tooltip>
+			<content>&lt;input type=\"radio\" name=\"var name\" value=\"default value\"/&gt;</content>
+		</leaf>
+		<leaf>
+			<title>InHidden</title>
+			<tooltip>Used to pass information to the CGI script</tooltip>
+			<content>&lt;input type=\"hidden\" name=\"var name\" value=\"default value\"/&gt;</content>
+		</leaf>
+		<leaf>
+			<title>InSelect</title>
+			<tooltip>Used for long lists of choices</tooltip>
+			<content>&lt;select name=\"variable name\"&gt;\n&lt;option&gt;|&lt;/option&gt;\n&lt;option&gt;&lt;/option&gt;\n&lt;option&gt;&lt;/option&gt;\n&lt;option&gt;&lt;/option&gt;\n&lt;/select&gt;\n</content>
+		</leaf>
+		<leaf>
+			<title>Option</title>
+			<content>&lt;option&gt;|&lt;/option&gt;</content>
+		</leaf>
+		<leaf>
+			<title>TextArea</title>
+			<tooltip>Large Block</tooltip>
+			<content>&lt;textarea name=\"variable name\" rows=\"3\" cols=\"40\"&gt;|&lt;/textarea&gt;</content>
+		</leaf>
+		<leaf>
+			<title>InSubmit</title>
+			<tooltip>Submits form</tooltip>
+			<content>&lt;input type=\"submit\" value=\"default value\"/&gt;</content>
+		</leaf>
+		<leaf>
+			<title>InReset</title>
+			<tooltip>Resets Form</tooltip>
+			<content>&lt;input type=\"reset\" value=\"default value\"/&gt;</content>
+		</leaf>
+	</node>
+	<node>
+		<title>Frames/JavaScript</title>
+		<tooltip>Also JavaScript</tooltip>
+		<toolbar>true</toolbar>
+		<hidden>true</hidden>
+		<leaf>
+			<title>Fset C</title>
+			<tooltip>Column Frameset</tooltip>
+			<content>&lt;frameset cols=\"20%,*\"&gt;\n\n|\n\n&lt;/frameset&gt; </content>
+		</leaf>
+		<leaf>
+			<title>Fset R</title>
+			<tooltip>Row Frameset</tooltip>
+			<content>&lt;frameset rows=\"20%,*\"&gt;\n\n|\n\n&lt;/frameset&gt; </content>
+		</leaf>
+		<leaf>
+			<title>Frame</title>
+			<tooltip>Frame Definition</tooltip>
+			<content>&lt;frame src=\"\" name=\"\"/&gt;</content>
+		</leaf>
+		<leaf>
+			<title>Target</title>
+			<tooltip>Target Frame</tooltip>
+			<content>&lt;a href=\"\" target=\"\"&gt;|&lt;/a&gt;</content>
+		</leaf>
+		<leaf>
+			<title>NoFrame</title>
+			<tooltip>No Frame Block/For browsers that don't support frames</tooltip>
+			<content>&lt;noframes&gt;\n\n|\n\n&lt;/noframes&gt;</content>
+		</leaf>
+		<leaf>
+			<title>Style</title>
+			<tooltip>Style tags/Tags for CSS Style block</tooltip>
+			<content>&lt;style type=\"text/css\"&gt;\n&lt;!--\n\n|\n\n--&gt;\n&lt;/style&gt;</content>
+		</leaf>
+		<leaf>
+			<title>NoScript</title>
+			<tooltip>NoScript block/Block for NoScript commands</tooltip>
+			<content>&lt;noscript&gt;\n|\n&lt;/noscript&gt;</content>
+		</leaf>
+		<leaf>
+			<title>Script</title>
+			<tooltip>JavaScript code block</tooltip>
+			<content>&lt;script type=\"text/javascript\" language=\"JavaScript\"&gt;\n&lt;!-- ;\n\n|\n\n// end hide --&gt;\n&lt;/script&gt;</content>
+		</leaf>
+		<leaf>
+			<title>ASPCode</title>
+			<tooltip>ASP Code block/Block for ASP document code</tooltip>
+			<content>&lt;%\n|\n%&gt;</content>
+		</leaf>
+		<leaf>
+			<title>Write</title>
+			<tooltip>Write to browser</tooltip>
+			<content>document.writeln(\"|\");</content>
+		</leaf>
+		<leaf>
+			<title>Alert</title>
+			<tooltip>Cute Dialog Box</tooltip>
+			<content>alert(\"|\");</content>
+		</leaf>
+		<leaf>
+			<title>Prompt</title>
+			<tooltip>Ask the user</tooltip>
+			<content>var response = prompt(\"|\",\"y/n\");</content>
+		</leaf>
+		<leaf>
+			<title>Funct</title>
+			<tooltip>Function block</tooltip>
+			<content>function |() {\n\n}</content>
+		</leaf>
+		<leaf>
+			<title>IfElse</title>
+			<tooltip>Decision block</tooltip>
+			<content>if (|) {\n}\nelse {\n}</content>
+		</leaf>
+	</node>
+	<node>
+		<title>Graphics/Misc</title>
+		<tooltip>Graphics-related/Graphics, marquee, CGI links</tooltip>
+		<toolbar>true</toolbar>
+		<hidden>true</hidden>
+		<leaf>
+			<title>NewImg</title>
+			<tooltip>New Image/Locate and move graphic resource</tooltip>
+			<content>[InsertFullGraphicTag]</content>
+		</leaf>
+		<leaf>
+			<title>EditImg</title>
+			<tooltip>Edit Image/Locate and move graphic resource</tooltip>
+			<content>[InsertGraphicLink]</content>
+		</leaf>
+		<leaf>
+			<title>BareImg</title>
+			<tooltip>Bare Image/Fill in by hand</tooltip>
+			<content>&lt;img src=\"\" title=\"\" alt=\"\"/&gt;</content>
+		</leaf>
+		<leaf>
+			<title>NewColr</title>
+			<tooltip>New Font Color</tooltip>
+			<content>&lt;font color=\"[InsertValueColor]\"&gt;|&lt;/font&gt;</content>
+		</leaf>
+		<leaf>
+			<title>EditColr</title>
+			<tooltip>Edit Font Color/New Font Color</tooltip>
+			<content>[InsertValueColor]</content>
+		</leaf>
+		<leaf>
+			<title>Marquee</title>
+			<tooltip>Moving Text/Creates a scrolling display of text</tooltip>
+			<content>&lt;marquee width=\"50%\" scrolldelay=\"0\" behavior=\"alternate\"&gt;|&lt;/marquee&gt;</content>
+		</leaf>
+	</node>
+	<node>
+		<title>Links</title>
+		<tooltip>New links, edit links/Link-related tags</tooltip>
+		<toolbar>true</toolbar>
+		<leaf>
+			<title>NewImg</title>
+			<tooltip>New Image/Locate and move graphic resource</tooltip>
+			<content>[InsertFullGraphicTag]</content>
+		</leaf>
+		<leaf>
+			<title>NewHTML</title>
+			<tooltip>For page links on your own site</tooltip>
+			<content>&lt;a href=\"[CreateFileLink:HTML]\"&gt;|&lt;/a&gt;</content>
+		</leaf>
+		<leaf>
+			<title>BareLnk</title>
+			<tooltip>Fill in by hand</tooltip>
+			<content>&lt;a href=\"\"&gt;|&lt;/a&gt;</content>
+		</leaf>
+		<leaf>
+			<title>DocLnk</title>
+			<tooltip>Finds bookmark within a document</tooltip>
+			<content>&lt;a href=\"#link\"&gt;|&lt;/a&gt;</content>
+		</leaf>
+		<leaf>
+			<title>DocRef</title>
+			<tooltip>Places bookmark in a document</tooltip>
+			<content>&lt;a name=\"link\"&gt;|&lt;/a&gt;</content>
+		</leaf>
+	</node>
+	<node>
+		<title>Structure/Lists</title>
+		<tooltip>Basic HTML/Overall Structure</tooltip>
+		<toolbar>true</toolbar>
+		<leaf>
+			<title>Blockquote</title>
+			<content>&lt;blockquote&gt;\n|\n&lt;/blockquote&gt;</content>
+		</leaf>
+		<leaf>
+			<title>UnOrdList</title>
+			<tooltip>Creates unordered list out of selected lines</tooltip>
+			<content>[MakeUnorderedList]</content>
+		</leaf>
+		<leaf>
+			<title>OrdList</title>
+			<tooltip>Creates ordered list out of selected lines with number index</tooltip>
+			<content>[MakeOrderedList]</content>
+		</leaf>
+		<leaf>
+			<title>LetterList</title>
+			<tooltip>Creates ordered list out of selected lines with letter (a-z) index</tooltip>
+			<content>[MakeOrderedList:a]</content>
+		</leaf>
+		<leaf>
+			<title>RomanList</title>
+			<tooltip>Creates ordered list out of selected lines with Roman numeral index</tooltip>
+			<content>[MakeOrderedList:I]</content>
+		</leaf>
+		<leaf>
+			<title>pre</title>
+			<tooltip>Creates a block of text that preserves the original spacing and tabs</tooltip>
+			<content>&lt;pre&gt;\n|\n&lt;/pre&gt;</content>
+		</leaf>
+		<leaf>
+			<title>Code</title>
+			<content>&lt;code&gt;\n|\n&lt;/code&gt;</content>
+		</leaf>
+		<leaf>
+			<title>div</title>
+			<tooltip>Structure division</tooltip>
+			<content>&lt;div class=\"\"&gt;\n|\n&lt;/div&gt;</content>
+		</leaf>
+		<leaf>
+			<title>span</title>
+			<content>&lt;span class=\"\"&gt;\n|\n&lt;/span&gt;</content>
+		</leaf>
+		<leaf>
+			<title>iframe</title>
+			<tooltip>Structure frame</tooltip>
+			<content>&lt;iframe name=\"\"&gt;\n|\n&lt;/iframe&gt;</content>
+		</leaf>
+		<leaf>
+			<title>li</title>
+			<tooltip>List Item/Works with ordered and unordered lists</tooltip>
+			<content>&lt;li&gt;|&lt;/li&gt;</content>
+		</leaf>
+	</node>
+	<node>
+		<title>Styles</title>
+		<tooltip>Text and Page Styles</tooltip>
+		<toolbar>true</toolbar>
+		<leaf>
+			<title>hr</title>
+			<tooltip>Horizontal Rule/Horizontal Bar Across the page</tooltip>
+			<content>&lt;hr width=\"95%\" align=\"center\"/&gt;\n</content>
+		</leaf>
+		<leaf>
+			<title>br</title>
+			<tooltip>Line Break/One line</tooltip>
+			<content>&lt;br/&gt;\n</content>
+		</leaf>
+		<leaf>
+			<title>Bold</title>
+			<tooltip>Bold Text</tooltip>
+			<content>&lt;b&gt;|&lt;/b&gt;</content>
+		</leaf>
+		<leaf>
+			<title>Center</title>
+			<tooltip>Center Text</tooltip>
+			<content>&lt;div align=\"center\"&gt;|&lt;/div&gt;</content>
+		</leaf>
+		<leaf>
+			<title>Comment</title>
+			<content>&lt;!-- | --&gt;</content>
+		</leaf>
+		<leaf>
+			<title>Italic</title>
+			<tooltip>Italic Text</tooltip>
+			<content>&lt;i&gt;|&lt;/i&gt;</content>
+		</leaf>
+		<leaf>
+			<title>Paragraph</title>
+			<content>&lt;p&gt;|&lt;/p&gt;\n\n</content>
+		</leaf>
+		<leaf>
+			<title>Strikeout</title>
+			<content>&lt;s&gt;|&lt;/s&gt;</content>
+		</leaf>
+		<leaf>
+			<title>Subscript</title>
+			<content>&lt;sub&gt;|&lt;/sub&gt;</content>
+		</leaf>
+		<leaf>
+			<title>Superscript</title>
+			<content>&lt;sup&gt;|&lt;/sup&gt;</content>
+		</leaf>
+		<leaf>
+			<title>Teletype</title>
+			<tooltip>Literal Text</tooltip>
+			<content>&lt;tt&gt;|&lt;/tt&gt;</content>
+		</leaf>
+		<leaf>
+			<title>Underline</title>
+			<content>&lt;u&gt;|&lt;/u&gt;</content>
+		</leaf>
+	</node>
+	<node>
+		<title>Tables</title>
+		<tooltip>Various tags for tables</tooltip>
+		<toolbar>true</toolbar>
+		<hidden>true</hidden>
+		<leaf>
+			<title>TableWiz</title>
+			<tooltip>Table Wizard -- helps you design a table</tooltip>
+			<content>[TableWizard]</content>
+		</leaf>
+		<leaf>
+			<title>Table1x1</title>
+			<tooltip>Makes Simple Table/Default one-row, one-column table</tooltip>
+			<content>&lt;table&gt;\n\t&lt;tr&gt;\n\t\t&lt;td&gt;\n\t\t\t|\n\t\t&lt;/td&gt;\n\t&lt;/tr&gt;\n&lt;/table&gt;</content>
+		</leaf>
+		<leaf>
+			<title>Text Box</title>
+			<tooltip>A nice,simple bordered table meant to contain some text</tooltip>
+			<content>&lt;table width=95% align=center cellpadding=1 cellspacing=0 border=0 bgcolor=#0000ff&gt;\n   &lt;tr&gt;\n      &lt;td&gt;\n         &lt;table width=100% cellpadding=8 cellspacing=0 border=0 bgcolor=#ffffcc&gt;\n            &lt;tr&gt;\n               &lt;td&gt;\n                  |\n               &lt;/td&gt;\n            &lt;/tr&gt;\n         &lt;/table&gt;\n      &lt;/td&gt;\n   &lt;/tr&gt;\n&lt;/table&gt;</content>
+		</leaf>
+		<leaf>
+			<title>NewRow</title>
+			<tooltip>New Row/Makes New One-column Row</tooltip>
+			<content>\t&lt;tr&gt;\n\t\t&lt;td&gt;\n\t\t\t|\n\t\t&lt;/td&gt;\n\t&lt;/tr&gt;</content>
+		</leaf>
+		<leaf>
+			<title>tr</title>
+			<tooltip>Row Tags</tooltip>
+			<content>\t&lt;tr&gt;\n\t&lt;/tr&gt;</content>
+		</leaf>
+		<leaf>
+			<title>td</title>
+			<tooltip>Data Tags</tooltip>
+			<content>\t\t&lt;td&gt;\n\t\t\t|\n\t\t&lt;/td&gt;</content>
+		</leaf>
+		<leaf>
+			<title>td centered</title>
+			<tooltip>Centered Data Tags</tooltip>
+			<content>\t\t&lt;td align=center&gt;\n\t\t\t|\n\t\t&lt;/td&gt;</content>
+		</leaf>
+	</node>
+</node>

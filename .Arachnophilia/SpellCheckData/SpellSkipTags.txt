@@ -1,0 +1,29 @@
+;
+; This is a list of HTML tags that should not be
+; scanned by the spell checker.
+;
+; This list is used to prevent the spell checker from 
+; scanning within the listed tags. The spell checker just skips the
+; entire block enclosed by these tags.
+;
+; This list contains the (bare) tag to look for and the special closing tag
+; to search for at the finish of the special block, the pair separated by a tab.
+; The starting tag is bare, but the ending tag must be complete, because
+; it can take different forms in different cases.
+;
+; If more tags are needed, just add them. In particular, if the spell checker
+; scans within a tag pair that does not contain regular text, simply add the tag
+; and its closing partner to this list, and the problem will go away.
+;
+; If you want to experiment, but not permanently delete a tag from this list,
+; just "comment it out" -- place a comment delimiter ';'
+; at the left margin. That way, you can restore the tag later.
+
+style	</style>
+
+; Page code blocks
+script	</script> 
+
+; ASP tags
+%	%>
+

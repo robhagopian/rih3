@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Created on Mar 1, 2002 10:06:35 AM -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      The Arachnophilia Right-Click Wizard
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rev="made" href="http://www.arachnoid.com"/>
+    <meta http-equiv="Content-language" content="en"/>
+    <meta name="author" content="Paul Lutus"/>
+    <meta name="owner" content="Paul Lutus"/>
+    <meta name="description" content="Choosing colors, files and other things by way of a right click."/>
+    <meta name="group" content="DOCUMENTATION"/>
+    <meta name="keywords" content="Arachnophilia,HTML,edit,editor,webpage,programming,macro,Lutus"/>
+    <meta name="rating" content="General"/>
+    <meta name="ROBOTS" content="ALL"/>
+    <meta name="GENERATOR" content="Arachnophilia 5.0"/>
+    <meta name="FORMATTER" content="Arachnophilia 5.0"/>
+    <link rel="stylesheet" type="text/css" href="styles/default_article.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/roundcorner_16_parch.css"/>
+    <style type="text/css">
+.lc {font-weight:normal;font-style:normal;color:#808080;background-color:#ffffd8}
+    </style>
+  </head>
+  <body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000">
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <script type="text/javascript" language="JavaScript">
+            function toNewPage(t) { location.href = t.options[t.selectedIndex].value; }
+          </script>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html" selected="selected">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="MacroArchitecture.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="CodeBeautifier.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+    <div align="center">
+      <div class="article_title_inverse">The Arachnophilia Right-Click Wizard</div>
+<div class="article_linklist_inverse">Arachnophilia is &copy; Copyright 2009, P. Lutus.
+        <br/>
+        <p>Arachnophilia is
+        <a href="http://www.arachnoid.com/careware">CareWare</a></p>
+
+
+      </div>
+      <!-- LINK_MENU_START --><!-- LINK_MENU_END -->
+    </div>
+    <p></p>
+
+    <div class="article_wrapper">
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch0"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch9"></span>
+      </span>
+      <div class="roundcorner_16_parch_content">
+        <b>
+          The right-click wizard is a nice, but invisible, feature of Arachnophilia.
+        </b>
+        When you are editing an HTML document, you find yourself doing the same things over and over again, and it occurs to you that these actions should be the easiest to activate. For example, you are looking at an HTML color code, and you want to:
+        <ol>
+          <li>Find out what the actual color is for the code, and</li>
+          <li>Perhaps change the color as well.</li>
+        </ol>
+        Here's an example. You are looking at this tag (notice the position of the "
+        <font color="#ff0000">
+          |
+        </font>
+        " cursor):
+        <p></p>
+
+        <blockquote>
+          <pre><code>
+<font color = "#0000ff">&lt;</font><font color = "#000000">font</font><font color = "#00b200"> color=</font><font color = "#b200b2">"#660<font color="#ff0000">|</font>0ff"</font><font color = "#0000ff">&gt;</font>The Arachnophilia Right-Click Wizard<font color = "#0000ff">&lt;</font><font color = "#000000">/font</font><font color = "#0000ff">&gt;
+</font><font color = "#0000ff"></font>
+          </code></pre>
+        </blockquote>
+        <p></p>
+
+        &mdash; and you want to either preview the color or change it. In Arachnophilia, if the cursor is placed as shown, you can simply press the right mouse button, and a color selector dialog will appear:
+        <p></p>
+
+        <blockquote>
+          <img src="images/ColorSelectorDialog.png" width="441" height="398" alt=""/>
+          <p></p>
+
+        </blockquote>
+        Using this dialog, you can choose a new color and press "OK," or press "Cancel" to leave the color as it is.
+        <p></p>
+
+        <b>
+          Another action the wizard can take
+        </b>
+        is to detect a graphic filename in an image tag:
+        <p></p>
+
+        <blockquote>
+          <pre><code>
+<font color = "#0000ff">&lt;</font><font color = "#000000">img</font><font color = "#00b200"> src=</font><font color = "#b200b2">"../ara<font color="#ff0000">|</font>ch.png"</font><font color = "#00b200"> width=</font><font color = "#b200b2">"96"</font><font color = "#00b200"> height=</font><font color = "#b200b2">"76"</font><font color = "#00b200"> alt=</font><font color = "#b200b2">""</font><font color = "#00b200"> align=</font><font color = "#b200b2">"middle"</font><font color = "#0000ff">&gt;
+</font><font color = "#0000ff"></font>
+          </code></pre>
+        </blockquote>
+        <p></p>
+
+        In this case, if you press the right mouse button, the wizard will launch a file selection dialog with a graphic preview pane, and if you choose a new image file, the wizard will insert the new file name, create an appropriate relative path to the file, and finally it will change the image size tags to reflect the new image size. As you gain Web page design experience, you will appreciate the significance of always using relative paths to local files, and of having the image size tags correctly computed for new images.
+        <p></p>
+
+        <b>
+          A third action of the wizard
+        </b>
+        is to detect any local file type whatever in the same way, launch an appropriate file dialog, and compute the relative path to a selected file.
+        <p></p>
+
+        This leads to a rather important digression having to do with site organization. If you make links to images and other kinds of files, you must make sure those files will be uploaded onto your site along with your pages. The only reliable way to do this is to either move those files into your site directory and link to them there, or create subdirectories of your main site directory to contain those files. For example, it is common practice to have a subdirectory named "images" that contains all the site's graphic files.
+        <p></p>
+
+        It is a common beginner error to make a link to a local file that ends up not being uploaded to the Web site. Always move linked file into a directory that will be uploaded along with the Web pages themselves, for example by making a subdirectory of your main site directory.
+        <p></p>
+
+        <b>
+          The right-click wizard has one more feature
+        </b>
+        &mdash; if you hold down the Ctrl key, then press the right mouse button, the right-click wizard will provide a list of user-defined commands from a file located at C:UsersBill.Arachnophilia/ArachConf/CtrlRightClickList.txt. This is a convenient way to gain access to yet another list of macros that you can define any way you please.
+        <br/>&nbsp;
+      </div> <!-- content -->
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch9"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch0"></span>
+      </span>
+    </div> <!-- wrapper -->
+    <p></p>
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html" selected="selected">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="MacroArchitecture.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="CodeBeautifier.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+  </body>
+</html>

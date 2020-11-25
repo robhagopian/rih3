@@ -1,0 +1,56 @@
+;
+; This is the database file for file types.
+;
+; Fields are separated by '|', and they are:
+; type name | (t)ext/(b)inary | syntax marker class name | accepted file suffixes separated by commas
+;
+; An optional comment may be appended to a record line
+; if it is preceded by ';'
+;
+; VERY IMPORTANT: the first listed file suffix must be the
+; suffix of a template file for this file type
+; located in the templates directory
+; otherwise that template will not be detected
+; example: The first text file suffix is 'txt'
+; and there is a template file named:
+; Templates/templates.txt
+; therefore this file template will be used for new text files
+;
+; There must be at least one file suffix
+; for each file type.
+;
+; File types without a defined syntax marker class
+; (the class that defines the syntax coloring and styles)
+; (meaning having a null marker field: ||)
+; are not editable and will not be
+; accepted by the text editor.
+; To make a file type editable but with no syntax marker class,
+; use "-" as below for the Text file type
+;
+: Files must be identified as (t)ext/(b)inary so they
+; can be correctly interpreted as text or binary files
+; by the FTP service. Default is binary.
+;
+; P. Lutus 11-04-2006
+;
+All|||*.*; this entry must remain for the option of listing all files
+Text|t|-|txt,text,doc,bat,log,tbd ; text files
+HTML|t|JArachTextArea.HTMLTokenMarker|html,htm,shtml,asp,stm,idc,htx,ssi,cfm,hts ; HTML files
+Graphic|b||gif,jpg,jpeg,png ; graphic files
+Java|t|JArachTextArea.JavaTokenMarker|java ; Java source files
+JavaScript|t|JArachTextArea.JavaScriptTokenMarker|js ; JavaScript source files
+Perl|t|JArachTextArea.PerlTokenMarker|pl,perl,pm ; Perl scripts
+C|t|JArachTextArea.CTokenMarker|c,h ; C source files
+CSS|t|JArachTextArea.CTokenMarker|css ; CSS Source Files
+C++|t|JArachTextArea.CCTokenMarker|cpp,cc,h ; C++ source files
+CGI|t|JArachTextArea.PerlTokenMarker|cgi ; CGI script files
+XML|t|JArachTextArea.XMLTokenMarker|xml;
+Python|t|JArachTextArea.PythonTokenMarker|python;
+PHP|t|JArachTextArea.PHPTokenMarker|php;
+RTF|T|-|rtf; RTF files
+Eiffel|t|JArachTextArea.EiffelTokenMarker|eiffel;
+Shell Script|t|JArachTextArea.ShellScriptTokenMarker|sh;
+SQL|t|JArachTextArea.SQLTokenMarker|sql;
+TSQL|t|JArachTextArea.TSQLTokenMarker|tsql;
+TeX|t|JArachTextArea.TeXTokenMarker|tex;
+Sound|b||mid,rmi,wav,ra,ram ; sound files

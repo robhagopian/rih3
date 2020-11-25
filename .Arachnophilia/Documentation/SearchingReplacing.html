@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Created on Mar 1, 2002 10:06:35 AM -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      Searching &amp; Replacing
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rev="made" href="http://www.arachnoid.com"/>
+    <meta http-equiv="Content-language" content="en"/>
+    <meta name="author" content="Paul Lutus"/>
+    <meta name="owner" content="Paul Lutus"/>
+    <meta name="description" content="Regular expressions and unadorned text searching."/>
+    <meta name="group" content="DOCUMENTATION"/>
+    <meta name="keywords" content="Arachnophilia,HTML,edit,editor,webpage,programming,macro,Lutus"/>
+    <meta name="rating" content="General"/>
+    <meta name="ROBOTS" content="ALL"/>
+    <meta name="GENERATOR" content="Arachnophilia 5.0"/>
+    <meta name="FORMATTER" content="Arachnophilia 5.0"/>
+    <link rel="stylesheet" type="text/css" href="styles/default_article.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/roundcorner_16_parch.css"/>
+  </head>
+  <body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000">
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <script type="text/javascript" language="JavaScript">
+            function toNewPage(t) { location.href = t.options[t.selectedIndex].value; }
+          </script>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html" selected="selected">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="HowToCreateHTML.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="SpellChecker.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+    <div align="center">
+      <div class="article_title_inverse">Searching &amp; Replacing</div>
+<div class="article_linklist_inverse">Arachnophilia is &copy; Copyright 2009, P. Lutus.
+        <br/>
+        <p>Arachnophilia is
+        <a href="http://www.arachnoid.com/careware">CareWare</a></p>
+
+
+      </div>
+      <!-- LINK_MENU_START --><!-- LINK_MENU_END -->
+    </div>
+    <p></p>
+
+    <div class="article_wrapper">
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch0"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch9"></span>
+      </span>
+      <div class="roundcorner_16_parch_content">
+        Searching for and replacing text is such a constant activity in Web development, and in general programming, that Arachnophilia has a special bar dedicated to this purpose. It looks like this:
+        <p></p>
+
+        <img src="images/SearchReplaceClosed.png" width="620" height="28" alt=""/>
+        <p></p>
+
+        But, since we're going to be looking at all the search &amp; replace features, click the button marked "Exp" at the right. You will see the expanded panel display:
+        <p></p>
+
+        <img src="images/SearchReplaceOpen.png" width="620" height="109" alt=""/>
+        <p></p>
+
+        The rules are simple:
+        <p></p>
+
+        <ul>
+          <li>Searching:<p></p>
+
+            <ol>
+              <li>If you type into the left-hand text window (the search window) and press "First," the first example of what you type will be sought in the presently displayed document.</li>
+              <li>If "Instant" is selected, a search for the first match will be carried out as you type &mdash; on each keystroke.</li>
+              <li>If you click "Next" (or press "Enter" while the editing cursor is in the search text window), the next match is found.</li>
+              <li>You can scan the entire document for matches by pressing "Next" (or "Enter") again and again.</li>
+              <li>Pressing the Enter key while typing into the search window is equivalent to pressing "Next." This makes instant searches easy &mdash; just type until you like what you find, then press Enter to find the next case.</li>
+            </ol>
+          <p></p></li>
+
+          <li>Replacing:<p></p>
+
+            <ol>
+              <li>If you type some text into the right-hand text window (the replace window) and click "Replace," text that matches the search entry will be replaced by the replace entry, once.</li>
+              <li>If you press "All," item (1) above will be carried out for all matching cases in the document that is on display, <i>if there is no selection.</i> Remember: nearly all Arachnophilia functions work on the slection if there is one, and on the entire document if there is no selecton. So remember not to select anything if you want to apply "All" to the entire document.</li>
+              <li>If you press "Global," item (2) above will be carried out for all the documents you have open.</li>
+              <li>Pressing the toolbar button marked <img src="images/Undo.png" width="20" height="20" alt=""/> or typing Ctrl-Z will undo the most recent replacement (or, if "All" had been clicked, all of them).</li>
+          </ol></li>
+        </ul>
+        The power of "All" and "Global" obviously means you will want to be careful &mdash; before pressing "All" or "Global," first satisfy yourself that you are searching for and replacing the desired text.
+        <p></p>
+
+        Both the search and replace windows remember what you have typed before, so if you need to repeat a search, you can get back your prior entry by opening the drop-down list and selecting instead of retyping it.
+        <p></p>
+
+        More rules and behaviors:
+        <ul>
+          <li>If you press "Count," the number of occurrences of the search text is counted in the displayed document (or selection).</li>
+          <li>If you select "Case," the search become case-sensitive (it is not case-sensitive by default).</li>
+          <li>An advanced feature &mdash; if you want to insert a macro name into either the search or replace text windows, simply press the right mouse button and choose the desired macro name. The macro will be processed when the search is carried out.</li>
+        </ul>
+        Escape characters
+        <blockquote>
+          The usual escape characters work for both normal and regular expression entries: \n = linefeed, \t = tab, and so forth. These escape characters work for both the search and replace fields. And, because "\" is used for the escape prefix, if you want to search for "\", enter it as "\\".
+        </blockquote>
+        Long search entries
+        <blockquote>
+          <i>Avoid entering more than a few words into the main seach and replace windows.</i> For longer search or replace fields, first write a macro to contain the text, then refer to the macro by name in the search and replace fields. To get the macro name, simply right-click the desired field and choose the name from the list that will appear.<p></p>
+
+          If you enter too much text into a search or replace field, this may produce an unusable dropdown list. If this happens, you may need to remove the entry by editing the configuration file located at:<p></p>
+
+          <blockquote><tt>
+              C:UsersBill/.Arachnophilia/Arach.ini
+          </tt></blockquote>
+        </blockquote>
+        And finally, a note about Regular Expressions. Selecting "RegExp" in the "RegExp Functions" window enables the regular expression parser, a very powerful tool that is rather advanced, and one that I won't be covering in detail here. If you want to learn how to use regular expressions, the Internet has a number of pages dedicated to this topic. A search engine like
+        <a href="http://www.google.com">www.google.com</a>
+        will produce a list of them.
+        <p></p>
+
+        One more thing.
+        <i>
+          An innocent-looking, poorly-written regular expression can lock up your program and your computer.
+        </i>
+        Always save important documents before experimenting with regular expressions, and always save successful regular expression patterns in macros instead of trying to type them in from memory. And avoid using the "Instant" mode with regular expressions &mdash; a partially entered regular expression may have unexpected effects.
+        <p></p>&nbsp;
+
+      </div> <!-- content -->
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch9"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch0"></span>
+      </span>
+    </div> <!-- wrapper -->
+    <p></p>
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html" selected="selected">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="HowToCreateHTML.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="SpellChecker.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+  </body>
+</html>

@@ -1,0 +1,16 @@
+konqueror
+netscape
+netscape.exe
+mozilla
+mozilla.exe
+opera
+opera.exe
+iexplore.exe
+firefox
+firefox.exe
+safari
+safari.exe
+seamonkey
+seamonkey.exe
+chrome
+chrome.exe

@@ -1,0 +1,59 @@
+You can change nearly any Arachnophilia menu item, toolbar button, or keyboard mapping - just use the Macro Editor to edit the macro tree at the right of the main display, or right-click toolbar buttons and choose "Edit."
+*
+You can create new HTML tag commands using the macro editor (or by simply right-clicking toolbar buttons), and your choices become part of Arachnophilia. You don't have to accept the default behavior of any Arachnophilia HTML tag command.
+*
+You can make Arachnophilia automatically save your documents at specified time intervals. Choose Tools ... Configure AutoSave.
+*
+To change the content of the Arachnophilia file templates, just go to [UserHomeDirectory]/.Arachnophilia/Templates and edit the files as you wish. This is how, among other things, you can avoid an HTML default file outline that you don't like, and you can customize the appearance of any newly created file.
+*
+For most Arachnophilia commands, if you make a selection, the command acts on the selection. If you have not made a selection, the command acts on the entire document. So if you see unexpected behavior during, for  example, search & replace, make sure you are not selecting something unintended.
+*
+This set of tips you are reading is located at [UserHomeDirectory]/.Arachnophilia/ArachConf/TipsOfTheDay.txt, so you can edit this list of suggestions, as with nearly everything in Arachnophilia. You can put in extra hints that you have discovered yourself, cookie recipes, state secrets - anything at all.
+*
+Arachnophilia is not just a Web development tool. It serves the needs of programmers with syntax coloring keyed to various programming source file types, it beautifies many kinds of code, it will launch a compiler you specify, and it will provide feedback about any errors the compiler discovers by providing a list of errors and interactively moving to those error lines in the source file.
+*
+You can support as many browsers as exist on your system, and Arachnophilia will automatically find them for you, using the menu item HTML ... Configure Browsers. This means you can find out how your HTML page looks on more than one browser. If you wish, you can even put extra buttons on the toolbar, one for each browser (or assign keyboard keys to each browser if you prefer).
+*
+If you run with scissors, you might get hurt. Even walking with scissors isn't such a hot idea. On the other hand, you can't avoid all risks, and scissors are rather low on the spectrum of risks -- probably below boredom, insurance salesmen and meteorites. :)
+*
+You can map keyboard keys to any command, and there doesn't have to be a menu item or toolbar button for keyboard-mapped commands. You can use any combination of Ctrl, Alt, and/or Shift to modify the key you choose. This results in a huge number of unique custom keys, hopefully more than anyone can meaningfully use up. :)
+
+Arachnophilia detects an inadvertent effort to assign a key to more than one command, and offers you a choice when this happens.
+
+You can list all the key mappings that are in effect, using Tools ... List Current Key Mappings.
+*
+You can save part or all of your custom macro sets - just select the part of the menu tree you want to save, press the right  mouse button, and select "Write Macro File."
+
+Then you can load such a file to any part of the macro tree you care to, or mail it to a friend who trusts you. I say that because an Arachnophilia macro can do absolutely anything to Arachnophilia or to your system (but you can review macro contents before they are executed). In this case, it is important to trust the sender.
+*
+You can import toolbar files from pre - 5.0 versions of Arachnophilia. Just select the part of the macro tree you want them to go, press the right mouse button, and choose "Read Legacy File."
+*
+Arachnophilia is CareWare. Meaning what, you may ask? Well, no money, now or ever. No nags, no expiration date, no mailing list, no spam. Batteries not included. Not prohibited anywhere. Your mileage won't vary.
+
+Just be nice to someone, even if that someone is yourself. Details at www.arachnoid.com/careware.
+
+And no guilt. You are free to do anything you want with CareWare including ignore it. Just in case you thought my saying "be nice to someone" was an order. :)
+*
+You can globally change the case of the tags in HTML files, either to UPPERCASE or lowercase. Use HTML ... More Functions ... Tags UPPERCASE/Tags lower case for this. But remember: in XHTML, all tags should be lower case.
+*
+Be sure to see the Arachnophilia Table Wizard do its thing. Table Wizard will turn a tabular data set into a table pretty close to instantly. Just copy a data table (lines of data delimited by commas, tabs, etc.) into Arachnophilia, select the data, and run the Table Wizard (HTML ... Launch Table Wizard). Seconds later, a pretty table.
+*
+Nearly all Arachnophilia's basic program configuration data (not the macros, but the specifics of the program like color and Look & Feel choices) is located at [UserHomeDirectory]/.Arachnophilia/ArachConf/Arach.ini. There are a number of options there that aren't explicitly included as a dialog or system command. You may want to look at it sometime, especially if there is a behavior you want but cannot seem to get.
+*
+Arachnophilia's macro set is located at [UserHomeDirectory]/.Arachnophilia/Macros/Macros.xml. It is an XML data file, and it is also user-editable, although this is not really necessary. If the user changes a macro during an Arachnophilia session, the file is saved when the program exits.
+*
+To list all the system commands (tags that, when include in macros, directly invoke Arachnophilia program features), use Tools ... List System Commands. Any of these commands can be placed in macros, and made part of Arachnophilia menu items and toolbars. In fact, that is how the menus and toolbars are created, each time Arachnophilia runs.
+*
+The Arachnophilia spell checker dictionary is located at [UserHomeDirectory]/.Arachnophilia/SpellCheckData. Any file whose name ends in ".txt" that is placed in this directory will be read and included in the standard dictionary. Any file placed in this directory whose name ends in ".txt" and begins with "custom" will be made part of the custom dictionary (that part of the dictionary the user adds to by choice). Finally, any files ending in ".zip" will be read, and the above rules will be applied to its contents.
+
+This means the spell checker can easily support languages other than English, the default. Simply put your word list (one word per line) in the spell checker directory and run Arachnophilia.
+*
+The Arachnophilia Home Page is located at www.arachnoid.com/arachnophilia.
+The Arachnophilia Documentation home page is located at www.arachnoid.com/arachnophilia/Documentation.
+The CareWare Home Page is located at www.arachnoid.com/arachnophilia/careware.
+*
+If you have a problem with Arachnophilia and you want to submit a bug report, please:
+
+1. Locate the error log file, which, if it exists, will be located on your machine at [UserHomeDirectory]/.Arachnophilia/ArachErrorLog.txt. If it has any content, please include it in your report. If it has no content, be sure to say this also.
+
+2. Go to http://www.arachnoid.com/arachnophilia/arach_email.html, describe the problem and your system, and include any error log contents in your message.

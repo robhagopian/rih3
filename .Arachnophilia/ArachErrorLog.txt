@@ -1,0 +1,86 @@
+Error log for Arachnophilia 5.4 build 2445
+Thu Mar 24 22:09:16 EDT 2011
+Operating System: Windows 7
+Java Version: 1.6.0_24
+If you plan to submit a bug report, be sure to include the entire contents of this log.
+If there are no messages below the dashed line, there were no errors
+during the most recent Arachnophilia session.
+If you see a message below about an error "in native code outside the VM",
+or language like that, this means there was an error in your operating system,
+not in Java or Arachnophilia.
+------------------------------------------------------------
+java.net.ConnectException: Connection refused: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at FTPService.FTPUtils.connect(Unknown Source)
+	at FTPService.FTPUtils.initializeConnection(Unknown Source)
+	at FTPService.FTPUtils.<init>(Unknown Source)
+	at FTPService.FTPPanel$1.run(Unknown Source)
+java.net.UnknownHostException: http://members.hypermart.net/controlpanel/FileManager/
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at FTPService.FTPUtils.connect(Unknown Source)
+	at FTPService.FTPUtils.initializeConnection(Unknown Source)
+	at FTPService.FTPUtils.<init>(Unknown Source)
+	at FTPService.FTPPanel$1.run(Unknown Source)
+java.lang.NullPointerException
+	at FTPService.FTPUtils.sendCommand(Unknown Source)
+	at FTPService.FTPUtils.changeDir(Unknown Source)
+	at FTPService.FTPUtils.changeMakeDir(Unknown Source)
+	at FTPService.FTPUtils.createDirUploadFile(Unknown Source)
+	at FTPService.FTPUtils.scanDir(Unknown Source)
+	at FTPService.FTPUtils.scanDir(Unknown Source)
+	at FTPService.FTPUtils.scanDir(Unknown Source)
+	at FTPService.FTPUtils.scanDirEntry(Unknown Source)
+	at FTPService.FTPPanel$1.run(Unknown Source)
+java.io.FileNotFoundException: \\$Recycle.Bin\S-1-5-21-3111579935-177672929-2987266323-1001\$I0G7APM.cpt (The network path was not found)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at FTPService.FTPUtils.readLocalFile(Unknown Source)
+	at FTPService.FTPUtils.createDirUploadFile(Unknown Source)
+	at FTPService.FTPUtils.scanDir(Unknown Source)
+	at FTPService.FTPUtils.scanDir(Unknown Source)
+	at FTPService.FTPUtils.scanDir(Unknown Source)
+	at FTPService.FTPUtils.scanDirEntry(Unknown Source)
+	at FTPService.FTPPanel$1.run(Unknown Source)
+java.io.FileNotFoundException: \\$Recycle.Bin\S-1-5-21-3111579935-177672929-2987266323-1001\$I0G7APM.cpt (The network path was not found)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at FTPService.FTPUtils.readLocalFile(Unknown Source)
+	at FTPService.FTPUtils.createDirUploadFile(Unknown Source)
+	at FTPService.FTPUtils.scanDir(Unknown Source)
+	at FTPService.FTPUtils.scanDir(Unknown Source)
+	at FTPService.FTPUtils.scanDir(Unknown Source)
+	at FTPService.FTPUtils.scanDirEntry(Unknown Source)
+	at FTPService.FTPPanel$1.run(Unknown Source)
+java.lang.NullPointerException
+	at FTPService.FTPUtils.sendCommand(Unknown Source)
+	at FTPService.FTPUtils.login(Unknown Source)
+	at FTPService.FTPUtils.initializeConnection(Unknown Source)
+	at FTPService.FTPUtils.createDirUploadFile(Unknown Source)
+	at FTPService.FTPUtils.scanDir(Unknown Source)
+	at FTPService.FTPUtils.scanDir(Unknown Source)
+	at FTPService.FTPUtils.scanDir(Unknown Source)
+	at FTPService.FTPUtils.scanDirEntry(Unknown Source)
+	at FTPService.FTPPanel$1.run(Unknown Source)
+java.lang.NullPointerException
+	at FTPService.FTPUtils.sendCommand(Unknown Source)
+	at FTPService.FTPUtils.login(Unknown Source)
+	at FTPService.FTPUtils.initializeConnection(Unknown Source)
+	at FTPService.FTPUtils.createDirUploadFile(Unknown Source)
+	at FTPService.FTPUtils.scanDir(Unknown Source)
+	at FTPService.FTPUtils.scanDir(Unknown Source)
+	at FTPService.FTPUtils.scanDir(Unknown Source)
+	at FTPService.FTPUtils.scanDirEntry(Unknown Source)
+	at FTPService.FTPPanel$1.run(Unknown Source)

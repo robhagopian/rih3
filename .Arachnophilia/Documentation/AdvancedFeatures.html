@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Created on Mar 1, 2002 10:06:35 AM -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      Advanced Features
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rev="made" href="http://www.arachnoid.com"/>
+    <meta http-equiv="Content-language" content="en"/>
+    <meta name="author" content="Paul Lutus"/>
+    <meta name="owner" content="Paul Lutus"/>
+    <meta name="description" content="A tour of some esoteric aspects of Arachnophilia."/>
+    <meta name="group" content="DOCUMENTATION"/>
+    <meta name="keywords" content="Arachnophilia,HTML,edit,editor,webpage,programming,macro,Lutus"/>
+    <meta name="rating" content="General"/>
+    <meta name="ROBOTS" content="ALL"/>
+    <meta name="GENERATOR" content="Arachnophilia 5.0"/>
+    <meta name="FORMATTER" content="Arachnophilia 5.0"/>
+    <link rel="stylesheet" type="text/css" href="styles/default_article.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/roundcorner_16_parch.css"/>
+  </head>
+  <body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000">
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <script type="text/javascript" language="JavaScript">
+            function toNewPage(t) { location.href = t.options[t.selectedIndex].value; }
+          </script>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html" selected="selected">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="QuickTour.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="VersionNotes.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+    <div align="center">
+      <div class="article_title_inverse">Advanced Features</div>
+      <div class="article_linklist_inverse">Arachnophilia is &copy; Copyright 2009, P. Lutus.
+        <br/>
+        <p>Arachnophilia is
+        <a href="http://www.arachnoid.com/careware">CareWare</a></p>
+        
+        
+      </div>
+      <!-- LINK_MENU_START -->
+      <a href="#Relocatable_Configuration">Relocatable Configuration</a> | <a href="#PHP_ASP_server_side_support">PHP/ASP server-side support</a> | <a href="#Arachnophilia_Macro_Architecture">Arachnophilia Macro Architecture</a><br/>
+      <a href="#Advanced_FTP_Operations">Advanced FTP Operations</a> | <a href="#HTML_Beautifier">HTML Beautifier</a> | <a href="#Unicode_Support">Unicode Support</a>
+      <!-- LINK_MENU_END -->
+    </div>
+    <p></p>
+    
+    <div class="article_wrapper">
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch0"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch9"></span>
+      </span>
+      <div class="roundcorner_16_parch_content">
+        <i>
+          This page describes features of interest to power Arachnophilia users &mdash; how to exercise greater control over the FTP service, how to list and use Arachnophilia system commands, internationalization issues and some other things.
+        </i>
+        
+        <a name="Relocatable_Configuration"></a><div class="article_heading">Relocatable Configuration</div>
+        <div class="article_section_color_bar">
+          <p>Normally, Arachnophilia places its configuration in the user's home directory, under a directory named ".Arachnophilia", but for special purposes the user can specify an alternate configuration location on Arachnophilia's command line. This allows the user to place Arachnophilia on a thumb drive, accompanied by the user's preferred configuration, for use on any available computer. Another use for this feature is to create multiple Arachnophilia configurations with different properties and specify which is to be used by way of the above command-line argument. This allows the user to create special configurations for different tasks and easily switch between them. Here are the rules for use of this feature:</p>
+          
+          <ul>
+            <li>The provided location must specify a directory, not a file.</li>
+            <li>The provided location is submitted on Arachnophilia's command line and must be the first argument if there is more than one. Example:
+              <blockquote style="font-family:monospace">
+                java -jar (path to Arachnophilia)/Arachnophilia.jar (alternate configuration path) (optional file names)
+              </blockquote>
+            </li>
+            <li>It is not necessary to copy an existing Arachnophilia configuration to the specified location &mdash; if none is provided, a default configuration will be created.</li>
+            <li>If the user chooses to copy an existing configuration, be sure to copy Arachnophilia's entire configuration directory, with the name ".Arachnophilia", to the new location, rather than the files and directories it contains.</li>
+          </ul>
+          
+          
+          
+        </div>
+        <a name="PHP_ASP_server_side_support"></a><div class="article_heading">PHP/ASP server-side support</div>
+        <div class="article_section_color_bar">
+          <ul>
+            <li>
+              <i>Overview</i>
+              <br/><br/>
+              PHP and ASP pages are special Web pages that are processed by a server before being presented to the client browser. If you have a server on your development machine, you can use Arachnophilia to preview these pages interactively.
+              <br/><br/>
+            </li>
+            <li>
+              <i>Procedure</i>
+              <br/><br/>
+              During preview, Arachnophilia handles the file types PHP and ASP in a special way. They are assigned a special invocation string that causes them to be handled by your local Web server. This string is user-defined in the browser configuration dialog (HTML ... Configure Browsers).<br/><br/>
+              You may want to place these special pages in your default HTML directory, in which case you need only type the name of your server into the initialization string, like this:<br/><br/>
+              http://your-server-name/$1<br/><br/>
+              Remember that a simple filename is appended to this initialization string (not a path), in the position taken by the "$1" token. This means if you are working in a subdirectory of your Web site's directory tree, you will need to provide this extra path information explicitly, or you can set up an alias in your server software and enter the alias instead. Unlike when previewing ordinary HTML web pages using file paths, you need to sort out the relationship between literal file paths and site relative paths &mdash; Arachnophilia cannot do this for you.<br/><br/>
+              An example. If you are working in a directory named "php" that is a subdirecory of your server's "document root" directory, you would enter:<br/><br/>
+              http://server-name/php/$1<br/><br/>
+              One more thing. If you are writing a server-processed page that calls itself recursively, there is no getting around the fact that you will need to save the page and press "refresh" on your browser directly. In a case like this, using a temporary file (Arachnophilia's default previewing approach) won't work.<br/><br/>
+            </li>
+            <li>
+              <i>A simple PHP test</i>
+              <br/><br/>
+              Once you have set up your local Web server, create a new PHP page and place the following line into it, between the &lt;body&gt; and &lt;/body&gt; tags:<br/><br/>
+              &lt;?php phpinfo() ?&gt;<br/><br/>
+              Set up the server initialization string as explained above and press the preview button. If you have set up your server correctly, you will see a rather long summary of the currently enabled PHP features.<br/><br/>
+            </li>
+          </ul>
+        </div>
+        <a name="Arachnophilia_Macro_Architecture"></a><div class="article_heading">Arachnophilia Macro Architecture</div>
+        <div class="article_section_color_bar">
+          <ul>
+            <li>
+              <i>
+                Overview
+              </i>
+              <br/><br/>
+              The macro list at the left in the main Arachnophilia display is actually a sort of telephone switchboard that links menu items, toolbar buttons and keystrokes to Arachnophilia commands (as well as user-entered text). The Arachnophilia command list is rather long, and not all the commands are represented by a menu item or toolbar button in the default configuration.
+              <br/><br/>
+              To see a list of all the commands, use Tools ... List System Commands. This is a very important list &mdash; remember where it is located and refer to it often.
+              <i>
+                Some of the less-often-used commands are only described in the list itself, nowhere else.
+              </i>
+              And any of them can be included in the macros you write.
+              <br/><br/>
+            </li>
+            <li>
+              <i>
+                Command Arguments
+              </i>
+              <br/><br/>
+              Some Arachnophilia commands accept arguments, which allows the user to create specific, powerful commands. An example might be:
+              <br/><br/>
+              <blockquote>
+                <tt>
+                  [FindReplaceAll:/cat/dog/]
+                </tt>
+              </blockquote>
+              <br/><br/>
+              This type of macro makes it unnecessary to manually enter search and replace text for common operations.
+              <br/><br/>
+              In summary, there are many powerful commands in the list, some not listed or described anywhere else.
+              <i>
+                It is a good idea to review this list before asking for a feature that already exists
+              </i>
+              .
+              <br/><br/>
+            </li>
+          </ul>
+        </div>
+        <a name="Advanced_FTP_Operations"></a><div class="article_heading">Advanced FTP Operations</div>
+        <div class="article_section_color_bar">
+          <ul>
+            <li>
+              <i>
+                File type determination
+              </i>
+              <br/><br/>
+              Some platforms must distinguish between text and binary files, in order to process text file line endings. FTP services ordinarily maintain a list of file suffixes and their respective types. Arachnophilia maintains this list as part of its file type configuration file.
+              <br/><br/>
+              The file type configuration file is located at:
+              <br/><br/>
+              <blockquote>
+                <tt>
+                  C:UsersBill/.Arachnophilia/FileData.txt
+                </tt>
+              </blockquote>
+              <br/><br/>
+              This file is self-documenting and contains a record for each file type. Each record distinguishes between binary and text file types.
+              <br/><br/>
+              To add a text file suffix, let's say "xyz", simply add it to an existing text file type, like this (change in
+              <font color="#ff0000">
+                red
+              </font>
+              ):
+              <br/><br/>
+              <blockquote>
+                <tt>
+                  Text|t|-|txt,text,doc,bat,log,tbd
+                  <font color="#ff0000">
+                    ,xyz
+                  </font>
+                  ; text files
+                </tt>
+              </blockquote>
+              <br/><br/>
+              Or, you might want to add a new file type simply to contain text file type suffixes, like this:
+              <br/><br/>
+              <blockquote>
+                <tt>
+                  TextFileSuffixes|t||abc,def,ghi,jkl ; text file types for FTP
+                </tt>
+              </blockquote>
+              <br/><br/>
+              The FTP service defaults to binary file type (after build 1860) but, to make its final determination, it searches this configuration file for any entries that identify a file type as text.
+              <br/><br/>
+            </li>
+            <li>
+              <i>
+                Debugging FTP operations
+              </i>
+              <br/><br/>
+              The FTP service has a debugging facility, controlled by the slider control at the bottom of the FTP dialog. To see more debugging messages, simply slide the control to the right and run the transaction. Each increment to the right increases the level of detail.
+              <br/><br/>
+              I receive many "bug reports" from users that simply say "The FTP transaction just stopped." Users need to look at the debugging messages to find out what actually happened.
+              <br/><br/>
+            </li>
+            <li>
+              <i>
+                Destination path
+              </i>
+              <br/><br/>
+              Systems differ widely as to the sort of destination path entry they require. Some systems require that the path begin with a forward slash ("/"), some must not have this, others do not care. This is a very common debugging problem.
+              <br/><br/>
+              Example &mdash; let's say you have a Web site with a target directory of "WebPages". Depending on the operating system the server is running, you may need to make any of these entries for a destination path:
+              <br/><br/>
+              <blockquote>
+                <tt>
+                  /home/username/WebPages
+                  <br/>
+                  /WebPages
+                  <br/>
+                  ~/WebPages
+                  <br/>
+                  /
+                  <br/>
+                </tt>
+              </blockquote>
+              <br/><br/>
+              The easiest way to sort this out is to ask your service which option is correct, but reading the full debugging trace always helps. The destination side may complain if the entry is not correct (but don't enter a directory name without a preceding "/" or "~", this is never correct).
+              <br/><br/>
+              <i>
+                If you do not use the above-described debugging facility, you may never know why the transfer failed
+              </i>
+              .
+              <br/><br/>
+            </li>
+          </ul>
+        </div>
+        <a name="HTML_Beautifier"></a><div class="article_heading">HTML Beautifier</div>
+        <div class="article_section_color_bar">
+          The HTML Beautifier (located in the HTML menu) will indent your HTML page just as code beautifiers do, except if the page contains legacy HTML, there can be problems one does not see in code beautifiers. Most of the problems are caused by inconsistent HTML syntax &mdash; some tags have closing partners, some do not. And some tags have closing partners sometimes, but not other times, both valid syntax. Example:
+          <blockquote>
+            <tt>
+              My paragraph&lt;p&gt; (legal)
+              <br/><br/>
+              &lt;p align=left&gt;My paragraph&lt;/p&gt; (also legal)
+              <br/><br/>
+            </tt>
+          </blockquote>
+          Because both these forms are valid HTML, and because there are many such valid examples, there is no meaningful way to write a reliable, robust beautifier for legacy HTML, something I discovered over years of trying. But these problems are solved by converting to XHTML, the main intent of the most recent Arachnophilia versions.
+          <br/><br/>
+          The previous major version of Arachnophilia (4.0) had a much more ambitious beautifier that also tried to correct HTML syntax. Eventually, because of the inconsistencies in legacy HTML, both these features (beautify and validate) were downplayed and one was dropped entirely. In the new Arachnophilia (version 5.3 and newer), because of the consistency provided by XHTML, HTML Beautify and HTML Validate are separate functions, and both work as intended <i>if the page contains valid XHTML syntax.</i> <p></p>
+          
+          If you want to keep your pages as they are, e.g not convert to XHTML, but want to use the advanced Arachnophilia features, just make these changes:
+          <ul>
+            <li>Make sure that every tag in your page either has a closing partner:
+              <blockquote>
+                &lt;open&gt;content&lt;/close&gt;
+              </blockquote>
+              or is self-closing:
+              <blockquote>
+                &lt;self-contained tag/&gt;
+              </blockquote>
+            </li>
+            <li>Examples of tags that should have closing partners, but did not in earlier versions of Arachnophilia, incude &lt;li&gt;&lt;/li&gt; and &lt;option&gt;&lt;/option&gt;.
+            </li>
+            <li>Examples of tags that should be made &lt;self-closing/&gt; include &lt;img ... /&gt;, &lt;input ... /&gt;, &lt;frame .../&gt;, &lt;meta ... /&gt; and about a half-dozen others. The point is there should <i>never</i> be a tag without &lt;either&gt; a &lt;/partner&gt; or the special &lt;self-closing syntax/&gt;.
+            </li>
+            <li>If this system is followed, you can update your pages with a minimum of effort, and your pages will be more acceptable to browsers as well as Arachnophilia.
+            </li>
+          </ul>
+          This is a bit of an editorial comment. I strongly recommend that the reader consider converting his or her pages to XHTML. This change allows much greater control over page form and content, and will prevent the eventual abandonment of Web pages that are not internally consistent.<p></p>
+          
+          As time has passed, I have done all in my power to automate Web page creation, and Arachnophilia represents some steps in this direction (although script writing is the primary approach to automation). In the case of legacy HTML Web pages, it is very difficult to apply automated methods because page content cannot be relied on to follow consistent rules. XHTML was created to correct the glaring deficiencies in HTML, and Arachnophiila is now oriented toward XHTML, to the degree that some of its advanced features won't work with HTML any more.<p></p>
+          
+        </div>
+        <a name="Unicode_Support"></a><div class="article_heading">Unicode Support</div>
+        <div class="article_section_color_bar">
+          <p style="">Beginning with Arachnophilia Version 5.4, Unicode is supported by way of the UTF-8 character set, selectable using the menu item "File ... Character Encoding ... UTF-8". Once this selection has been made, file loading and saving, and clipboard operations, will support Unicode characters and files. This change has been made in response to a number of inquiries about internationalization issues, and I made this change in a way that shouldn't affect existing documents (assuming a suitable character encoding is chosen at menu item "File ... Character Encoding").</p>
+          
+          <p style="">But the fact that Arachnophilia supports Unicode doesn't mean that typical browsers will suddenly and automatically support Unicode. A Unicode character sequence such as "Ð—Ð´Ñ€Ð°Ð²Ñ�Ñ‚Ð²ÑƒÐ¹Ñ‚Ðµ" may or may not appear correctly while editing in Arachnophilia, and it may or may not appear correctly in your browser or that of your visitors. All these issues depend on the availability of fonts to support the characters represented by the Unicode content.</p>
+          
+          <p style="">One partial solution to compatibility issues with respect to international Unicode characters is to convert them into HTML entities using the menu item "HTML ... More Functions ... Html to Entity". For example, the small sample given above would be converted like this:</p>
+          
+          <blockquote>
+            "Ð—Ð´Ñ€Ð°Ð²Ñ�Ñ‚Ð²ÑƒÐ¹Ñ‚Ðµ" -> "&amp;#1047;&amp;#1076;&amp;#1088;&amp;#1072;&amp;#1074;&amp;#1089;&amp;#1090;&amp;#1074;&amp;#1091;&amp;#1081;&amp;#1090;&amp;#1077;"
+          </blockquote>
+          <p style="">The problem with this sort of conversion is that the result is no longer suitable for editing, a problem solved by temporarily converting back from entities to characters using "HTML ... More Functions ... Entity to HTML".</p>
+          
+          <p style="">The other problem with using Unicode characters is the fact that entity conversion only solves certain trivial browser compatibility issues, it doesn't get around the issue of display fonts. To display Unicode characters within a document in Arachnophilia, your system must have the correct fonts and a suitable Unicode font must be chosen using the font selector located at "Text ... Set Editor Font." To see Unicode characters in program prompts and macros, you must also select a Unicode font for the program itself, using menu item "Text ... Set Program Font" (in most cases the same font can be used for both choices). Finally, to see the intended Unicode characters in your browser, the browser also must have a suitable font installed. But the final problem with Unicode support is that visitors to your Web site also need to install appropriate fonts in order to view your Unicode content. All these problems should be considered before adding Unicode content to your Web pages.</p>
+          
+          <p style="">Remember about using Unicode characters that you may have arranged to be able to see the right characters in Arachnophilia and on your own development Web browser, but this doesn't mean your visitors will be able to see the content you intend. For that, the visitor must have a Unicode-compatible browser <i>and</i> the correct installed fonts.</p>
+          
+          <p style="">One more note about Unicode. Choosing an appropriate editing font with the dialog located at "Text ... Set Editor Font" doesn't change your document's <i>content</i>, it only changes how it is <i>displayed in the editor</i>. If while editing you see little blocks instead of characters, the document may still display correctly whern viewed with a browser. Conversely, the appearance of the correct characters in the editor doesn't assure that the resulting Web page will display correctly for a visitor to your site.</p>
+          
+          <p>To become familiar with Unicode, a good way to start is to acquire some Unicode fonts. For experimentation I recommend <a href="http://www.google.com/search?q=bitstream+cyberbit">Bitstream Cyberbit</a>, a font available from multiple sources, and an attempt at a "universal" Unicode font (one that covers a lot of languages). You may eventually settle for a less ambitious font, one that supports fewer languages, but this font is a good way to try out Unicode.</p>
+          
+          <ul>
+            <li>Download the font from <a href="http://www.google.com/search?q=bitstream+cyberbit">one of the listed sources</a> (the font should be free).</li>
+            <li>Install the font using your operating system's font mangement tools.</li>
+            <li>Run Arachnophilia, then select menu item "Text ... Set Editor Font". Choose "Bitstream Cyberbit" from the drop-down list.</li>
+            <li>To allow program prompts and macros to display correctly, select menu item "Text ... Set Program Font". Again, choose "Bitstream Cyberbit" from the drop-down list.</li>
+            <li>Test the editor's ability to manage Unicode by copying some foreign-language text into the editor:<br/><br/>
+              <ul>
+                <li>English: Hello</li>
+                <li>Russian: Ð—Ð´Ñ€Ð°Ð²Ñ�Ñ‚Ð²ÑƒÐ¹Ñ‚Ðµ</li>
+                <li>Japanese: ã�“ã‚“ã�«ã�¡ã�¯</li>
+                <li>Chinese: ä½ å¥½</li>
+                <li>Korean ì—¬ë³´ì„¸ìš”</li>
+                <li>Arabic: Ù…Ø±Ø­Ø¨Ø§</li>
+                <li>Hebrew: ×©×œ×•×�</li>
+              </ul>
+            </li>
+          </ul>
+          
+          Here are some additional notes about Arachnophilia's Unicode support:
+          
+          <ul>
+            
+            <li>If you experience difficulty editing your existing files, if some characters are not displayed correctly, try changing character encoding &mdash; go to the "File ... Character Encoding" menu item and select "ISO-8859-1" or "ASCII", then try loading a file. If this resolves the issue and if you don't care about Unicode support, just use the encoding you have selected for all file loading and saving (Arachnophilia will remember your selection).</li>
+            
+            <li>In the long term it is best to choose a single default character encoding, and for a number of reasons UTF-8 is a very good choice.</li>
+            
+            <li>If a file's character encoding is not known, one easy way to import it into Arachnophilia is to use the system clipboard. Simply open a blank document in Arachnophilia and paste the document content into it. This trick works because clipboards normally use a more consistent character encoding than files do.</li>
+            
+            <li>Some more detail &mdash; a new submenu has been added to the "File" menu category named "Character Encoding," containing some common character encodings. Clicking one of these character encodings changes the encoding used during subsequent read and write operations. Users can add to this list using the <a href="MacroArchitecture.html">Arachnophilia Macro Editor</a>.</li>
+            
+            <li>A new system command has been added that allows the user to choose a document read/write character set other than the default ISO-8859-1. The command is [FileEncoding] and, if included in a <a href="MacroArchitecture.html">macro</a>, it can be used to choose from a large number of character encodings (more than offered by the provided menu selection). When invoked as [FileEncoding:UTF-8], this command will change subsequent file operations to use the UTF-8 (full Unicode support) chartacter set. When invoked as [FileEncoding] this command reverts to the default ISO-8859-1 character encoding. <a href="MacroArchitecture.html">Click here</a> to read more about writing macros.</li>
+            
+            <li>For those who would like to prepare Arachnophilia for use in non-English-language environments, remember that nearly all Arachnophilia menu and toolbar content can be translated into foreign languages using Unicode character sets, and the resulting program content can be exported as a distributable file. Such a translation activity would be carried out on Arachnophilia's macro content, as <a href="MacroArchitecture.html">explained here</a>.</li>
+            
+            <li>If you are creating content in a language that reads right-to-left, choose the "plain text" editor mode (right-click, "Change to plain display"). This mode automatically manages typing direction and has a distinctive text cursor that shows the current editing direction .</li>
+          </ul>
+          
+          <p>At risk of repeating myself, remember the Unicode pitfalls. If you don't see characters rendered correctly in Arachnophilia, this doesn't mean they won't be rendered correctly in a browser. Conversely, if you see characters rendered correctly in Arachnophilia, this doesn't assure they will appear correctly on your development browser or on the browsers of your site's visitors. All these outcomes depend on selecting and installing appropriate fonts.</p>
+          
+          
+        </div>&nbsp;
+      </div> <!-- content -->
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch9"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch0"></span>
+      </span>
+    </div> <!-- wrapper -->
+    <p></p>
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html" selected="selected">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="QuickTour.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="VersionNotes.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+  </body>
+</html>

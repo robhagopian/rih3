@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Created on Mar 1, 2002 10:06:35 AM -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      The Java Custom Class Interface
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rev="made" href="http://www.arachnoid.com"/>
+    <meta http-equiv="Content-language" content="en"/>
+    <meta name="author" content="Paul Lutus"/>
+    <meta name="owner" content="Paul Lutus"/>
+    <meta name="description" content="How to write and link external Java classes."/>
+    <meta name="group" content="DOCUMENTATION"/>
+    <meta name="keywords" content="Arachnophilia,HTML,edit,editor,webpage,programming,macro,Lutus"/>
+    <meta name="rating" content="General"/>
+    <meta name="ROBOTS" content="ALL"/>
+    <meta name="GENERATOR" content="Arachnophilia 5.0"/>
+    <meta name="FORMATTER" content="Arachnophilia 5.0"/>
+    <link rel="stylesheet" type="text/css" href="styles/default_article.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/roundcorner_16_parch.css"/>
+    <style type="text/css">
+.lc {font-weight:normal;font-style:normal;color:#808080;background-color:#ffffd8}
+    </style>
+  </head>
+  <body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000">
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <script type="text/javascript" language="JavaScript">
+            function toNewPage(t) { location.href = t.options[t.selectedIndex].value; }
+          </script>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html" selected="selected">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="CodeBeautifier.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="ExternalPrograms.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+    <div align="center">
+      <div class="article_title_inverse">The Java Custom Class Interface</div>
+      <div class="article_linklist_inverse">Arachnophilia is &copy; Copyright 2009, P. Lutus.
+        <br/>
+        <p>Arachnophilia is
+        <a href="http://www.arachnoid.com/careware">CareWare</a></p>
+        
+        
+      </div>
+      <!-- LINK_MENU_START --><!-- LINK_MENU_END -->
+    </div>
+    <p></p>
+    
+    <div class="article_wrapper">
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch0"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch9"></span>
+      </span>
+      <div class="roundcorner_16_parch_content">
+        <b>
+          Using system macros, Arachnophilia can interface with external Java classes written by the user or provided by third parties.
+        </b>
+        This essentially means any imaginable function can be added to Arachnophilia.
+        <p></p>
+        
+        Here is how to proceed:
+        <p></p>
+        
+        <ul>
+          <li>Create (or acquire) Java classes containing methods that
+            <ul>
+              <li>Are public.</li>
+              <li>Accept and return a String.</li>
+          </ul></li>
+          <li>Put these classes in your Arachnophilia user directory or a subdirectory of that directory.</li>
+          <li>Invoke one of two macros:
+            <ul>
+              <li>[RunCustomClassArg:arg]       (arg) = (className,argument). Processes argument through user class (className)</li>
+              <li>[RunCustomClassDoc:arg]       (arg) = className. Processes current document through a user class named in (arg)</li>
+          </ul></li>
+        </ul>
+        <p></p>
+        
+        This is the general idea, and most programmers will have no problems at all. But, just for an example, we'll invoke a sample Java class that is included with Arachnophilia.
+        <p></p>
+        
+        Here is a listing of the test class (Copy the block below to create your own content):
+        <p></p>
+        
+        <div style="background:#fffff0;border:1px solid black;padding-left:8px">
+<pre>
+        <code>
+<i><font style="color:#808080">/*
+ * Created on Oct 26, 2009 12:06:55 PM
+ */
+
+/* TestClass is meant to demonstrate the use
+ * of Arachnophilia's custom class launcher feature.
+ * Just compile this class in place, create
+ * a macro that looks like this:
+ * "[RunCustomClassDoc:CustomClasses/TestClass]",
+ * load a suitable document, and activate the macro.
+ */
+
+</font></i><font style="color:#006699">package</font><font style="color:#000000"> CustomClasses;
+
+</font><font style="color:#006699">import</font><font style="color:#000000"> java.util.*;
+
+</font><font style="color:#0000ff">public</font><font style="color:#000000"> </font><font style="color:#009600">class</font><font style="color:#000000"> TestClass {
+   
+   </font><i><font style="color:#808080">// this is a generic, minimal global search &amp; replace method
+</font></i><font style="color:#000000">   
+   </font><font style="color:#0000ff">private</font><font style="color:#000000"> String searchReplace(String data,String find,String replace)
+   {
+      StringBuffer sb = </font><font style="color:#0000ff">new</font><font style="color:#000000"> StringBuffer();
+      </font><font style="color:#009600">int</font><font style="color:#000000"> a = 0,b;
+      </font><font style="color:#009600">int</font><font style="color:#000000"> findLength = find.length();
+      </font><font style="color:#0000ff">while</font><font style="color:#000000">((b = data.indexOf(find,a)) != -1) {
+         sb.append(data.substring(a,b));
+         sb.append(replace);
+         a = b + findLength;
+      }
+      </font><font style="color:#0000ff">if</font><font style="color:#000000">(a &lt; data.length()) {
+         sb.append(data.substring(a));
+      }
+      </font><font style="color:#0000ff">return</font><font style="color:#000000"> sb.toString();
+   }
+   
+   </font><i><font style="color:#808080">// this is the default method that custom classes
+</font></i><font style="color:#000000">   </font><i><font style="color:#808080">// must have to work with Arachnophilia's class
+</font></i><font style="color:#000000">   </font><i><font style="color:#808080">// launcher feature unless a specific method name
+</font></i><font style="color:#000000">   </font><i><font style="color:#808080">// is provided
+</font></i><font style="color:#000000">   
+   </font><font style="color:#0000ff">public</font><font style="color:#000000"> String processString(String s)
+   {
+      String result = </font><font style="color:#650099">"Hello! This is an example of Java Custom Class Interfacing!\n\n"
+</font><font style="color:#000000">      + </font><font style="color:#650099">"You sent over this:\n"
+</font><font style="color:#000000">      + </font><font style="color:#650099">"\""</font><font style="color:#000000"> + s + </font><font style="color:#650099">"\"\n"
+</font><font style="color:#000000">      + </font><font style="color:#650099">"Here it is all uppercase:\n"
+</font><font style="color:#000000">      + </font><font style="color:#650099">"\""</font><font style="color:#000000"> + s.toUpperCase() + </font><font style="color:#650099">"\"\n"
+</font><font style="color:#000000">      + </font><font style="color:#650099">"Here it is all lowercase:\n"
+</font><font style="color:#000000">      + </font><font style="color:#650099">"\""</font><font style="color:#000000"> + s.toLowerCase() + </font><font style="color:#650099">"\"\n"
+</font><font style="color:#000000">      + </font><font style="color:#650099">"Here it is with a global change:\n"
+</font><font style="color:#000000">      + </font><font style="color:#650099">"\""</font><font style="color:#000000"> + searchReplace(s,</font><font style="color:#650099">"a"</font><font style="color:#000000">,</font><font style="color:#650099">"(A)"</font><font style="color:#000000">) + </font><font style="color:#650099">"\"\n"</font><font style="color:#000000">;
+      </font><font style="color:#0000ff">return</font><font style="color:#000000"> result;
+   }
+   
+   </font><i><font style="color:#808080">// this is another method to show the ability to choose
+</font></i><font style="color:#000000">   </font><i><font style="color:#808080">// any method by name
+</font></i><font style="color:#000000">   
+   </font><font style="color:#0000ff">public</font><font style="color:#000000"> String reallyBoringMethod(String s)
+   {
+      </font><font style="color:#0000ff">return</font><font style="color:#000000"> </font><font style="color:#650099">"On "</font><font style="color:#000000"> + </font><font style="color:#0000ff">new</font><font style="color:#000000"> Date() + </font><font style="color:#650099">", you invoked this really boring Java method."</font><font style="color:#000000">;
+   }
+}
+</font>
+        </code>
+        </pre>
+</div>
+        <p>This test class has already been created and compiled, and should be in your user directory under a subdirectory named "CustomClasses." Let's see if it is. :)
+        </p>
+        
+        Open a new text document and type something into it. Here's our example text:
+        <blockquote>
+          <pre>This is a test phrase.</pre>
+        </blockquote>
+        Now find the menu item
+        <b>
+          Programming ... Custom Class Demo
+        </b>
+        and click it. The macro behind this menu item has this content by default:
+        <p></p>
+        
+        <blockquote>
+          <pre><b>[RunCustomClassDoc:CustomClasses/TestClass]</b></pre>
+        </blockquote>
+        This macro means "Find a Java class in a subdirectory of the Arachnophilia user directory named "CustomClasses," find a class there named 'TestClass,' and run a method called 'ProcessString' with the current document's contents as its argument."
+        <p></p>
+        
+        Here is the outcome for our example sentence:
+        <p></p>
+        
+        <blockquote>
+          <pre>
+Hello! This is an example of Java Custom Class Interfacing!
+You sent over this:
+"This is a test phrase."
+Here it is all uppercase:
+"THIS IS A TEST PHRASE."
+Here it is all lowercase:
+"this is a test phrase."
+Here it is with a global change:
+"This is (A) test phr(A)se."
+          </pre>
+        </blockquote>
+        <p></p>
+        
+        If the macro is invoked as above, it will assume the existence of a public method called "ProcessString," and it will tell you if it cannot find it. If you want to use a different method name, simply provide the name, like this:
+        <p></p>
+        
+        <blockquote>
+          [RunCustomClassDoc:CustomClasses/TestClass.reallyBoringMethod]
+        </blockquote>
+        <p></p>
+        
+        It happens there is a method with this name in our test class, and if invoked it will return (something resembling):
+        <p></p>
+        
+        <blockquote>
+          <pre>
+On Fri Mar 08 21:58:27 PST 2002, you invoked this really boring Java method.
+          </pre>
+        </blockquote>
+        <p></p>
+        
+        Custom classes created by the user can be located anywhere in the user's Arachnophilia directory or subdirectories, and there can be any number of methods with any names in the classes. The only requirements are that the package identifier be the same as the above listing ("CustomClasses") and that the methods be public and receive and return a String.
+        <p></p>&nbsp;
+        
+      </div> <!-- content -->
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch9"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch0"></span>
+      </span>
+    </div> <!-- wrapper -->
+    <p></p>
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html" selected="selected">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="CodeBeautifier.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="ExternalPrograms.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+  </body>
+</html>

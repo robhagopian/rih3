@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Created on Mar 1, 2002 10:06:35 AM -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      A Quick Tour of Arachnophilia
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rev="made" href="http://www.arachnoid.com"/>
+    <meta http-equiv="Content-language" content="en"/>
+    <meta name="author" content="Paul Lutus"/>
+    <meta name="owner" content="Paul Lutus"/>
+    <meta name="description" content="An overview of the main features."/>
+    <meta name="group" content="DOCUMENTATION"/>
+    <meta name="keywords" content="Arachnophilia,HTML,edit,editor,webpage,programming,macro,Lutus"/>
+    <meta name="rating" content="General"/>
+    <meta name="ROBOTS" content="ALL"/>
+    <meta name="GENERATOR" content="Arachnophilia 5.0"/>
+    <meta name="FORMATTER" content="Arachnophilia 5.0"/>
+    <link rel="stylesheet" type="text/css" href="styles/default_article.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/roundcorner_16_parch.css"/>
+    <style type="text/css">
+.lc {font-weight:normal;font-style:normal;color:#808080;background-color:#ffffd8}
+    </style>
+  </head>
+  <body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000">
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <script type="text/javascript" language="JavaScript">
+            function toNewPage(t) { location.href = t.options[t.selectedIndex].value; }
+          </script>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html" selected="selected">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="index.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="AdvancedFeatures.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+    <div align="center">
+      <div class="article_title_inverse">A Quick Tour of Arachnophilia</div>
+<div class="article_linklist_inverse">Arachnophilia is &copy; Copyright 2009, P. Lutus.
+        <br/>
+        <p>Arachnophilia is
+        <a href="http://www.arachnoid.com/careware">CareWare</a></p>
+
+
+      </div>
+      <!-- LINK_MENU_START -->
+<a href="#Preliminaries">Preliminaries</a> | <a href="#HTML_Beautify">HTML Beautify</a> | <a href="#FTP_Service">FTP Service</a><br/>
+<a href="#Display_Issues">Display Issues</a>
+<!-- LINK_MENU_END -->
+    </div>
+    <p></p>
+
+    <div class="article_wrapper">
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch0"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch9"></span>
+      </span>
+      <div class="roundcorner_16_parch_content">
+        <a name="Preliminaries"></a><div class="article_heading">Preliminaries</div>
+        <div class="article_section_color_bar">
+          <div align="center">
+            <b>
+              Arachnophilia is an advanced Web site development environment, as well as a general programming tool.
+            </b>
+          </div>
+          <p></p>
+
+          <ul>
+            <li>Arachnophilia is designed to learn as much as possible from you:
+              <p></p>
+
+              <ul>
+                <li>Arachnophilia's menus and toolbars are
+                  <i>
+                    programmable.
+                  </i>
+                  <p></p>
+
+                  <ul>
+                    <li>Nearly all Arachnophilia menu and toolbar items are internally represented by a "macro," a user-definable data element that connects a command with a button and a keyboard key.</li>
+                    <li> You can add to or edit the macro set, change the content of the commands, and change their keyboard mapping.</li>
+                    <li>The macro command can be something you simply want to type at a keystroke, and it can include Arachnophilia system commands and other macros. It can even invoke an external java class to process your documents.</li>
+                    <li>You can build entire new toolbars and menu trees.</li>
+                    <li>You can display or hide custom menus and toolbars at a keystroke.</li>
+                    <li>
+                      <i>
+                        The macro editor is available, interactively, at all times.
+                      </i>
+                    You can even right-click toolbar buttons and edit them as you work.</li>
+                    <li> Here is an example in which the main toolbar's "NewAuto" button is being edited:
+                      <p></p>
+
+                      <div style="width:100%;overflow:auto;">
+                        <img src="images/DisplayMacroEditor.png" width="746" height="591" alt="Macro editor display"/>
+                      </div>
+                    <p></p></li>
+
+                </ul></li>
+                <li>When you exit Arachnophilia, the program remembers
+                  <i>
+                    everything.
+                  </i>
+                It saves all your macro changes, remembers which documents were open and which choices you made. When you run Arachnophilia again, it restores all your choices and documents.</li>
+              </ul>
+            <br/></li>
+          </ul>
+        </div>
+        <a name="HTML_Beautify"></a><div class="article_heading">HTML Beautify</div>
+        <div class="article_section_color_bar">
+          <ul>
+            <li>Arachnophilia can take a Web page you need to edit, which might look like this --
+              <p></p>
+
+              <div style="width:100%;overflow:auto;">
+                <pre><code>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html&gt; &lt;head&gt; &lt;title&gt; This is my web page! &lt;/title&gt;
+&lt;meta name="GENERATOR" content="Arachnophilia 5.0"&gt; &lt;meta name="FORMATTER" content="Arachnophilia 5.0"&gt;
+&lt;/head&gt; &lt;body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000"&gt;
+This is my Web page! &lt;/body&gt; &lt;/html&gt;
+                </code></pre>
+                &mdash; and make it look like this with a keystroke (Ctrl-E):
+                <pre><code>
+<span class="lc">&nbsp;&nbsp;1&nbsp;</span><font color = "#0000ff">&lt;</font><font color = "#000000">!DOCTYPE</font><font color = "#00b200"> html PUBLIC </font><font color = "#b200b2">"-//W3C//DTD XHTML 1.0 Transitional//EN"</font><font color = "#00b200"> </font><font color = "#b200b2">"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;2&nbsp;</span>
+<span class="lc">&nbsp;&nbsp;3&nbsp;</span></font><i><font color = "#000000">&lt;!-- Created on Mar 1, 2002 11:29:01 AM --&gt;
+<span class="lc">&nbsp;&nbsp;4&nbsp;</span>
+<span class="lc">&nbsp;&nbsp;5&nbsp;</span></font></i><font color = "#0000ff">&lt;</font><font color = "#000000">html</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;6&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">head</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;7&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">title</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;8&nbsp;</span></font>         My web page!
+<span class="lc">&nbsp;&nbsp;9&nbsp;</span>      <font color = "#0000ff">&lt;</font><font color = "#000000">/title</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;10&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">meta</font><font color = "#00b200"> name=</font><font color = "#b200b2">"GENERATOR"</font><font color = "#00b200"> content=</font><font color = "#b200b2">"Arachnophilia 5.0"</font><font color = "#0000ff">/&gt;
+<span class="lc">&nbsp;11&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">meta</font><font color = "#00b200"> name=</font><font color = "#b200b2">"FORMATTER"</font><font color = "#00b200"> content=</font><font color = "#b200b2">"Arachnophilia 5.0"</font><font color = "#0000ff">/&gt;
+<span class="lc">&nbsp;12&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">/head</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;13&nbsp;</span>
+<span class="lc">&nbsp;14&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">body</font><font color = "#00b200"> bgcolor=</font><font color = "#b200b2">"#ffffff"</font><font color = "#00b200"> text=</font><font color = "#b200b2">"#000000"</font><font color = "#00b200"> link=</font><font color = "#b200b2">"#0000ff"</font><font color = "#00b200"> vlink=</font><font color = "#b200b2">"#800080"</font><font color = "#00b200"> alink=</font><font color = "#b200b2">"#ff0000"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;15&nbsp;</span>
+<span class="lc">&nbsp;16&nbsp;</span></font>      This is my Web page!
+<span class="lc">&nbsp;17&nbsp;</span>
+<span class="lc">&nbsp;18&nbsp;</span>   <font color = "#0000ff">&lt;</font><font color = "#000000">/body</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;19&nbsp;</span></font><font color = "#0000ff">&lt;</font><font color = "#000000">/html</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;20&nbsp;</span>
+<font color = "#0000ff"></font></font>
+                </code></pre>
+              </div>
+              <p></p>
+
+              While it is prettying up your page, Arachnophilia will tell you if you have made one of several kinds of trivial HTML errors:
+              <p></p>
+
+              <img src="images/BeautifyIndentationError.png" width="443" height="239" alt=""/>
+              <p></p>
+
+              Such an error is trivial, but its consequences may not be. If not corrected, this kind of error may prevent your page from displaying at all on some older browsers.
+            <p></p></li>
+
+          </ul>
+        </div>
+        <a name="FTP_Service"></a><div class="article_heading">FTP Service</div>
+        <div class="article_section_color_bar">
+          <ul>
+            <li>Arachnophilia has a built-in FTP Service that lets you move your Web site to the Internet:
+              <p></p>
+
+              <img src="images/FTPServiceDialogImage.png" width="500" height="427" alt=""/>
+              <p></p>
+
+              The FTP Service uses a synchronization method to upload only changed files, saving time and bandwidth.
+            <p></p></li>
+
+          </ul>
+        </div>
+        <a name="Display_Issues"></a><div class="article_heading">Display Issues</div>
+        <div class="article_section_color_bar">
+          <ul>
+            <li>Arachnophilia's displays are designed to offer as much information as possible:
+              <p></p>
+
+              <blockquote>
+                Here is a typical Web page display (after using Beautify HTML (Ctrl-E)):
+                <div style="width:100%;overflow:auto;">
+                  <pre><code>
+<span class="lc">&nbsp;&nbsp;1&nbsp;</span><font color = "#0000ff">&lt;</font><font color = "#000000">!DOCTYPE</font><font color = "#00b200"> html PUBLIC </font><font color = "#b200b2">"-//W3C//DTD XHTML 1.0 Transitional//EN"</font><font color = "#00b200"> </font><font color = "#b200b2">"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;2&nbsp;</span>
+<span class="lc">&nbsp;&nbsp;3&nbsp;</span></font><i><font color = "#000000">&lt;!-- Created on Mar 1, 2002 10:48:47 AM --&gt;
+<span class="lc">&nbsp;&nbsp;4&nbsp;</span>
+<span class="lc">&nbsp;&nbsp;5&nbsp;</span></font></i><font color = "#0000ff">&lt;</font><font color = "#000000">html</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;6&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">head</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;7&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">title</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;8&nbsp;</span></font>         My Web Page!
+<span class="lc">&nbsp;&nbsp;9&nbsp;</span>      <font color = "#0000ff">&lt;</font><font color = "#000000">/title</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;10&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">meta</font><font color = "#00b200"> name=</font><font color = "#b200b2">"GENERATOR"</font><font color = "#00b200"> content=</font><font color = "#b200b2">"Arachnophilia 5.0"</font><font color = "#0000ff">/&gt;
+<span class="lc">&nbsp;11&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">meta</font><font color = "#00b200"> name=</font><font color = "#b200b2">"FORMATTER"</font><font color = "#00b200"> content=</font><font color = "#b200b2">"Arachnophilia 5.0"</font><font color = "#0000ff">/&gt;
+<span class="lc">&nbsp;12&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">/head</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;13&nbsp;</span>
+<span class="lc">&nbsp;14&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">body</font><font color = "#00b200"> bgcolor=</font><font color = "#b200b2">"#ffffff"</font><font color = "#00b200"> text=</font><font color = "#b200b2">"#000000"</font><font color = "#00b200"> link=</font><font color = "#b200b2">"#0000ff"</font><font color = "#00b200"> vlink=</font><font color = "#b200b2">"#800080"</font><font color = "#00b200"> alink=</font><font color = "#b200b2">"#ff0000"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;15&nbsp;</span>
+<span class="lc">&nbsp;16&nbsp;</span></font>      This is my Web Page!
+<span class="lc">&nbsp;17&nbsp;</span>
+<span class="lc">&nbsp;18&nbsp;</span>   <font color = "#0000ff">&lt;</font><font color = "#000000">/body</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;19&nbsp;</span></font><font color = "#0000ff">&lt;</font><font color = "#000000">/html</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;20&nbsp;</span>
+<font color = "#0000ff"></font></font>
+                  </code></pre>
+                </div>
+                <p></p>
+
+                And a programming display (after using Beautify Code (Ctrl+H)):
+                <pre><code>
+<span class="lc">&nbsp;&nbsp;1&nbsp;</span><i><font color = "#000000">/*
+<span class="lc">&nbsp;&nbsp;2&nbsp;</span> *		Created on Feb 28, 2002 3:26:55 PM
+<span class="lc">&nbsp;&nbsp;3&nbsp;</span> */
+<span class="lc">&nbsp;&nbsp;4&nbsp;</span>
+<span class="lc">&nbsp;&nbsp;5&nbsp;</span>/* TestClass is meant to demonstrate the use
+<span class="lc">&nbsp;&nbsp;6&nbsp;</span> * of Arachnophilia's custom class launcher feature.
+<span class="lc">&nbsp;&nbsp;7&nbsp;</span> * Just compile this class in place, create
+<span class="lc">&nbsp;&nbsp;8&nbsp;</span> * a macro that looks like this:
+<span class="lc">&nbsp;&nbsp;9&nbsp;</span> * "[RunCustomClassDoc:CustomClasses/TestClass]",
+<span class="lc">&nbsp;10&nbsp;</span> * load a suitable document, and activate the macro.
+<span class="lc">&nbsp;11&nbsp;</span> * The document/selection will have all its "a" letters
+<span class="lc">&nbsp;12&nbsp;</span> * replaced by "(the letter"a")"
+<span class="lc">&nbsp;13&nbsp;</span> */
+<span class="lc">&nbsp;14&nbsp;</span>
+<span class="lc">&nbsp;15&nbsp;</span></font></i><b><font color = "#0000ff">public</font></b> <font color = "#009600">class</font> TestClass {
+<span class="lc">&nbsp;16&nbsp;</span>   
+<span class="lc">&nbsp;17&nbsp;</span>   <b><font color = "#0000ff">private</font></b> String searchReplace(String data,String find,String replace)
+<span class="lc">&nbsp;18&nbsp;</span>   {
+<span class="lc">&nbsp;19&nbsp;</span>      StringBuffer sb = <b><font color = "#0000ff">new</font></b> StringBuffer();
+<span class="lc">&nbsp;20&nbsp;</span>      <font color = "#009600">int</font> a = 0,b;
+<span class="lc">&nbsp;21&nbsp;</span>      <font color = "#009600">int</font> findLength = find.length();
+<span class="lc">&nbsp;22&nbsp;</span>      <b><font color = "#0000ff">while</font></b>((b = data.indexOf(find,a)) != -1) {
+<span class="lc">&nbsp;23&nbsp;</span>         sb.append(data.substring(a,b));
+<span class="lc">&nbsp;24&nbsp;</span>         sb.append(replace);
+<span class="lc">&nbsp;25&nbsp;</span>         a = b + findLength;
+<span class="lc">&nbsp;26&nbsp;</span>      }
+<span class="lc">&nbsp;27&nbsp;</span>      <b><font color = "#0000ff">if</font></b>(a &lt; data.length()) {
+<span class="lc">&nbsp;28&nbsp;</span>         sb.append(data.substring(a));
+<span class="lc">&nbsp;29&nbsp;</span>      }
+<span class="lc">&nbsp;30&nbsp;</span>      <b><font color = "#0000ff">return</font></b> sb.toString();
+<span class="lc">&nbsp;31&nbsp;</span>   }
+<span class="lc">&nbsp;32&nbsp;</span>   
+<span class="lc">&nbsp;33&nbsp;</span>   <font color = "#000000">// this is the default method that custom classes
+<span class="lc">&nbsp;34&nbsp;</span><i></i>   <i>// must have to work with Arachnophilia's class
+<span class="lc">&nbsp;35&nbsp;</span></i>   <i>// launcher feature unless a specific method name
+<span class="lc">&nbsp;36&nbsp;</span></i>   <i>// is provided
+<span class="lc">&nbsp;37&nbsp;</span></i>   
+<span class="lc">&nbsp;38&nbsp;</span>   </font><b><font color = "#0000ff">public</font></b> String processString(String s)
+<span class="lc">&nbsp;39&nbsp;</span>   {
+<span class="lc">&nbsp;40&nbsp;</span>      <b><font color = "#0000ff">return</font></b> searchReplace(s,<font color = "#650099">"a"</font>,<font color = "#650099">"(the letter\"a\")"</font>);
+<span class="lc">&nbsp;41&nbsp;</span>   }
+<span class="lc">&nbsp;42&nbsp;</span>}
+<span class="lc">&nbsp;43&nbsp;</span>
+
+                </code></pre>
+                Also, as these examples show, you can export Arachnophilia's syntax-colored displays as HTML with a few keystrokes. This allows you to post your work on the Web in classic source-listing form.
+                <p></p>
+
+            </blockquote></li>
+            <li><b>This is just an overview. Arachnophilia has many more features to make you productive in Web page design and general programming.
+            </b></li>
+          </ul>
+        </div>&nbsp;
+      </div> <!-- content -->
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch9"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch0"></span>
+      </span>
+    </div> <!-- wrapper -->
+    <p></p>
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html" selected="selected">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="index.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="AdvancedFeatures.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+  </body>
+</html>

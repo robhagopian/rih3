@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Created on Mar 1, 2002 10:06:35 AM -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      Tables and Lists
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rev="made" href="http://www.arachnoid.com"/>
+    <meta http-equiv="Content-language" content="en"/>
+    <meta name="author" content="Paul Lutus"/>
+    <meta name="owner" content="Paul Lutus"/>
+    <meta name="description" content="how to create Web page structures."/>
+    <meta name="group" content="DOCUMENTATION"/>
+    <meta name="keywords" content="Arachnophilia,HTML,edit,editor,webpage,programming,macro,Lutus"/>
+    <meta name="rating" content="General"/>
+    <meta name="ROBOTS" content="ALL"/>
+    <meta name="GENERATOR" content="Arachnophilia 5.0"/>
+    <meta name="FORMATTER" content="Arachnophilia 5.0"/>
+    <link rel="stylesheet" type="text/css" href="styles/default_article.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/roundcorner_16_parch.css"/>
+    <style type="text/css">
+.lc {font-weight:normal;font-style:normal;color:#808080;background-color:#ffffd8}
+table { border-collapse: collapse; }
+    </style>
+  </head>
+  <body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000">
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <script type="text/javascript" language="JavaScript">
+            function toNewPage(t) { location.href = t.options[t.selectedIndex].value; }
+          </script>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html" selected="selected">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="SpellChecker.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="MacroArchitecture.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+    <div align="center">
+      <div class="article_title_inverse">Tables and Lists</div>
+<div class="article_linklist_inverse">Arachnophilia is &copy; Copyright 2009, P. Lutus.
+        <br/>
+        <p>Arachnophilia is
+        <a href="http://www.arachnoid.com/careware">CareWare</a></p>
+
+
+      </div>
+      <!-- LINK_MENU_START --><!-- LINK_MENU_END -->
+    </div>
+    <p></p>
+
+    <div class="article_wrapper">
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch0"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch9"></span>
+      </span>
+      <div class="roundcorner_16_parch_content">
+        This page describes the Table Wizard and a new, more flexible way to deal with lists than existed in the previous version of Arachnophilia.
+        First, for the table wizard, create an HTML document and type in the highlighted section below:
+        <p></p>
+
+        <pre><code>
+<span class="lc">&nbsp;&nbsp;1&nbsp;</span><font color = "#0000ff">&lt;</font><font color = "#000000">!DOCTYPE</font><font color = "#00b200"> HTML PUBLIC </font><font color = "#b200b2">"-//W3C//DTD HTML 4.01 Transitional//EN"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;2&nbsp;</span>
+<span class="lc">&nbsp;&nbsp;3&nbsp;</span></font><i><font color = "#000000">&lt;!-- Created on Mar 8, 2002 6:46:26 PM --&gt;
+<span class="lc">&nbsp;&nbsp;4&nbsp;</span>
+<span class="lc">&nbsp;&nbsp;5&nbsp;</span></font></i><font color = "#0000ff">&lt;</font><font color = "#000000">html</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;6&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">head</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;7&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">title</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;&nbsp;8&nbsp;</span></font>         Table
+<span class="lc">&nbsp;&nbsp;9&nbsp;</span>      <font color = "#0000ff">&lt;</font><font color = "#000000">/title</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;10&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">meta</font><font color = "#00b200"> name=</font><font color = "#b200b2">"GENERATOR"</font><font color = "#00b200"> content=</font><font color = "#b200b2">"Arachnophilia 5.0"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;11&nbsp;</span></font>      <font color = "#0000ff">&lt;</font><font color = "#000000">meta</font><font color = "#00b200"> name=</font><font color = "#b200b2">"FORMATTER"</font><font color = "#00b200"> content=</font><font color = "#b200b2">"Arachnophilia 5.0"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;12&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">/head</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;13&nbsp;</span>
+<span class="lc">&nbsp;14&nbsp;</span></font>   <font color = "#0000ff">&lt;</font><font color = "#000000">body</font><font color = "#00b200"> bgcolor=</font><font color = "#b200b2">"#ffffff"</font><font color = "#00b200"> text=</font><font color = "#b200b2">"#000000"</font><font color = "#00b200"> link=</font><font color = "#b200b2">"#0000ff"</font><font color = "#00b200"> vlink=</font><font color = "#b200b2">"#800080"</font><font color = "#00b200"> alink=</font><font color = "#b200b2">"#ff0000"</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;15&nbsp;</span>
+<span class="lc">&nbsp;16&nbsp;</span></font><span style="background-color:#ccccff;">      one two three four
+<span class="lc">&nbsp;17&nbsp;</span>      five six seven eight
+<span class="lc">&nbsp;18&nbsp;</span>      nine ten eleven twelve</span>
+<span class="lc">&nbsp;19&nbsp;</span>
+<span class="lc">&nbsp;20&nbsp;</span>   <font color = "#0000ff">&lt;</font><font color = "#000000">/body</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;21&nbsp;</span></font><font color = "#0000ff">&lt;</font><font color = "#000000">/html</font><font color = "#0000ff">&gt;
+<span class="lc">&nbsp;22&nbsp;</span>
+</font><font color = "#0000ff"></font>
+        </code></pre>
+        The section highlighted in
+        <span style="background-color:#ccccff;">this color</span>
+        is the part we are interested in, and we'll be focusing on this section in the example below.
+        <p></p>
+
+        <ol>
+          <li>
+            Select the section of interest as shown above, by dragging the mouse cursor over it:
+            <p></p>
+
+            <pre>
+            <span style="background-color:#ccccff;">
+one two three four
+five six seven eight
+nine ten eleven twelve
+</span>
+          </pre></li>
+          <li>Launch the Table Wizard. In the default menu structure it is located at
+            <b>
+              HTML ... Launch Table Wizard.
+            </b>
+            You  will see:
+            <p></p>
+
+            <img src="images/TableWizard.png" width="452" height="400" alt=""/>
+            <p></p>
+
+            The Table Wizard examines the selected text and tries to figure out which delimiter is being used to separate the fields in your data &mdash; it usually guesses correctly. But if it doesn't, simply choose another delimiter with the "data delimiter" drop-down list and press "rescan" to make the wizard reevaluate the selected data.
+          <p></p></li>
+
+          <li>Then try pressing "Create" just to see what the wizard comes up with. Remember &mdash; you can always undo (
+            <img src="images/Undo.png" width="20" height="20" style="vertical-align:middle;" alt=""/>
+            ) the result and try something else. There are many options and combinations, and you should experiment with these to see what results the wizard can produce.
+            <p></p>
+
+            And remember &mdash; there are any number of sources of information in table form, separated by commas, tabs, and other characters &mdash; spreadsheets, databases, and others &mdash; and most of them can be trivially imported into Arachnophilia and turned into a table using this wizard.
+          <p></p></li>
+
+        </ol>
+        Here is an example of the sort of tables the Table Wizard can create with a few seconds of effort and our example data above:
+        <p></p>
+
+        <table cellspacing="0" cellpadding="4" border="1" width="95%" bgcolor="#c4ffff" style="border-color:#a00000">
+          <tr>
+            <!-- Row 1 Column 1 -->
+            <td bgcolor="#d9fed3">
+              <b>one</b>
+            </td>
+            <!-- Row 1 Column 2 -->
+            <td bgcolor="#d9fed3">
+              <b>two</b>
+            </td>
+            <!-- Row 1 Column 3 -->
+            <td bgcolor="#d9fed3">
+              <b>three</b>
+            </td>
+            <!-- Row 1 Column 4 -->
+            <td bgcolor="#d9fed3">
+              <b>four</b>
+            </td>
+          </tr>
+          <tr>
+            <!-- Row 2 Column 1 -->
+            <td bgcolor="#d9fed3">
+              <b>five</b>
+            </td>
+            <!-- Row 2 Column 2 -->
+            <td>
+              six
+            </td>
+            <!-- Row 2 Column 3 -->
+            <td>
+              seven
+            </td>
+            <!-- Row 2 Column 4 -->
+            <td>
+              eight
+            </td>
+          </tr>
+          <tr>
+            <!-- Row 3 Column 1 -->
+            <td bgcolor="#d9fed3">
+              <b>nine</b>
+            </td>
+            <!-- Row 3 Column 2 -->
+            <td>
+              ten
+            </td>
+            <!-- Row 3 Column 3 -->
+            <td>
+              eleven
+            </td>
+            <!-- Row 3 Column 4 -->
+            <td>
+              twelve
+            </td>
+          </tr>
+        </table>
+        <p></p>
+
+        <b>
+          Now for a new way of handling lists.
+        </b>
+        <p></p>
+
+        In the previous version of Arachnophilia, there was a list wizard similar to the table wizard, but I have since realized this arrangement was unnecessarily complicated and inflexible. So now there are two system macros that do the job:
+        <p></p>
+
+        If invoked without any arguments,
+        <b>
+          [MakeUnorderedList]
+        </b>
+        (for which there is a convenient button in the "HTML Tag Toolbars" section of the macros) will take the selection and turn it into an unordered list, like this:
+        <p></p>
+
+        <b>
+          Before (note the selection):
+        </b>
+        <p></p>
+
+        <span style="background-color:#ccccff;">one
+          <br/>
+          two
+          <br/>
+          three
+          <br/>
+          four
+          <br/>
+          five
+          <br/>
+          six
+          <br/>
+          seven
+          <br/>
+        eight</span>
+        <p></p>
+
+        <b>
+          After:
+        </b>
+        <p></p>
+
+        <ul style="background-color:#ccccff;">
+          <li>one<br/></li>
+          <li>two<br/></li>
+          <li>three<br/></li>
+          <li>four<br/></li>
+          <li>five<br/></li>
+          <li>six<br/></li>
+          <li>seven<br/></li>
+          <li>eight<br/></li>
+        </ul>
+        <p></p>
+
+        But this is just the beginning! Select a subset of the list as shown below:
+        <ul>
+          <li>one
+          <br/></li>
+          <li>two
+          <br/></li>
+          <li style="background-color:#ccccff;">three<br/></li>
+          <li style="background-color:#ccccff;">four<br/></li>
+          <li style="background-color:#ccccff;">five<br/></li>
+          <li style="background-color:#ccccff;">six<br/></li>
+          <li>seven
+          <br/></li>
+          <li>eight
+          <br/></li>
+        </ul>
+        <p></p>
+
+        And invoke
+        <b>
+          [MakeUnorderedList]
+        </b>
+        again. Result:
+        <p></p>
+
+        <ul>
+          <li>one
+          <br/></li>
+          <li>two
+            <br/>
+            <ul>
+              <li>three
+              <br/></li>
+              <li>four
+              <br/></li>
+              <li>five
+              <br/></li>
+              <li>six
+              <br/></li>
+          </ul></li>
+          <li>seven
+          <br/></li>
+          <li>eight
+          <br/></li>
+        </ul>
+        <p></p>
+
+        Select a subset again:
+        <p></p>
+
+        <ul>
+          <li>one
+          <br/></li>
+          <li>two
+            <br/>
+            <ul>
+              <li>three
+              <br/></li>
+              <li style="background-color:#ccccff;">four<br/></li>
+              <li style="background-color:#ccccff;">five<br/></li>
+              <li>six
+              <br/></li>
+          </ul></li>
+          <li>seven
+          <br/></li>
+          <li>eight
+          <br/></li>
+        </ul>
+        <p></p>
+
+        Result:
+        <p></p>
+
+        <ul>
+          <li>one
+          <br/></li>
+          <li>two
+            <br/>
+            <ul>
+              <li>three
+                <br/>
+                <ul>
+                  <li>four
+                  <br/></li>
+                  <li>five
+                  <br/></li>
+              </ul></li>
+              <li>six
+              <br/></li>
+          </ul></li>
+          <li>seven
+          <br/></li>
+          <li>eight
+          <br/></li>
+        </ul>
+        <p></p>
+
+        This list-building method is very flexible, and remember &mdash; if you don't like the outcome, simply
+        <img src="images/Undo.png" width="20" height="20" alt="" align="middle"/>
+        &nbsp;"undo" it.
+        <p></p>
+        
+        If you plan to have syntactically correct Web pages that have multiply-indented lists like this example, be sure to apply the Arachnophilia feature known as "ReplaceLiTags" to the final result. This feature is located in the "HTML ... More Functions" menu. This feature will automatically correct the relationship between your &lt;ul&gt;, &lt;ol&gt; and &lt;li&gt; tags to conform to XHTML syntax. If you don't take this step and you have multiply indented lists, because of the difficult syntax involved it's not likely that your page will pass XHTML validation.<p></p>
+
+        Please note that this example is just an example. :) You can just as easily work from some small subset of a list to the outer extremes as the reverse (as in this example). That is why this new method is more useful &mdash; it makes no assumptions about the needs of the user, and it exhibits some intelligence about where to put
+        <b>
+          &lt;li&gt;
+        </b>
+        tags and enclosing list tags.
+        <p></p>
+
+        The macro
+        <b>
+          [MakeOrderedList],
+        </b>
+        also conveniently available in the "HTML Tag Toolbars" section of the macro tree, creates a sequential, numbered list in the same way.
+        <p></p>
+
+        Both
+        <b>
+          [MakeUnorderedList]
+        </b>
+        and
+        <b>
+          [MakeOrderedList]
+        </b>
+        accept optional arguments, ones having to do with special list styles. Here are examples:
+        <p></p>
+
+        <b>
+          [MakeOrderedList]
+        </b>
+        creates:
+        <p></p>
+
+        <ol>
+          <li>Animal
+          <br/></li>
+          <li>Vegetable
+          <br/></li>
+          <li>Mineral
+          <br/></li>
+          <li>Indeterminate
+          <br/></li>
+        </ol>
+        <p></p>
+
+        <b>
+          [MakeOrderedList:A]
+        </b>
+        creates:
+        <p></p>
+
+        <ol type="A">
+          <li>Animal
+          <br/></li>
+          <li>Vegetable
+          <br/></li>
+          <li>Mineral
+          <br/></li>
+          <li>Indeterminate
+          <br/></li>
+        </ol>
+        <p></p>
+
+        <b>
+          [MakeOrderedList:a]
+        </b>
+        creates:
+        <p></p>
+
+        <ol type="a">
+          <li>Animal
+          <br/></li>
+          <li>Vegetable
+          <br/></li>
+          <li>Mineral
+          <br/></li>
+          <li>Indeterminate
+          <br/></li>
+        </ol>
+        <p></p>
+
+        <b>
+          [MakeOrderedList:I]
+        </b>
+        creates:
+        <p></p>
+
+        <ol type="I">
+          <li>Animal
+          <br/></li>
+          <li>Vegetable
+          <br/></li>
+          <li>Mineral
+          <br/></li>
+          <li>Indeterminate
+          <br/></li>
+        </ol>
+        <p></p>
+
+        <b>
+          [MakeOrderedList:i]
+        </b>
+        creates:
+        <p></p>
+
+        <ol type="i">
+          <li>Animal
+          <br/></li>
+          <li>Vegetable
+          <br/></li>
+          <li>Mineral
+          <br/></li>
+          <li>Indeterminate
+          <br/></li>
+        </ol>
+        <p></p>
+
+        <b>
+          Now, for [MakeUnorderedList], the options are:
+        </b>
+        <p></p>
+
+        <b>
+          [MakeUnorderedList]
+        </b>
+        creates:
+        <ul>
+          <li>Animal
+          <br/></li>
+          <li>Vegetable
+          <br/></li>
+          <li>Mineral
+          <br/></li>
+          <li>Indeterminate
+          <br/></li>
+        </ul>
+        <b>
+          [MakeUnorderedList:disc]
+        </b>
+        creates:
+        <ul type="disc">
+          <li>Animal
+          <br/></li>
+          <li>Vegetable
+          <br/></li>
+          <li>Mineral
+          <br/></li>
+          <li>Indeterminate
+          <br/></li>
+        </ul>
+        <b>
+          [MakeUnorderedList:circle]
+        </b>
+        creates:
+        <ul type="circle">
+          <li>Animal
+          <br/></li>
+          <li>Vegetable
+          <br/></li>
+          <li>Mineral
+          <br/></li>
+          <li>Indeterminate
+          <br/></li>
+        </ul>
+        <p></p>
+
+        <b>
+          [MakeUnorderedList:square]
+        </b>
+        creates:
+        <ul type="square">
+          <li>Animal
+          <br/></li>
+          <li>Vegetable
+          <br/></li>
+          <li>Mineral
+          <br/></li>
+          <li>Indeterminate
+          <br/></li>
+        </ul>
+        <p></p>
+
+        Obviously these unordered list examples will look different on different browsers. Most browsers use different marks for different levels in unordered lists, this is a way to override that default ordering.
+        <p></p>
+
+        All these ordered and unordered list options simply reflect the formal HTML options one can invoke directly on the
+        <b>
+          &lt;ol&gt;
+        </b>
+        and
+        <b>
+          &lt;ul&gt;
+        </b>
+        tags. It is just a convenient way to represent them in an Arachnophilia macro.
+        <p></p>&nbsp;
+
+      </div> <!-- content -->
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch9"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch0"></span>
+      </span>
+    </div> <!-- wrapper -->
+    <p></p>
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html" selected="selected">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="SpellChecker.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="MacroArchitecture.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+  </body>
+</html>

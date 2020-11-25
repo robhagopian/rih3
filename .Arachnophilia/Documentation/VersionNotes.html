@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Created on Mar 1, 2002 10:06:35 AM -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      Arachnophilia 5.4 Version Notes
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rev="made" href="http://www.arachnoid.com"/>
+    <meta http-equiv="Content-language" content="en"/>
+    <meta name="author" content="Paul Lutus"/>
+    <meta name="owner" content="Paul Lutus"/>
+    <meta name="description" content="The latest on the latest."/>
+    <meta name="group" content="DOCUMENTATION"/>
+    <meta name="keywords" content="Arachnophilia,HTML,edit,editor,webpage,programming,macro,Lutus"/>
+    <meta name="rating" content="General"/>
+    <meta name="ROBOTS" content="ALL"/>
+    <meta name="GENERATOR" content="Arachnophilia 5.0"/>
+    <meta name="FORMATTER" content="Arachnophilia 5.0"/>
+    <link rel="stylesheet" type="text/css" href="styles/default_article.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/roundcorner_16_parch.css"/>
+  </head>
+  <body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000">
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <script type="text/javascript" language="JavaScript">
+            function toNewPage(t) { location.href = t.options[t.selectedIndex].value; }
+          </script>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html" selected="selected">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="AdvancedFeatures.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="arachnofaq.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+    <div align="center">
+      <div class="article_title_inverse">Arachnophilia 5.4 Version Notes</div>
+      <div class="article_linklist_inverse">Arachnophilia is &copy; Copyright 2009, P. Lutus.
+
+        <br/>
+        <p>Arachnophilia is
+        <a href="http://www.arachnoid.com/careware">CareWare</a></p>
+
+
+
+
+      </div>
+      <!-- LINK_MENU_START -->
+<a href="#Introduction">Introduction</a> | <a href="#XHTML">XHTML</a> | <a href="#Converting_to_XHTML">Converting to XHTML</a><br/>
+<a href="#Unicode">Unicode</a> | <a href="#Additional_changes">Additional changes</a>
+<!-- LINK_MENU_END -->
+    </div>
+    <p></p>
+
+    <div class="article_wrapper">
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch0"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch9"></span>
+      </span>
+      <div class="roundcorner_16_parch_content">
+        <a name="Introduction"></a><div class="article_heading">Introduction</div>
+        <div class="article_section_color_bar">
+          Newer versions of Arachnophilia (5.3 and more recent) represent one of those departure points in the history of this program, points at which it is necessary to make a fresh start. Specifically, the changes in this version are so far-reaching &mdash; including a rewrite of most of the macro set and the documentation &mdash; that it is necessary to delete the Arachnophilia user directory to realize the full benefit of the changes.<p></p>
+
+          To make this change, please read these instructions and then:<p></p>
+
+          <ul>
+            <li>Exit Arachnophilia
+            </li>
+            <li>Delete the directory C:UsersBill/.Arachnophilia
+            </li>
+            <li>Re-run Arachnophilia
+            </li>
+          </ul>
+          <p></p>
+
+          After taking these steps, the user will see a reinstallation of the Arachnophilia user files &mdash; that's a sign that the deletion was carried out successfully. By the way, this is the correct approach to dealing with problems that seem insurmountable &mdash; to overcome various problems that might come up, simply delete C:UsersBill/.Arachnophilia and run Arachnophilia again.<p></p>
+
+          Arachnophilia 5.3 represents a big change, and has many new features. It's been three years since the last major upgrade to this program, plenty of time to collect a list of desired improvements. This page explains what's new.<p></p>
+
+        </div>
+        <a name="XHTML"></a><div class="article_heading">XHTML</div>
+        <div class="article_section_color_bar">
+          <b>Beginning with Arachnophilia Version 5.3, Arachnophilia has become an XHTML workshop.</b><p></p>
+
+          A new version of HTML has appeared, named "XHTML," that has so many advantages over HTML that Arachnophilia has been completely reworked to take advantage of it. Elsewhere in these directions, and in Arachnophilia's menus and prompts, the term HTML appears, but remember that this is simply a syntactical convenience &mdash; it refers to XHTML.<p></p>
+
+          Earlier Arachnophilia difficulties with beautifying and formatting HTML, and analyzing Web pages for tag errors, have been corrected in this version. In past Arachnophilia versions, certain features had to be dropped because they couldn't coexist with the internal ambiguities and inconsistencies of straight HTML. In the new Arachnophilia version, the best of those features has been restored. Specifically, HTML Beautify now works reliably and HTML Validate &mdash; a tool for finding and correcting structural errors, a feature not seen since Arachnophilia 4.0 &mdash; is back and works very well.<p></p>
+
+          XHTML is internally consistent in a way that HTML cannot be, and it greatly simplifies the task of Web page design and maintenance. Arachnophilia is now structured around XHTML and it can help you convert your pages from HTML to XHTML.<p></p>
+
+          If your site has HMTL pages and you don't want to convert them, some of Arachnophilia's features aren't going to work for you, in particular the features "HTML Beautify" and "HTML Validate" will likely misbehave. If you do decide to upgrade to XHTML, I offer these comments:<p></p>
+
+          <ul>
+            <li>In XHTML, there are no tag ambiguituies. A particular tag always appears the same way, there is no latitude about how a tag can be used.
+            </li>
+            <li>All XHTML tags are either paired &lt;like&gt; &lt;/this&gt;, or they are single self-closing tags &lt;like this/&gt;. There is but one exception (the DOCTYPE tag at the top of a page).
+            </li>
+            <li>Past versions of Arachnophilia contained some "relaxed" (read: wrong) tag definitions and practices, in particular the absence of closing &lt;/li&gt; and &lt;/option&gt; tags. These errors have been corrected.
+            </li>
+            <li>Contrary to what the reader may believe, due in part to the relaxed syntax of HTML and in part because of my errors in earlier versions of Arachnophilia, the "img" tag is self-closing: &lt;img src="path" /&gt;. So are &lt;input /&gt;, &lt;meta /&gt; tags and about a dozen others. And some tags I believed to be orphans are actually supposed to have associated closing tags, for example &lt;li&gt;&lt;/li&gt; and &lt;option&gt;&lt;/option&gt;.
+            </li>
+            <li>To conclude this list, I want to restate the basic idea &mdash; all XHTML tags fall into two categories:<p></p>
+
+              <ul>
+                <li>Single, self-closing tags &lt;like this/&gt;.
+                </li>
+                <li>Paired tags &lt;like&gt; &lt;/this&gt;.
+                </li>
+              </ul><p></p>
+
+              There is only one exception &mdash; the &lt;!DOCTYPE ... &gt; tag that appears at the beginning of each HTML or XHTML page is an oddball that fails to agree with the strict pattern.<p></p>
+
+              Remember that this change is in place. If you use the new HTML Beautify or HTML validate and they don't work as you expect, it will be because of page tags that do not meet this strict XHTML syntax.
+            </li>
+          </ul>
+        </div>
+        <a name="Converting_to_XHTML"></a><div class="article_heading">Converting to XHTML</div>
+        <div class="article_section_color_bar">
+          Because Arachnophilia supports regular expressions and can apply them to many pages at once, it should be relatively easy to convert a set of Web pages from HTML to XHTML by converting tags <i>en masse</i>. This sort of task is better done with a dedicated script applied to an entire Web site at once, but for a few pages, Arachnophilia's automation and macro creation capability should make it relatively easy.<p></p>
+
+          Arachnophilia now uses XHTML conventions throughout, but this doesn't guarantee that your pages will pass XHTML validation. One example error is to put formatting tags outside block elements like this:<p></p>
+
+          <blockquote>
+            <pre>
+  &lt;b&gt;
+    &lt;div style="style"&gt;
+      text content
+    &lt;/div&gt;
+  &lt;/b&gt;
+            </pre>
+          </blockquote>
+          Arachnophilia will let you do this, and its HTML Validator won't complain (because the tags are properly nested), but the page will fail online XHTML validation. The right format is:<p></p>
+
+          <blockquote>
+            <pre>
+  &lt;div style="style"&gt;
+    &lt;b&gt;
+      text content
+    &lt;/b&gt;
+  &lt;/div&gt; 
+            </pre>
+          </blockquote>
+          Another common error is to lay out tags in what seems like a logical way but is wrong:<p></p>
+
+          <blockquote>
+            <pre>
+&lt;i&gt;&lt;b&gt;my text&lt;/i&gt;&lt;/b&gt;
+            </pre>
+          </blockquote>
+          The correct form:<p></p>
+
+          <blockquote>
+            <pre>
+&lt;i&gt;&lt;b&gt;my text&lt;/b&gt;&lt;/i&gt;
+            </pre>
+          </blockquote>
+          Arachnophilia's HTML Validator will catch this class of error and help you fix them, because it checks for proper tag sequencing.<p></p>
+
+        </div>
+        <a name="Unicode"></a><div class="article_heading">Unicode</div>
+        <div class="article_section_color_bar">
+          <b>Unicode Support</b>
+          <blockquote>
+            Beginning with Arachnophilia Version 5.4, Unicode is supported by way of the UTF8 character set. File loading and saving, and clipboard operations, support UTF8 characters and files. These features are more fully descibed under "<a href="AdvancedFeatures.html#Unicode_support">Advanced Features</a>".
+          </blockquote>
+        </div>
+        <a name="Additional_changes"></a><div class="article_heading">Additional changes</div>
+        <div class="article_section_color_bar">
+          <b>Jump to Opposite Tag</b>
+          <blockquote>
+            There is a new feature in recent versions of Arachnophilia, one added by popular demand. You can now jump from one HTML tag to its partner with a keystroke (Alt-J, menu item "HTML ... Jump to Opposite Tag"). If the tag is at the far end of a large document, this feature will take you there. If the partner tag is is only a few characters away in the same line, this feature will place the editing cursor to the immediate left of the partner tag. If you press Alt-J repeatedly, the editing cursor jumps back and forth between the partners.<p></p>
+
+            This feature is useful for sorting out syntax issues that don't necessarily produce an error message in HMTL Beautify or HTML Validate, or for understanding the structure of a document by browsing through its hierarchy of tags.<p></p>
+
+          </blockquote>
+          <b>Display Enhancements / Antialiasing</b>
+          <blockquote>
+            Arachnophilia's display routines have been recoded to use antialiasing, a font smoothing technique. On most systems, this change greatly improves the appearance of the editing windows and some other diplays.<p></p>
+
+            But on some systems, this font smoothing feature may not work as planned. If the antialiasing feature causes problems on your system, you can turn it off. Simply click menu item "Text ... AntiAliasing on/off".<p></p>
+
+          </blockquote>
+          <b>HTML Beautify, HTML Validate</b>
+          <blockquote>
+            HTML Validate is a new feature (there was an earlier form of this feature in Arachnophilia 4.0) that interactively displays and helps correct page syntax errors. Like all new Arachnophilia features, this one strictly follows XHTML syntax rules. A dialog appears that lets you click specific error messages, and the program responds by jumping back and forth between tag locations that don't match up.<p></p>
+
+            HTML Beautify is more polite than in past versions. Apart from following XHTML rules in its behavior, it doesn't try to force each tag onto a separate line as in earlier versions, something that turned out to be a mistake. The new version produces a clean, readable listing that doesn't change the displayed appearance of the pages it beautifies. If you want a more readable listing and you have multiple tags per line in your pages, you can separate the tags manually to suit your requirements.<p></p>
+
+            Both HTML Beautify and HTML Validate function best when the processed documents contain valid XHTML tag syntax.<p></p>
+
+          </blockquote>
+          <b>XHTML Issues</b>
+          <blockquote>
+            Arachnophilia's internal routines have been reworked to properly take XHTML rules into account, including the provision of a closing &lt;/li&gt; tag, a longstanding error.<p></p>
+
+            I created a new addition to Arachnophilia after trying to validate my pages using an online XHTML validator. It turns out that (a) contrary to what I wrongly beieved, there's a closing &lt;/li&gt; tag, (b) the location of this closing tag is deterministic &mdash; there is zero latitude about its placement, and (c) determining that location by eye surpasses the puny skills of mere mortals.<p></p>
+
+            I responded to this need by writing a new feature that begins by stripping all the &lt;/li&gt; tags out of the document and then proceeds to locate all of them correctly. It is quite reliable and avoids a lot of frustration. The new function is named "[ReplaceLiTags]" and it is available in the "HTML ... More Functions" menu. It was only after writing the first version of this routine that I was able to partially automate the conversion of my pages from (my rather sloppy) HTML to XHTML.<p></p>
+
+            I must add (and if I don't, one of my readers will give me the business) that a tag whose placement is completely deterministic serves no purpose. The opening &lt;li&gt; tag identifies a line that is to be bulleted one way or another, and its closing partner must exist. As I said, there is no latitude about the closing tag's placement. The proof of this is I can automate the placement of the closing tag, no matter how large or complex the document, and if there is a difference between the algorithm's tag placement and that of a human, this can only mean the human made a mistake.<p></p>
+
+            If the user encounters a syntax error while using HTML Validate that involves &lt;li&gt; ...&lt;/li&gt; tags, "[ReplaceLiTags]" should be the first applied remedy.<p></p>
+
+          </blockquote>
+          <b>File Change Tracking</b>
+          <blockquote>
+            Arachnophilia now tracks changes to each open document's disk file, and if the disk file is changed by another program while editing is underway, once Arachnophilia has the user's attention (technically, "focus") again, it will alert the user and provide a list of choices.<p></p>
+
+          </blockquote>
+          <b>Display Issues</b>
+          <blockquote>
+            The display, somewhat annoying, still has two distinct modes (syntax coloring without line wrap, and line wrap without syntax coloring). The display is unchanged except that it looks better because of antialiasing. This dual personality may change in the future, but for it to change, I realized I would have to throw out the entire code base and start over, something I am not inclined to do at this time.<p></p>
+
+          </blockquote>
+          <b>Other Changes</b>
+          <blockquote>
+            A CSS file type has been added, because of the increasing importance of Cascading Style Sheets in page design. Both the syntax coloring and code beautification features work with this new file type.<p></p>
+
+            Some internal configuration files are now gone. In particular, a set of configuration files responsible for listing tag variants and exceptions is gone, because there are no such things in XHTML.<p></p>
+
+            I have corrected a raft of small but annoying bugs that I've been tracking over the past few years, too numerous to list here.<p></p>
+
+          </blockquote>
+          I hope you enjoy this new version of Arachnophilia!
+        </div>&nbsp;
+      </div> <!-- content -->
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch9"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch0"></span>
+      </span>
+    </div> <!-- wrapper -->
+    <p></p>
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html" selected="selected">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="AdvancedFeatures.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="arachnofaq.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+  </body>
+</html>

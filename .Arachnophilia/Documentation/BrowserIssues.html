@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Created on Mar 1, 2002 10:06:35 AM -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      Browser Issues
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rev="made" href="http://www.arachnoid.com"/>
+    <meta http-equiv="Content-language" content="en"/>
+    <meta name="author" content="Paul Lutus"/>
+    <meta name="owner" content="Paul Lutus"/>
+    <meta name="description" content="Dealing with the browser interface."/>
+    <meta name="group" content="DOCUMENTATION"/>
+    <meta name="keywords" content="Arachnophilia,HTML,edit,editor,webpage,programming,macro,Lutus"/>
+    <meta name="rating" content="General"/>
+    <meta name="ROBOTS" content="ALL"/>
+    <meta name="GENERATOR" content="Arachnophilia 5.0"/>
+    <meta name="FORMATTER" content="Arachnophilia 5.0"/>
+    <link rel="stylesheet" type="text/css" href="styles/default_article.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/roundcorner_16_parch.css"/>
+
+
+  </head>
+  <body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000">
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <script type="text/javascript" language="JavaScript">
+            function toNewPage(t) { location.href = t.options[t.selectedIndex].value; }
+          </script>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html" selected="selected">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="BasicWebPageBuilding.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="CommonProblems.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+    <div align="center">
+      
+          <div class="article_title_inverse">Browser Issues
+          </div>
+<div class="article_linklist_inverse">Arachnophilia is &copy; Copyright 2009, P. Lutus.
+        <br/>
+        <p>Arachnophilia is
+        <a href="http://www.arachnoid.com/careware">CareWare</a></p>
+
+
+      </div>
+      <!-- LINK_MENU_START --><!-- LINK_MENU_END -->
+          </div>
+        
+    <p></p>
+<div class="article_wrapper">
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch0"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch9"></span>
+      </span>
+      <div class="roundcorner_16_parch_content">
+
+    <b>
+      In the previous release of Arachnophilia, by far the most common complaint was about preview browsers
+    </b>
+    &mdash; they would close when they shouldn't, or wouldn't close when they should, or they caused Arachnophilia to crash, or they locked up the system, and so forth.
+    <p></p>
+
+    When things were working perfectly, the browser would launch just once, not 0 times or 20 times. It would show the page to be previewed, and it would refresh itself without crashing or cloning itself, so you could look at changes in your page without an excessive amount of time spent waiting for another browser launch. But, on the strength on e-mail feedback, it seems that outcome was the minor, aberrant case.
+    <p></p>
+
+    In Java, in exchange for portability and much less tendency to crash, one has somewhat less intimate control over the system browser. In the current version, the browser is launched, then, for the next preview, typically that process is terminated and the browser is launched again. This is by far the most reliable and portable approach.
+    <p></p>
+
+    But, consistent with the entire Arachnophilia design philosophy, you can change this if you want. There are any number of special browser features that might, in some cases, allow the browser to simply refresh itself, without any great strain. Therefore the browser configuration dialog (by default on the
+    <b>
+      HTML
+    </b>
+    menu) allows you to choose whether or not to terminate the previous browser process (with "close before opening"), you may choose whether or not to use the feature that usually causes a jump to the editing position in the launched page (see below) (especially convenient if the browser is relaunched on each preview), and you can enter custom browser launching instructions.
+    <p></p>
+
+    The Internet (and Usenet in particular) is awash with suggestions about how to launch Web browsers in various interesting ways. Arachnophilia will accommodate most of them, using the browser setup dialog's data fields. The only pedestrian requirement is that the symbol "$1" be included somewhere in the command string, to allow the temporary preview file to be included as the browser's target.
+    <p></p>
+
+    Actually, on second thought, you might choose not to use the temporary file at all, and instead save your document to preview it, in which case you would need to include your document's name as "file:/[FullPath]", or something like that, instead of "$1". In this case, a feature to be described below won't work.
+    <p></p>
+
+    <b>
+      A few more details.
+    </b>
+    For various reasons, Arachnophilia creates a temporary file for browser previewing. The temporary file is located in the same directory as the file being previewed if the file has been saved, or in the user's home directory if the file has yet to be saved. This temporary file is deleted either in the course of changing pages and browsers, or it is deleted when the user exits Arachnophilia.
+    <p></p>
+
+    The original reason for the temporary file was to make it possible for an HTML beginner to view a page he had not saved, or wasn't considering saving, or perhaps thought "saving" was only something that Jehovah's Witnesses do. But it turns out having a separate preview file has a rather nice side effect &mdash; read on.
+    <p></p>
+
+    In the new version of Arachnophilia, as soon as I realized I wasn't going to be able to simply refresh any browser on any platform without also relaunching the browser, I also realized that the new browser view would inevitably show the top of the previewed page. So I thought up a way to make the browser scroll to the editing position &mdash; I insert a document reference tag (sort of an HTML bookmark) in the temporary preview file, and I specify that reference in the browser launch URL, which ordinarily makes the browser seek out and display the reference. This scheme doesn't always work &mdash; I place the tag in the preview file without exhaustively trying to avoid places where the reference will not be found (such as in a table, but outside &lt;td&gt;&lt;/td&gt; pairs). This method usually gets the browser to show the editing area of the current page - usually. :)
+    <p></p>&nbsp;
+    </div> <!-- content -->
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch9"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch0"></span>
+      </span>
+    </div> <!-- wrapper -->
+    <p></p>
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html" selected="selected">Browser Issues</option>
+            <option value="CommonProblems.html">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="BasicWebPageBuilding.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="CommonProblems.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+  </body>
+</html>

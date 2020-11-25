@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Created on Mar 1, 2002 10:06:35 AM -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      Common Problems
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rev="made" href="http://www.arachnoid.com"/>
+    <meta http-equiv="Content-language" content="en"/>
+    <meta name="author" content="Paul Lutus"/>
+    <meta name="owner" content="Paul Lutus"/>
+    <meta name="description" content="Based on personal experience and a lot of e-mail."/>
+    <meta name="group" content="DOCUMENTATION"/>
+    <meta name="keywords" content="Arachnophilia,HTML,edit,editor,webpage,programming,macro,Lutus"/>
+    <meta name="rating" content="General"/>
+    <meta name="ROBOTS" content="ALL"/>
+    <meta name="GENERATOR" content="Arachnophilia 5.0"/>
+    <meta name="FORMATTER" content="Arachnophilia 5.0"/>
+    <link rel="stylesheet" type="text/css" href="styles/default_article.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/roundcorner_16_parch.css"/>
+  </head>
+  <body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000">
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <script type="text/javascript" language="JavaScript">
+            function toNewPage(t) { location.href = t.options[t.selectedIndex].value; }
+          </script>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html" selected="selected">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="BrowserIssues.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="ConfigurationFiles.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+    <div align="center">
+      <div class="article_title_inverse">Common Problems with Arachnophilia</div>
+      <div class="article_linklist_inverse">Arachnophilia is &copy; Copyright 2009, P. Lutus.
+        <br/>
+        <p>Arachnophilia is
+        <a href="http://www.arachnoid.com/careware">CareWare</a></p>
+        
+        
+      </div>
+      <!-- LINK_MENU_START -->
+<a href="#Starting_Arachnophilia">Starting Arachnophilia</a> | <a href="#Browser_Launching">Browser Launching</a> | <a href="#Search__amp__Replace">Search &amp; Replace</a><br/>
+<a href="#Memory_Issues">Memory Issues</a> | <a href="#FTP_Service">FTP Service</a> | <a href="#Windows_Suggestions">Windows Suggestions</a>
+<!-- LINK_MENU_END -->
+    </div>
+    <p></p>
+    
+    <div class="article_wrapper">
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch0"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch9"></span>
+      </span>
+      <div class="roundcorner_16_parch_content">
+        <i>
+          Now that the new Java version of Arachnophilia has been available for a while, I have seen certain problems reported again and again. Here is a list of the most common ones.
+        </i>
+        <a name="Starting_Arachnophilia"></a><div class="article_heading">Starting Arachnophilia</div>
+        <div class="article_section_color_bar">
+          <ul>
+            <li>First time
+              <blockquote>
+                If you have downloaded and installed the correct Java runtime engine from
+                <a href="http://java.com">http://java.com</a>
+                , and you can't seem to run Arachnophilia, open a command window (Linux: shell console), move to the place where the file "Arachnophilia.jar" is located, and type:
+                <p></p>
+                
+                <pre>java -jar Arachnophilia.jar</pre>
+                <p></p>
+                
+                This launch method has the advantage that you can read any errors that may appear during launch.
+                <p></p>
+                
+                This launch command is what is invoked by the default Windows program icon, and it is the appropriate way to launch Arachnophilia on other platforms. Linux users can create a batch file containing this command, or use one of the various desktop-environment launching methods.
+            </blockquote></li>
+            <li>Subsequently
+              <blockquote>
+                If, after successfully running Arachnophilia, you find that you cannot run it any more, you have the option of editing the configuration files located in the directory C:UsersBill/.Arachnophilia, or, the simplest approach, just delete that directory. If you delete the directory and run Arachnophilia, the program will re-install itself with a fresh set of configuration files.
+            </blockquote></li>
+            <li> Running from shell scripts / batch files
+              <blockquote>
+                It turns out that, unlike more sophisticated operating systems, it is nearly impossible to directly associate a Java program with a file type in Windows. To get around this, you can create a Windows batch file like the following:
+                <br/>
+                <br/>
+                <tt>
+                  @echo off
+                  <br/>
+                  java -jar "c:\Program Files\Arachnophilia\Arachnophilia.jar" "%1"
+                  <br/>
+                </tt>
+                <br/>
+                Remember to change the path to the executable JAR if your path differs from that shown above.
+                <br/>
+                <br/>
+                This obviously launches a command window that won't close, but that is what it's like using Windows (pay more, get less), and there are no remedies for this bug that can be explained in less than the length of an overly wordy spy novel.
+                <br/>
+                <br/>
+                Once you have created a batch file like the above, you can name it "Arachnophilia.bat" and place it in your Windows directory (so it can be found in a path search). Then you can use the Windows File Explorer's file association dialog to create an association between one or more file types and the Arachnophilia batch file.
+                <br/>
+                <br/>
+                On more sophisticated operating systems such as Linux, you can either create the required association directly within X windows, or use a shell script similar to that used in Windows:
+                <br/>
+                <br/>
+                <tt>
+                  #!/bin/sh
+                  <br/>
+                  java -jar (path to Arachnophilia JAR file)/Arachnophilia.jar "$@"
+                  <br/>
+                </tt>
+                <br/>
+                Name this shell script "Arachnophilia", make it executable, and place it in the <tt>/usr/local/bin</tt> directory. This simply creates an easy wasy to launch Arachnophilia or create file associations, without the drawback of the Windows approach.
+                <br/>
+                <br/>
+                If you use Linux and X windows, you can also create a plain-text desktop shortcut like this:<br/>
+                <br/>
+                <tt>
+                  [Desktop Entry]<br/>
+                  Exec=java -jar (path to Arachnophilia JAR file)/Arachnophilia.jar<br/>
+                  Name=Arachnophilia<br/>
+                  Name[en_US]=Arachnophilia<br/>
+                  Type=Application<br/>
+                </tt><br/>
+                Name this file "Arachnophilia", place it in your desktop directory (in Linux, normally located at /home/(user name)/Desktop), and you have an easy way to launch Arachnophilia.<br/>
+            </blockquote></li>
+            <li>Error log file
+              <blockquote>
+                Most kinds of program errors are trapped and logged in the file C:UsersBill/.Arachnophilia/Aracherrorlog.txt. If you have difficulty launching Arachnophilia, reading this log file should be the first step. If you decide to report an Arachnophilia bug, be sure to include the contents of this log file.
+            </blockquote></li>
+          </ul>
+        </div>
+        <a name="Browser_Launching"></a><div class="article_heading">Browser Launching</div>
+        <div class="article_section_color_bar">
+          The main help pages cover browser location and installation, this section covers a few problems that may come up on some systems, or with some browsers.
+          <ul>
+            <li>Launch Argument
+              <p></p>
+              
+              <blockquote>
+                The default launch argument is "file:$1". During the launch procedure, the token "$1" is replaced with a temporary file name that contains the Web page to be viewed. Some browsers may not accept this specific launch string. In that event, you can change the launch string and your changes will be remembered.
+                <p></p>
+                
+                It is important to realize that the same browser can be launched using different launch properties. Simply create a new browser profile, type in the same program path, and change the options.
+              </blockquote>
+            <p></p></li>
+            
+            <li>Jump to Doc Position
+              <blockquote>
+                This feature tries to synchronize the browser preview with the editing position in long documents. But it has one flaw &mdash; the document marker might end up in the middle of a script segment and cause runtime errors in that script, for a page with &lt;script&gt;&lt;/script&gt; blocks. In such a case, simply disable the "Jump to doc position" feature.
+            </blockquote></li>
+            <li>Toolbar buttons for different browsers
+              <blockquote>
+                You may want to create a toolbar button for each browser, to save time previewing and comparing browser behaviors. This is easy &mdash; the macro "[LaunchBrowser]" accepts an optional argument. To launch a browser you have named "MyFavorite" in the browser configuration dialog, use this macro argument:
+                <p></p>
+                
+                <pre>[LaunchBrowser:MyFavorite]</pre>
+                <p></p>
+                
+            </blockquote></li>
+          </ul>
+        </div>
+        <a name="Search__amp__Replace"></a><div class="article_heading">Search &amp; Replace</div>
+        <div class="article_section_color_bar">
+          <ul>
+            <li> Search do's and dont's
+              <p></p>
+              
+              <blockquote>
+                The search &amp; replace panel contains a very easy way to search for things, but it should not be used for every kind of search. If you want to search for a very long string, or provide a very long replacement string, use macros instread of typing them directly into the search &amp; replace panel.
+                <p></p>
+                
+                To make this easier, the search &amp; replace panel text entry windows can be right-clicked and a list of user macros is displayed. So type your long entry into a macro, then enter the macro name into search &amp; replace.
+                <p></p>
+                
+                Also, macros can be written for specific searches, this formalizes the search process and makes it easy to collect your favorite searches as a set of toolbar buttons.
+            </blockquote></li>
+            <li>Recovery
+              <p></p>
+              
+              <blockquote>
+                Some people have tried pasting the entire text of "War &amp; Peace" into the search text window. This will have a very bad effect, distorting Arachnophilia's display entirely. One solution is to press the "clear" button in the extended search &amp; replace panel. But in truly pathological cases, to recover the display, simply delete the C:UsersBill/.Arachnophilia directory, and let Arachnophilia reinstall itself.
+            </blockquote></li>
+          </ul>
+        </div>
+        <a name="Memory_Issues"></a><div class="article_heading">Memory Issues</div>
+        <div class="article_section_color_bar">
+          <p>Arachnophilia runs under the Java virtual machine, which normally allocates enough memory for itself and for most Web development applications like Arachnophilia. But in some environments (that I won't identify but whose name starts with "Windows") the Java virtual machine defaults to a small memory allocation, which prevents some Arachnophilia users from loading and editing either a very large page, or a large set of pages simultaneously. Here is the solution to this problem:</p>
+          
+          <ul>
+            <li>Under most operating systems other than Windows, memory problems rarely come up because the Java virtual machine allocates plenty of memory for itself. But, since I don't test on every operating system, this issue might come up. In case of memory problems, find the shell script that launches Arachnophilia, and edit it as follows:
+              <ul>
+                <li>Find the line that contains something like: "java -jar Arachnophilia.jar".</li>
+                <li>Edit it so it looks like this: "java -Xmx1000m -jar Arachnophilia.jar".</li>
+                <li>Save the result and any memory problems should be  history.</li>
+              </ul>
+            </li>
+            <li>For Windows XP, follow this procedure:
+              <ul>
+                <li>Open a file browser.
+                </li>
+                <li>Select "Tools ... Folder Options ... File types"
+                </li>
+                <li>To save time, when confronted by the list of file types, type "j" at the keyboard. In most cases this will jump to "JAR", the file type of interest. If not, scroll down to get to the entry for "JAR".
+                </li>
+                <li>Click "Advanced", then "Edit".
+                </li>
+                <li>After the string "javaw.exe" and before the string "-jar", put this: "-Xmx1000m".</li>
+                <li>The section of interest should now look like this: "(path)/javaw.exe -Xmx1000m -jar (path to arachnophilia)".</li>
+                <li>Click "OK, "OK" and "Close".
+                </li>
+              </ul>
+            </li>
+            <li>For other Windows versions ... well, I don't know, because I don't run Windows. One can only hope that the above method will work for other versions, but in any case, the key is to instruct the Java virtual machine to allocate itself more memory as shown above.</li>
+          </ul>
+          
+          
+        </div>
+        <a name="FTP_Service"></a><div class="article_heading">FTP Service</div>
+        <div class="article_section_color_bar">
+          <blockquote>
+            There is a subtle aspect of the FTP service that has caused some problems. The user-provided remote path should be "anchored," that is, it should be a full path beginning either with "/" or "~", depending on the requirements of your service.
+            <p></p>
+            
+            For example, if you know that the path to your Web pages is understood by your service's FTP service as "wwwdocs",
+            <b>be sure to enter this as:</b>
+            <p></p>
+            
+            /wwwdocs
+            <p></p>
+            
+            <b>or:</b>
+            <p></p>
+            
+            ~/wwwdocs
+            <p></p>
+            
+            <b>but not as:</b>
+            <p></p>
+            
+            wwwdocs
+            <p></p>
+            
+            If the latter example is entered, it creates a very annoying result &mdash; a series of directories is created in the wrong place, because the FTP protocol interprets each new change-directory command as an addition to the last, rather than a lateral movement as intended. To summarize, this produces any number of useless directories in the wrong place.
+            <p></p>
+            
+          </blockquote>
+          <div align="center">
+            If you didn't find what you were looking for here, try the
+            <a href="arachnofaq.html">Arachnophilia FAQ</a>
+          </div>
+        </div>
+        <a name="Windows_Suggestions"></a><div class="article_heading">Windows Suggestions</div>
+        <div class="article_section_color_bar">
+          My favorite Windows suggestion is that everyone dump Windows in favor of Linux, but since that's a bit unrealistic, I have these Windows-specific hints:
+          <ul>
+            <li>The Arachnophilia desktop shortcut will accept a drag & drop of one or more filenames and will launch Arachnophilia with those files opened. Simply drag the selected file names from Windows File Explorer onto the Arachnophilia desktop shortcut.</li>
+            <li>Arachnophilia is listed in the "Send To" context menu, which allows files to be opened within Arachnophilia by right-clicking the file name(s) and specifying "Send To".</li>
+            <li>Windows users who have memory and resource issues should read the suggestions on this page under "Memory Issues".</li>
+            <li>Oh, one more thing. Did I remember to mention that everyone should dump Windows in favor of Linux?</li>
+          </ul>
+        </div>&nbsp;
+      </div> <!-- content -->
+      <span class="roundcorner_16_parch">
+        <span class="roundcorner_16_parch9"></span>
+        <span class="roundcorner_16_parch8"></span>
+        <span class="roundcorner_16_parch7"></span>
+        <span class="roundcorner_16_parch6"></span>
+        <span class="roundcorner_16_parch5"></span>
+        <span class="roundcorner_16_parch4"></span>
+        <span class="roundcorner_16_parch3"></span>
+        <span class="roundcorner_16_parch2"></span>
+        <span class="roundcorner_16_parch1"></span>
+        <span class="roundcorner_16_parch0"></span>
+      </span>
+    </div> <!-- wrapper -->
+    <p></p>
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="index.html">Documentation</a>&nbsp;|&nbsp;</td><td>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="index.html">* Arachnophilia Documentation</option>
+            <option value="QuickTour.html">A Quick Tour of Arachnophilia</option>
+            <option value="AdvancedFeatures.html">Advanced Features</option>
+            <option value="VersionNotes.html">Arachnophilia 5.4 Version Notes</option>
+            <option value="arachnofaq.html">Arachnophilia FAQ</option>
+            <option value="Introduction.html">Arachnophilia Introduction</option>
+            <option value="RevHistory.html">Arachnophilia Revision History</option>
+            <option value="BasicWebPageBuilding.html">Basic Web Page Building</option>
+            <option value="BrowserIssues.html">Browser Issues</option>
+            <option value="CommonProblems.html" selected="selected">Common Problems</option>
+            <option value="ConfigurationFiles.html">Configuration Files</option>
+            <option value="GettingStarted.html">Getting Started</option>
+            <option value="GraphicsOperations.html">Graphics Operations</option>
+            <option value="HowToCreateHTML.html">How to Create and Edit HTML Documents</option>
+            <option value="SearchingReplacing.html">Searching &amp; Replacing</option>
+            <option value="SpellChecker.html">Spell Checker</option>
+            <option value="TablesAndLists.html">Tables and Lists</option>
+            <option value="MacroArchitecture.html">The Arachnophilia Macro Architecture</option>
+            <option value="RightClickWizard.html">The Arachnophilia Right-Click Wizard</option>
+            <option value="CodeBeautifier.html">The Code Beautifier</option>
+            <option value="JavaCustomClassInterface.html">The Java Custom Class Interface</option>
+            <option value="ExternalPrograms.html">Working with external programs</option>
+            <option value="Acknowledgments.html">~ Acknowledgments</option>
+          </select>
+    </td><td><a href="BrowserIssues.html"><img src="images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="ConfigurationFiles.html"><img src="images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;</td></tr></table>
+    <!-- SiteIndexEnd -->
+  </body>
+</html>

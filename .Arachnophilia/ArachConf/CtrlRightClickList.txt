@@ -1,0 +1,16 @@
+; This handy list appears when you press
+; the right mouse button and the 
+; control key at the same time.
+
+<!-- | --> ; comment
+<blockquote>|</blockquote>
+<pre>|</pre>
+<td>|</td>
+<tr>|</tr>
+<li>|</li>
+<table><tr><td>|</td></tr></table>
+[MakeUnorderedList]
+[MakeOrderedList]
+[MakeOrderedList:a] ; with letters
+[TableWizard]
+[DateTime]
